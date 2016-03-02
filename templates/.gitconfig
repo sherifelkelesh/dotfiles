@@ -1,1 +1,88 @@
-/home/iago/.gitconfig
+[user]
+	name   = Iago Dahlem Lorensini
+	email = iago.lorensini@cwi.com.br
+	editor = subl
+
+[core]
+    editor 		 = subl
+    excludesfile = ~/.gitignore_global
+
+[alias]
+	# Add
+	ad = add
+	aa = add .
+
+	# Checkout
+	co = checkout
+	cb = checkout -b
+
+	# Cherry-pick
+	cp = cherry-pick
+
+	# Commit
+	cm = commit -m
+	ca = commit --amend -m
+
+	# Config
+	c  = config
+	cg = config --global
+
+	# Diff
+	df = diff
+
+	# Discard
+	dc = checkout --
+
+	# Fetch
+	ft = fetch
+
+	# List
+	bl = branch -a
+	cl = config --list
+	rl = remote -v
+
+	# Logs
+	l = log --oneline
+
+	# Merge
+	mg = merge
+
+	# Status
+	st = status
+	ss = status -s
+
+	# Pull
+	pl = pull
+
+	# Push
+	ps = push
+	pu = push -u
+
+	# Remote
+	ra = remote add
+	rs = remote set-url
+
+	# Unstage
+	ut = reset HEAD --
+
+[color]
+  	diff   = auto
+  	status = auto
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old  = red bold
+    new  = green bold
+
+[color "status"]
+    added     = cyan bold
+    branch    = cyan bold
+    changed   = magenta bold
+    deleted   = red bold
+    untracked = yellow bold
+
+[push]
+    # 'git push' will push the current branch to its tracking branch
+    # the usual default is to push all branches
+    default = tracking
