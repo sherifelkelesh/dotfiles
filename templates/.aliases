@@ -1,16 +1,27 @@
-# ZSH
-alias zshconfig="subl ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh"
+#
+# Aliases
+# ===========================================
 
-# APT-GET
+# Configs
+REPOS_PATH="~/dev/repos"
+EDITOR="subl"
+
+# apt-get
 alias update="sudo apt-get update"
 alias upgrade="sudo apt-get upgrade"
 alias dist-upgrade="sudo apt-get dist-upgrade"
 alias install="sudo apt-get install"
 alias remove="sudo apt-get remove"
 alias clean="sudo apt-get clean"
-alias auto-clean="sudo apt-get auto-clean"
-alias auto-remove="sudo apt-get auto-remove"
+alias autoclean="sudo apt-get autoclean"
+alias autoremove="sudo apt-get autoremove"
 
-# SUBLIME PREFERENCES
-alias subl-preferences="subl ~/dev/repos/sublime-preferences"
+# Dotfiles
+alias dotfiles="$EDITOR $REPOS_PATH/dotfiles"
+
+# Sublime Preferences
+alias subl-preferences="$EDITOR $REPOS_PATH/sublime-preferences"
+
+# ZSH / oh-my-zsh
+alias zshconfig="$EDITOR ~/.zshrc"
+alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
