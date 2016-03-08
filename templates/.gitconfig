@@ -15,6 +15,10 @@
 	ad = add
 	aa = add .
 
+	# Branch
+	bd = branch -d
+	bv = branch -v
+
 	# Checkout
 	co = checkout
 	cb = checkout -b
@@ -34,7 +38,8 @@
 	df = diff
 
 	# Discard
-	dc = checkout --
+	discard = checkout --
+	dc      = checkout --
 
 	# Fetch
 	ft = fetch
@@ -66,7 +71,8 @@
 	rs = remote set-url
 
 	# Unstage
-	ut = reset HEAD --
+	unstage = reset HEAD --
+	ut      = reset HEAD --
 
 [color]
   	diff   = auto
