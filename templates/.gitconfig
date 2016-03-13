@@ -1,3 +1,7 @@
+#
+# Git Configs
+# ===========================================
+
 [user]
 	name   = Iago Dahlem Lorensini
 	email = iago.lorensini@cwi.com.br
