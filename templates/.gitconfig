@@ -1,5 +1,5 @@
 #
-# Git Configs
+# Git Config
 # ===========================================
 
 [user]
@@ -24,8 +24,9 @@
 	bv = branch -v
 
 	# Checkout
-	co = checkout
-	cb = checkout -b
+	co  = checkout
+	cb  = checkout -b
+	com = checkout master
 
 	# Cherry-pick
 	cp = cherry-pick
