@@ -2,7 +2,7 @@
 # Aliases
 # ===========================================
 
-# Configs
+# Config Variables
 REPOS_PATH="~/dev/repos"
 EDITOR="subl"
 
@@ -17,10 +17,10 @@ alias autoclean="sudo apt-get autoclean"
 alias autoremove="sudo apt-get autoremove"
 
 # Dotfiles
-alias dotfiles="$EDITOR $REPOS_PATH/dotfiles"
+alias dotfilesconfig="$EDITOR $REPOS_PATH/dotfiles"
 
 # Sublime Preferences
-alias subl-preferences="$EDITOR $REPOS_PATH/sublime-preferences"
+alias sublconfig="$EDITOR $REPOS_PATH/sublime-preferences"
 
 # ZSH / oh-my-zsh
 alias zshconfig="$EDITOR ~/.zshrc"
