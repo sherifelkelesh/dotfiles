@@ -19,6 +19,9 @@ alias autoremove="sudo apt-get autoremove"
 # Dotfiles
 alias dotfilesconfig="$EDITOR $REPOS_PATH/dotfiles"
 
+# Subl Aliases
+alias sublthis="subl ./"
+
 # Sublime Preferences
 alias sublconfig="$EDITOR $REPOS_PATH/sublime-preferences"
 
