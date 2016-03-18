@@ -17,7 +17,7 @@ alias autoclean="sudo apt-get autoclean"
 alias autoremove="sudo apt-get autoremove"
 
 # Dotfiles
-alias dotfilesconfig="$EDITOR $REPOS_PATH/dotfiles"
+alias dotconfig="$EDITOR $REPOS_PATH/dotfiles"
 
 # Subl Aliases
 alias sublthis="subl ./"
@@ -26,5 +26,6 @@ alias sublthis="subl ./"
 alias sublconfig="$EDITOR $REPOS_PATH/sublime-preferences"
 
 # ZSH / oh-my-zsh
+alias reload!='. ~/.zshrc'
 alias zshconfig="$EDITOR ~/.zshrc"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"

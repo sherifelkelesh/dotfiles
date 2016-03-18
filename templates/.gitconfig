@@ -4,7 +4,7 @@
 
 [user]
 	name   = Iago Dahlem Lorensini
-	email = iago.lorensini@cwi.com.br
+	email  = iago.lorensini@cwi.com.br
 	editor = subl
 
 [core]
@@ -80,8 +80,10 @@
 	ut      = reset HEAD --
 
 [color]
+	branch = auto
   	diff   = auto
   	status = auto
+  	ui     = auto
 
 [color "diff"]
     meta = yellow bold
@@ -99,4 +101,4 @@
 [push]
     # 'git push' will push the current branch to its tracking branch
     # the usual default is to push all branches
-    default = tracking
+    default = simple
