@@ -1,31 +1,39 @@
 #
 # Aliases
-# ===========================================
+# --------------------------------------------------------------------
 
-# Config Variables
-REPOS_PATH="~/dev/repos"
+# -- Config ----------------------------------------------------------
 EDITOR="subl"
+HOME="/home/iago"
+DEV_PATH="$HOME/dev"
+REPOS_PATH="$DEV_PATH/repos"
+PROJECTS_PATH="$DEV_PATH/projects"
+APT_GET="sudo apt-get"
 
-# apt-get
-alias update="sudo apt-get update"
-alias upgrade="sudo apt-get upgrade"
-alias dist-upgrade="sudo apt-get dist-upgrade"
-alias install="sudo apt-get install"
-alias remove="sudo apt-get remove"
-alias clean="sudo apt-get clean"
-alias autoclean="sudo apt-get autoclean"
-alias autoremove="sudo apt-get autoremove"
+# -- APT-GET ---------------------------------------------------------
+alias update="$APT_GET update"
+alias upgrade="$APT_GET upgrade"
+alias dist-upgrade="$APT_GET dist-upgrade"
+alias install="$APT_GET install"
+alias remove="$APT_GET remove"
+alias clean="$APT_GET clean"
+alias autoclean="$APT_GET autoclean"
+alias autoremove="$APT_GET autoremove"
 
-# Dotfiles
+# -- Dotfiles --------------------------------------------------------
 alias dotconfig="$EDITOR $REPOS_PATH/dotfiles"
 
-# Subl Aliases
-alias sublthis="subl ./"
-
-# Sublime Preferences
+# -- Sublime ---------------------------------------------------------
+alias sublthis="$EDITOR ./"
 alias sublconfig="$EDITOR $REPOS_PATH/sublime-preferences"
 
-# ZSH / oh-my-zsh
-alias reload!='. ~/.zshrc'
-alias zshconfig="$EDITOR ~/.zshrc"
-alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
+# -- ZSH / Oh-My-Zsh -------------------------------------------------
+alias reload='. $HOME/.zshrc'
+alias zshconfig="$EDITOR $HOME/.zshrc"
+alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
+
+# -- Workflow --------------------------------------------------------
+alias dev="cd $DEV_PATH"
+alias repos="cd $REPOS_PATH"
+alias proj="cd $PROJECTS_PATH"
+alias work=""
