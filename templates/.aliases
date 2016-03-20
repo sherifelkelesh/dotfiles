@@ -2,38 +2,41 @@
 # Aliases
 # --------------------------------------------------------------------
 
-# -- Config ----------------------------------------------------------
+# -- Config -------------------
 EDITOR="subl"
-HOME="/home/iago"
-DEV_PATH="$HOME/dev"
-REPOS_PATH="$DEV_PATH/repos"
-PROJECTS_PATH="$DEV_PATH/projects"
-APT_GET="sudo apt-get"
+DEV="$HOME/dev"
+REPOS="$DEV/repos"
+PROJECTS="$DEV/projects"
+APTGET="sudo apt-get"
 
-# -- APT-GET ---------------------------------------------------------
-alias update="$APT_GET update"
-alias upgrade="$APT_GET upgrade"
-alias dist-upgrade="$APT_GET dist-upgrade"
-alias install="$APT_GET install"
-alias remove="$APT_GET remove"
-alias clean="$APT_GET clean"
-alias autoclean="$APT_GET autoclean"
-alias autoremove="$APT_GET autoremove"
+# -- APT-GET ------------------
+alias update="$APTGET update"
+alias upgrade="$APTGET upgrade"
+alias dist-upgrade="$APTGET dist-upgrade"
+alias install="$APTGET install"
+alias remove="$APTGET remove"
+alias clean="$APTGET clean"
+alias autoclean="$APTGET autoclean"
+alias autoremove="$APTGET autoremove"
 
-# -- Dotfiles --------------------------------------------------------
-alias dotconfig="$EDITOR $REPOS_PATH/dotfiles"
+# TODO
+# Change dotfiles path
+# -- Dotfiles -----------------
+alias dotconfig="$EDITOR $REPOS/dotfiles"
 
-# -- Sublime ---------------------------------------------------------
+# TODO
+# Change sublime-preferences path
+# -- Sublime ------------------
 alias sublthis="$EDITOR ./"
-alias sublconfig="$EDITOR $REPOS_PATH/sublime-preferences"
+alias sublconfig="$EDITOR $REPOS/sublime-preferences"
 
-# -- ZSH / Oh-My-Zsh -------------------------------------------------
+# -- ZSH & Oh-My-Zsh ----------
 alias reload='. $HOME/.zshrc'
 alias zshconfig="$EDITOR $HOME/.zshrc"
 alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
 
-# -- Workflow --------------------------------------------------------
-alias dev="cd $DEV_PATH"
-alias repos="cd $REPOS_PATH"
-alias proj="cd $PROJECTS_PATH"
+# -- Workflow -----------------
+alias dev="cd $DEV"
+alias repos="cd $REPOS"
+alias proj="cd $PROJECTS"
 alias work=""
