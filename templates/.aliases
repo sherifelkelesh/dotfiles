@@ -19,19 +19,15 @@ alias clean="$APTGET clean"
 alias autoclean="$APTGET autoclean"
 alias autoremove="$APTGET autoremove"
 
-# TODO
-# Change dotfiles path
 # -- Dotfiles -----------------
 alias dotconfig="$EDITOR $REPOS/dotfiles"
 
-# TODO
-# Change sublime-preferences path
 # -- Sublime ------------------
 alias sublthis="$EDITOR ./"
 alias sublconfig="$EDITOR $REPOS/sublime-preferences"
 
 # -- ZSH & Oh-My-Zsh ----------
-alias reload='. $HOME/.zshrc'
+alias reload='. ~/.zshrc'
 alias zshconfig="$EDITOR $HOME/.zshrc"
 alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
 
