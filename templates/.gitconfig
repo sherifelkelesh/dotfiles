@@ -76,8 +76,8 @@
 	rs = remote set-url
 
 	# Unstage
-	unstage = reset HEAD --
-	ut      = reset HEAD --
+	unstage = reset HEAD
+	ut      = reset HEAD
 
 [color]
 	branch = auto
