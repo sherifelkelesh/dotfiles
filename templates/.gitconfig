@@ -32,8 +32,10 @@
 	cp = cherry-pick
 
 	# Commit
-	cm = commit -m
-	ca = commit --amend -m
+	c   = commit
+	cm  = commit -m
+	ca  = commit --amend
+	cam = commit -a -m
 
 	# Config
 	c  = config
@@ -55,10 +57,15 @@
 	rl = remote -v
 
 	# Logs
-	l = log --oneline
+	l  = log --oneline
+	lg = log --oneline --pretty=format:'%h %ad | [%an] %s%d' --graph --date=short
 
 	# Merge
 	mg = merge
+
+	# Stash
+	sh  = stash
+	sha = stash apply
 
 	# Status
 	st = status
@@ -74,6 +81,11 @@
 	# Remote
 	ra = remote add
 	rs = remote set-url
+
+	# Reset
+	r   = reset
+	rhh = reset --hard HEAD~1
+	rsh = reset --soft HEAD~1
 
 	# Unstage
 	unstage = reset HEAD
