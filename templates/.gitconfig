@@ -21,7 +21,6 @@
 
 	# Branch
 	bd = branch -d
-	bv = branch -v
 
 	# Checkout
 	co  = checkout
@@ -52,7 +51,8 @@
 	ft = fetch
 
 	# List
-	bl = branch -a
+	ba = branch -a
+	bl = branch -v
 	cl = config --list
 	rl = remote -v
 
