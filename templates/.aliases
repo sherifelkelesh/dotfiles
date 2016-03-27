@@ -18,6 +18,7 @@ alias remove="$APTGET remove"
 alias clean="$APTGET clean"
 alias autoclean="$APTGET autoclean"
 alias autoremove="$APTGET autoremove"
+alias superup="$APTGET update && $APTGET upgrade && $APTGET dist-upgrade"
 
 # -- Dotfiles -----------------
 alias dotconfig="$EDITOR $REPOS/dotfiles"
