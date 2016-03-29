@@ -18,3 +18,5 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 export NVM_DIR="/home/iago/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+eval "$(fuck --alias)"
