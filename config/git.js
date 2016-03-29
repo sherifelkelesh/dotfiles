@@ -7,10 +7,10 @@ let dotfiles = require('./dotfiles.js');
 module.exports = {
 
 	git: {
-		path_gitconfig: '<%= dotfiles.path_templates %>/.gitconfig'),
 		path_gitconfig_system: userhome('.gitconfig'),
-		path_gitignore_global: '<%= dotfiles.path_templates %>/.gitignore_global'),
+		path_gitconfig: '<%= dotfiles.path_templates %>/.gitconfig',
 		path_gitignore_global_system: userhome('.gitignore_global'),
+		path_gitignore_global: '<%= dotfiles.path_templates %>/.gitignore_global',
 	},
 
 };
