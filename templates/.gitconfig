@@ -24,7 +24,7 @@
 
 	# Checkout
 	co  = checkout
-	cb  = checkout -b
+	cob = checkout -b
 	com = checkout master
 
 	# Cherry-pick
@@ -76,7 +76,7 @@
 
 	# Push
 	ps = push
-	pu = push -u
+	psu = push -u
 
 	# Remote
 	ra = remote add
