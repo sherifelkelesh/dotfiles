@@ -2,6 +2,7 @@
 
 * [] - Modular Gruntfile
 * [] - Configure git-prompt plugin
+* [] - Configure git-prompt with Dracula ZSH Theme
 * [] - Configure tasks, configs, Gruntfile
 * [] - Write tests
 * [] - Change aliases dotfiles path
