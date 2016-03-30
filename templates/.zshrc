@@ -6,6 +6,7 @@ ZSH_THEME="dracula"
 ZSH_CUSTOM="$HOME/.custom"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 plugins=(gitfast git-prompt git-tools history-substring-search sublime node npm zsh-syntax-highlighting z)
 # Not needed plugins but very useful
