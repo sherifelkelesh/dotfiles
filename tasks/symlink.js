@@ -8,24 +8,23 @@ module.exports = {
 	symlink: {
 
 		aliases: {
-			src: '<%= config.git.path_gitconfig %>',
-			dest: '<%= zsh.custom.path_aliases %>',
-			zsh.custom.path_custom
+			src: '',
+			dest: '',
 		},
 
 		gitconfig: {
-			src: '<%= config.git.path_gitconfig %>',
-			dest: '<%= config.git.path_gitconfig_system %>',
+			src: '',
+			dest: '',
 		},
 
 		gitignore: {
-			src: '<%= config.git.path_gitignore_global %>',
-			dest: '<%= config.git.path_gitignore_global_system %>',
+			src: '',
+			dest: '',
 		},
 
 		zsh: {
-			src: '<%= config.zsh.path_zshrc %>',
-			dest: '<%= config.zsh.path_zshrc_system %>',
+			src: '',
+			dest: '',
 		},
 
 	},

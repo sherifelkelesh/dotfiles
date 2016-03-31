@@ -1,0 +1,116 @@
+#
+# Git Config
+# ===========================================
+
+[user]
+	name   = Iago Dahlem Lorensini
+	email  = iago.lorensini@cwi.com.br
+	editor = subl
+
+[core]
+    editor 		 = subl
+    excludesfile = ~/.gitignore_global
+
+[alias]
+	# Git
+	g = git
+
+	# Add
+	ad = add
+	aa = add .
+
+	# Branch
+	bd = branch -d
+
+	# Checkout
+	co  = checkout
+	cob = checkout -b
+	com = checkout master
+
+	# Cherry-pick
+	cp = cherry-pick
+
+	# Commit
+	c   = commit
+	cm  = commit -m
+	ca  = commit --amend
+	cam = commit -a -m
+
+	# Config
+	c  = config
+	cg = config --global
+
+	# Diff
+	df = diff
+
+	# Discard
+	discard = checkout --
+	dc      = checkout --
+
+	# Fetch
+	ft = fetch
+
+	# List
+	ba = branch -a
+	bl = branch -v
+	cl = config --list
+	rl = remote -v
+
+	# Logs
+	l  = log --oneline
+	lg = log --oneline --pretty=format:'%h %ad | [%an] %s%d' --graph --date=short
+
+	# Merge
+	mg = merge
+
+	# Stash
+	sh  = stash
+	sha = stash apply
+
+	# Status
+	st = status
+	ss = status -s
+
+	# Pull
+	pl = pull
+
+	# Push
+	ps = push
+	psu = push -u
+
+	# Remote
+	ra = remote add
+	rs = remote set-url
+
+	# Reset
+	r   = reset
+	rhh = reset --hard HEAD~1
+	rsh = reset --soft HEAD~1
+
+	# Unstage
+	unstage = reset HEAD
+	ut      = reset HEAD
+
+[color]
+	branch = auto
+  	diff   = auto
+  	status = auto
+  	ui     = auto
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old  = red bold
+    new  = green bold
+
+[color "status"]
+    added     = cyan bold
+    branch    = cyan bold
+    changed   = magenta bold
+    deleted   = red bold
+    untracked = yellow bold
+
+[push]
+    # 'git push' will push the current branch to its tracking branch
+    # the usual default is to push all branches
+    default = simple
