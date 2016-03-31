@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+```${1:format}
+${2:code}
+```
+]]></content>
+	<tabTrigger>md-sh</tabTrigger>
+</snippet>

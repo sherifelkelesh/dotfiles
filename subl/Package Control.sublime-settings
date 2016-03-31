@@ -1,0 +1,39 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"All Autocomplete",
+		"AutoFileName",
+		"Babel",
+		"cdnjs",
+		"Color Highlighter",
+		"DocBlockr",
+		"Dracula Color Scheme",
+		"EditorConfig",
+		"Emmet",
+		"Emmet Css Snippets",
+		"Emmet Style Reflector",
+		"Git",
+		"GitGutter",
+		"GitSyntaxes",
+		"JavaScript & NodeJS Snippets",
+		"JavaScriptNext - ES6 Syntax",
+		"JsFormat",
+		"JSHint",
+		"JSHint Gutter",
+		"Material Theme",
+		"Package Control",
+		"Sass",
+		"Seti_UI",
+		"SideBarEnhancements",
+		"SideBarFolders",
+		"SublimeLinter",
+		"TrailingSpaces",
+		"WakaTime"
+	]
+}

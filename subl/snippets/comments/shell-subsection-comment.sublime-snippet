@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+# ${1:subsection name}
+# ----------------------------------
+]]></content>
+	<tabTrigger>sh-sub-cm</tabTrigger>
+	<scope>source.shell, source.sh, source.zsh</scope>
+</snippet>

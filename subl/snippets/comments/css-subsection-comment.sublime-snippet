@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+/* ${1:sub-section name}
+ * ---------------------------------- */
+]]></content>
+	<tabTrigger>css-subsec-cm</tabTrigger>
+	<scope>source.css</scope>
+</snippet>

@@ -1,0 +1,46 @@
+{
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": false,
+	"caret_extra_bottom": 3,
+	"caret_extra_top": 3,
+	"caret_extra_width": 2,
+	"color_scheme": "Packages/User/SublimeLinter/Dracula (SL).tmTheme",
+	"font_options":
+	[
+		"gray_antialias",
+		"subpixel_antialias"
+	],
+	"font_size": 10,
+	"highlight_line": false,
+	"ignored_packages":
+	[
+		"JavaScript",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"material_theme_accent_indigo": true,
+	"material_theme_accent_lime": true,
+	"material_theme_accent_orange": true,
+	"material_theme_accent_purple": true,
+	"material_theme_accent_red": true,
+	"material_theme_accent_yellow": true,
+	"material_theme_bold_tab": false,
+	"material_theme_compact_sidebar": true,
+	"material_theme_contrast_mode": false,
+	"material_theme_disable_fileicons": false,
+	"material_theme_disable_folder_animation": false,
+	"material_theme_disable_tree_indicator": false,
+	"material_theme_panel_separator": true,
+	"material_theme_small_statusbar": true,
+	"material_theme_small_tab": true,
+	"material_theme_tabs_autowidth": true,
+	"material_theme_tabs_separator": true,
+	"overlay_scroll_bars": "enabled",
+	"theme": "Material-Theme-Darker.sublime-theme"
+}
