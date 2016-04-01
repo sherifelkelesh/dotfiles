@@ -5,11 +5,15 @@ let userhome = require('userhome');
 
 module.exports = {
 
+	test: {
+		path_sytem: userhome('test'),
+	},
+
 	dotfiles: {
 		path_dotfiles: userhome('.dotfiles'),
-		path_git: '<%= dotfiles.path_dotfiles %>/git'),
-		path_subl: '<%= dotfiles.path_dotfiles %>/subl'),
-		path_zsh: '<%= dotfiles.path_dotfiles %>/zsh'),
+		path_git: '<%= dotfiles.path_dotfiles %>/git',
+		path_subl: '<%= dotfiles.path_dotfiles %>/subl',
+		path_zsh: '<%= dotfiles.path_dotfiles %>/zsh',
 	},
 
 	git: {
@@ -25,26 +29,26 @@ module.exports = {
 
 		package_control: {
 			file_name: '/Package Control.sublime-settings',
-			path: '<%= subl.path %>' + '<%= package_control.file_name %>',
-			path_system: '<%= subl.path_system %>' + '<%= package_control.file_name %>',
+			path: '<%= subl.path %>' + '<%= subl.package_control.file_name %>',
+			path_system: '<%= subl.path_system %>' + '<%= subl.package_control.file_name %>',
 		},
 
 		preferences: {
 			file_name: '/Preferences.sublime-settings',
-			path: '<%= subl.path %>' + '<%= preferences.file_name %>',
-			path_system: '<%= subl.path_system %>' + '<%= preferences.file_name %>',
+			path: '<%= subl.path %>' + '<%= subl.preferences.file_name %>',
+			path_system: '<%= subl.path_system %>' + '<%= subl.preferences.file_name %>',
 		},
 
 		snippets: {
 			file_name: '/snippets',
-			path: '<%= subl.path %>' + '<%= snippets.file_name %>',
-			path_system: '<%= subl.path_system %>' + '<%= snippets.file_name %>',
+			path: '<%= subl.path %>' + '<%= subl.snippets.file_name %>',
+			path_system: '<%= subl.path_system %>' + '<%= subl.snippets.file_name %>',
 		},
 
 		key_maps: {
 			file_name: '/Default (Linux).sublime-keymap',
-			path: '<%= subl.path %>' + '<%= key_maps.file_name %>',
-			path_system: '<%= subl.path_system %>' + '<%= key_maps.file_name %>',
+			path: '<%= subl.path %>' + '<%= subl.key_maps.file_name %>',
+			path_system: '<%= subl.path_system %>' + '<%= subl.key_maps.file_name %>',
 		},
 	},
 
@@ -58,21 +62,21 @@ module.exports = {
 		themes: {
 			dracula: {
 				path_repository: 'https://github.com/zenorocha/dracula-theme.git',
-				path_system: '<%= custom_folder.path_themes %>/dracula-theme'),
+				path_system: '<%= custom_folder.path_themes %>/dracula-theme',
 			},
 		},
 
 		plugins: {
 			zsh_syntax_highlighting: {
 				path_repository: 'https://github.com/zsh-users/zsh-syntax-highlighting.git',
-				path_system: '<%= custom_folder.path_plugins %>/zsh-syntax-highlighting'),
+				path_system: '<%= custom_folder.path_plugins %>/zsh-syntax-highlighting',
 			},
 		},
 
-		path_zshrc: '<%= dotfiles.path_zsh %>/.zshrc'),
+		path_zshrc: '<%= dotfiles.path_zsh %>/.zshrc',
 		path_zshrc_system: userhome('.zshrc'),
-		path_aliases: '<%= dotfiles.path_zsh %>/.aliases'),
-		path_aliases_system: '<%= custom_folder.path_custom %>/.aliases',
+		path_aliases: '<%= dotfiles.path_zsh %>/.aliases',
+		path_aliases_system: '<%= zsh.custom_folder.path_custom %>/.aliases',
 	},
 
 	z: {

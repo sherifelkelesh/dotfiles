@@ -1,32 +1,31 @@
 'use strict';
-let zsh = require('../config/zsh.js');
 
 // -- Symlink Task --------------------------------------------------------------------
 
-module.exports = {
+module.exports = (grunt) => {
 
-	symlink: {
-
+	grunt.config('symlink', {
 		aliases: {
-			src: '',
-			dest: '',
+			src: '<%= config.test.path_system %>',
+			dest: '<%= config.zsh.path_aliases %>',
 		},
 
-		gitconfig: {
-			src: '',
-			dest: '',
-		},
+		// gitconfig: {
+		// 	src: '',
+		// 	dest: '',
+		// },
 
-		gitignore: {
-			src: '',
-			dest: '',
-		},
+		// gitignore: {
+		// 	src: '',
+		// 	dest: '',
+		// },
 
-		zsh: {
-			src: '',
-			dest: '',
-		},
+		// zsh: {
+		// 	src: '',
+		// 	dest: '',
+		// },
+	});
 
-	},
+	grunt.registerTask('symlink', ['symlink']);
 
 };
