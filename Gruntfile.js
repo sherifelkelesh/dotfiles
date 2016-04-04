@@ -40,23 +40,27 @@ module.exports = (grunt) => {
 				path_system: userhome('.config/sublime-text-3/Packages/User'),
 
 				package_control: {
-					path: '<%= config.subl.path %>/Package Control.sublime-settings',
-					path_system: '<%= config.subl.path_system %>/Package Control.sublime-settings',
+					file_name: '/Package Control.sublime-settings',
+					path: '<%= config.subl.path %>' + '<%= config.subl.package_control.file_name %>',
+					path_system: '<%= config.subl.path_system %>' + '<%= config.subl.package_control.file_name %>',
 				},
 
 				preferences: {
-					path: '<%= config.subl.path %>/Preferences.sublime-settings',
-					path_system: '<%= config.subl.path_system %>/Preferences.sublime-settings',
+					file_name: '/Preferences.sublime-settings',
+					path: '<%= config.subl.path %>' + '<%= config.subl.preferences.file_name %>',
+					path_system: '<%= config.subl.path_system %>' + '<%= config.subl.preferences.file_name %>',
 				},
 
 				snippets: {
-					path: '<%= config.subl.path %>/snippets',
-					path_system: '<%= config.subl.path_system %>/snippets',
+					file_name: '/snippets',
+					path: '<%= config.subl.path %>' + '<%= config.subl.snippets.file_name %>',
+					path_system: '<%= config.subl.path_system %>' + '<%= config.subl.snippets.file_name %>',
 				},
 
 				key_maps: {
-					path: '<%= config.subl.path %>/Default (Linux).sublime-keymap',
-					path_system: '<%= config.subl.path_system %>/Default (Linux).sublime-keymap',
+					file_name: '/Default (Linux).sublime-keymap',
+					path: '<%= config.subl.path %>' + '<%= config.subl.key_maps.file_name %>',
+					path_system: '<%= config.subl.path_system %>' + '<%= config.subl.key_maps.file_name %>',
 				},
 			},
 
