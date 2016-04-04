@@ -14,10 +14,9 @@ plugins=(gitfast git-prompt git-tools history-substring-search sublime node npm 
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH_CUSTOM/.aliases
+eval "$(thefuck --alias)"
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 export NVM_DIR="/home/iago/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-eval "$(thefuck --alias)"

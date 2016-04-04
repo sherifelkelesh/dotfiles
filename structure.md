@@ -2,18 +2,21 @@
 Structure of this repos and how /home will be after installing all.
 
 /home
+	/.backup
 	/.dotfiles
 		config.js
-		/tasks
 		Gruntfile.js
 		/git
 		/zsh
-
 	/.custom
 		/themes
+			dracula.zsh-theme
 		/plugins
-		/.aliases
-
-# Steps
-
-symlinks
+			/zsh-syntax-highlight
+		.aliases
+		.functions
+	/.softwares
+	/.themes
+	.gitconfig
+	.gitignore_global
+	.zshrc
