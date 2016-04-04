@@ -13,10 +13,6 @@ module.exports = (grunt) => {
 
 		config: {
 
-			test: {
-				path_sytem: userhome('test'),
-			},
-
 			backup: {
 				path_system: userhome('.backup'),
 			},
@@ -93,6 +89,33 @@ module.exports = (grunt) => {
 
 		},
 
+		// -- Clean ------------------------------------------------------------
+
+		clean: {
+
+			all: {
+				options: {
+					force: true,
+				},
+				src: [
+					'<%= config.git.path_gitconfig_system %>',
+					'<%= config.git.path_gitignore_global_system %>',
+					'<%= config.subl.path_system %>',
+					'<%= config.zsh.path_zshrc_system %>',
+					'<%= config.zsh.path_aliases_system %>',
+					'<%= config.z.path_system %>',
+				],
+			},
+
+			backup: {
+				options: {
+					force: true,
+				},
+				src: '<%= config.backup.path_system %>',
+			},
+
+		},
+
 		// -- Copy -------------------------------------------------------------
 
 		copy: {
@@ -127,33 +150,6 @@ module.exports = (grunt) => {
 						dest: '<%= config.backup.path_system %>/subl/snippets',
 					},
 				],
-			},
-
-		},
-
-		// -- Clean ------------------------------------------------------------
-
-		clean: {
-
-			all: {
-				options: {
-					force: true,
-				},
-				src: [
-					'<%= config.git.path_gitconfig_system %>',
-					'<%= config.git.path_gitignore_global_system %>',
-					'<%= config.subl.path_system %>',
-					'<%= config.zsh.path_zshrc_system %>',
-					'<%= config.zsh.path_aliases_system %>',
-					'<%= config.z.path_system %>',
-				],
-			},
-
-			backup: {
-				options: {
-					force: true,
-				},
-				src: '<%= config.backup.path_system %>',
 			},
 
 		},
@@ -430,6 +426,12 @@ module.exports = (grunt) => {
 		'copy:backup',
 	]);
 
-	grunt.registerTask('clone', ['gitclone']);
+	grunt.registerTask('clean', [
+		'clean:all'
+	]);
+
+	grunt.registerTask('clone', [
+		'gitclone'
+	]);
 
 };
