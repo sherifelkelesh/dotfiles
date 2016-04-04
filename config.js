@@ -53,30 +53,30 @@ module.exports = {
 	},
 
 	zsh: {
-		custom_folder: {
-			path_custom: userhome('.custom'),
-			path_themes: '<%= custom_folder.path_custom %>/themes',
-			path_plugins: '<%= custom_folder.path_custom %>/plugins',
-		},
-
-		themes: {
-			dracula: {
-				path_repository: 'https://github.com/zenorocha/dracula-theme.git',
-				path_system: '<%= custom_folder.path_themes %>/dracula-theme',
-			},
-		},
-
-		plugins: {
-			zsh_syntax_highlighting: {
-				path_repository: 'https://github.com/zsh-users/zsh-syntax-highlighting.git',
-				path_system: '<%= custom_folder.path_plugins %>/zsh-syntax-highlighting',
-			},
-		},
-
 		path_zshrc: '<%= dotfiles.path_zsh %>/.zshrc',
 		path_zshrc_system: userhome('.zshrc'),
 		path_aliases: '<%= dotfiles.path_zsh %>/.aliases',
 		path_aliases_system: '<%= zsh.custom_folder.path_custom %>/.aliases',
+
+		custom_folder: {
+			path_custom: userhome('.custom'),
+			path_themes: '<%= zsh.custom_folder.path_custom %>/themes',
+			path_plugins: '<%= zsh.custom_folder.path_custom %>/plugins',
+
+			themes: {
+				dracula: {
+					path_repository: 'https://github.com/zenorocha/dracula-theme.git',
+					path_system: '<%= zsh.custom_folder.path_themes %>/dracula-theme',
+				},
+			},
+
+			plugins: {
+				zsh_syntax_highlighting: {
+					path_repository: 'https://github.com/zsh-users/zsh-syntax-highlighting.git',
+					path_system: '<%= zsh.custom_folder.path_plugins %>/zsh-syntax-highlighting',
+				},
+			},
+		},
 	},
 
 	z: {
