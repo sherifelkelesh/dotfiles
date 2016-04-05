@@ -15,7 +15,7 @@ alias superup="$APTGET update && $APTGET upgrade && $APTGET dist-upgrade"
 alias superclean="$APTGET clean && $APTGET autoclean $APTGET autoremove"
 
 # -- Dotfiles ---------------------
-alias dotfiles="$EDITOR $DOTFILES"
+alias dotfiles="$EDITOR $DOTFILES && cd $DOTFILES"
 
 # -- ZSH & Oh-My-Zsh --------------
 alias reload='. ~/.zshrc'
@@ -26,4 +26,8 @@ alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
 alias dev="cd $DEV"
 alias repos="cd $REPOS"
 alias proj="cd $PROJECTS"
+alias doc="cd $DOCUMENTS"
+alias down="cd $DOWNLOADS"
+alias dropbox="cd $DROPBOX"
+alias soft="cd $SOFTWARES"
 alias work=""
