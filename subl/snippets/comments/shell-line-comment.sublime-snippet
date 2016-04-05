@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-# -- ${1:section name} --------------------------------------------------------------------
+# -- ${1:section name} ------------
 ]]></content>
 	<tabTrigger>sh-l-cm</tabTrigger>
 	<scope>source.shell, source.sh, source.zsh</scope>
