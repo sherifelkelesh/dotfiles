@@ -1,0 +1,9 @@
+#
+# Extras Config Variables
+# ---------------------------------------------------------------------
+
+DEV="$HOME/dev"
+REPOS="$DEV/repos"
+PROJECTS="$DEV/projects"
+DOTFILES="$HOME/.dotfiles"
+APTGET="sudo apt-get"
