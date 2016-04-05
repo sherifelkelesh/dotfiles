@@ -8,7 +8,7 @@
 	editor = subl
 
 [core]
-    editor 		 = subl
+    editor 		 = vim
     excludesfile = ~/.gitignore_global
 
 [alias]
