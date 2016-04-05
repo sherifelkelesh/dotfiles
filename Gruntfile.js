@@ -13,10 +13,6 @@ module.exports = (grunt) => {
 
 		config: {
 
-			test: {
-				path_system: userhome('test'),
-			},
-
 			backup: {
 				path_system: userhome('.backup'),
 			},
@@ -67,6 +63,8 @@ module.exports = (grunt) => {
 			zsh: {
 				path_zshrc: '<%= config.dotfiles.path_zsh %>/.zshrc',
 				path_zshrc_system: userhome('.zshrc'),
+				path_extras: '<%= config.dotfiles.path_zsh %>/.extras',
+				path_extras_system: '<%= config.custom_folder.path_custom %>/.extras',
 				path_aliases: '<%= config.dotfiles.path_zsh %>/.aliases',
 				path_aliases_system: '<%= config.custom_folder.path_custom %>/.aliases',
 				path_functions: '<%= config.dotfiles.path_zsh %>/.functions',
@@ -409,6 +407,11 @@ module.exports = (grunt) => {
 
 		symlink: {
 
+			extras: {
+				src: '<%= config.zsh.path_extras %>',
+				dest: '<%= config.zsh.path_extras_system %>',
+			},
+
 			aliases: {
 				src: '<%= config.zsh.path_aliases %>',
 				dest: '<%= config.zsh.path_aliases_system %>',
@@ -419,6 +422,11 @@ module.exports = (grunt) => {
 				dest: '<%= config.zsh.path_functions_system %>',
 			},
 
+			zsh: {
+				src: '<%= config.zsh.path_zshrc %>',
+				dest: '<%= config.zsh.path_zshrc_system %>',
+			},
+
 			gitconfig: {
 				src: '<%= config.git.path_gitconfig %>',
 				dest: '<%= config.git.path_gitconfig_system %>',
@@ -427,11 +435,6 @@ module.exports = (grunt) => {
 			gitignore: {
 				src: '<%= config.git.path_gitignore_global %>',
 				dest: '<%= config.git.path_gitignore_global_system %>',
-			},
-
-			zsh: {
-				src: '<%= config.zsh.path_zshrc %>',
-				dest: '<%= config.zsh.path_zshrc_system %>',
 			},
 
 			dracula: {
@@ -477,44 +480,14 @@ module.exports = (grunt) => {
 		'copy:backup',
 	]);
 
-	grunt.registerTask('clean-all', [
-		'clean:all'
-	]);
-
-	grunt.registerTask('clean-z', [
-		'clean:z'
-	]);
-
-	grunt.registerTask('clone', [
-		'gitclone'
-	]);
-
 	grunt.registerTask('make', [
-		// 'shell:softwares_folders',
+		'shell:softwares_folders',
 		'shell:custom_folder',
-		// 'shell:dev_folders',
-	]);
-
-	// grunt.registerTask('install', [
-	// 	'shell:install'
-	// ]);
-
-	// grunt.registerTask('ubuntu', [
-	// 	'shell:ubuntu'
-	// ]);
-
-	grunt.registerTask('link', [
-		'symlink',
+		'shell:dev_folders',
 	]);
 
 	grunt.registerTask('setup', [
-		'backup',
-		'clean-all',
-		'clone',
-		'make',
-		'install',
-		'ubuntu',
-		'symlink',
+
 	]);
 
 };
