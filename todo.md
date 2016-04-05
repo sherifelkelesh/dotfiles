@@ -4,6 +4,7 @@
 - [ ] Write tests
 - [ ] Add programs to Install task
 - [ ] Add startup files to someone task
+- [ ] Fix symlink sublime task
 
 ## Grunt Tasks
 - [x] Clean
