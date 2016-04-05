@@ -10,9 +10,9 @@ ZSH_CUSTOM="$HOME/.custom"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(gitfast git-prompt git-tools history-substring-search sublime node npm zsh-syntax-highlighting z)
+plugins=(gitfast git-tools history-substring-search sublime node npm zsh-syntax-highlighting z)
 # Not needed plugins but very useful
-# git git-extras
+# git git-extras git-prompt
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH_CUSTOM/.extras
