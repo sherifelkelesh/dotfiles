@@ -31,9 +31,8 @@
 	cp = cherry-pick
 
 	# Commit
-	c   = commit
 	cm  = commit -m
-	ca  = commit --amend
+	cma = commit --amend
 	cam = commit -a -m
 
 	# Config
