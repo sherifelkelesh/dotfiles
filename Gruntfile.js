@@ -17,10 +17,29 @@ module.exports = (grunt) => {
 				path_system: userhome('.backup'),
 			},
 
+			custom_folder: {
+				path_custom: userhome('.custom'),
+				path_themes: '<%= config.custom_folder.path_custom %>/themes',
+				path_plugins: '<%= config.custom_folder.path_custom %>/plugins',
+
+				themes: {
+					dracula: {
+						path_system: '<%= config.custom_folder.path_themes %>/dracula.zsh-theme',
+					},
+				},
+
+				plugins: {
+					zsh_syntax_highlighting: {
+						path_system: '<%= config.custom_folder.path_plugins %>/zsh-syntax-highlighting',
+					},
+				},
+			},
+
 			dotfiles: {
 				path_dotfiles: userhome('.dotfiles'),
 				path_git: '<%= config.dotfiles.path_dotfiles %>/git',
 				path_subl: '<%= config.dotfiles.path_dotfiles %>/subl',
+				path_vim: '<%= config.dotfiles.path_dotfiles %>/vim',
 				path_zsh: '<%= config.dotfiles.path_dotfiles %>/zsh',
 			},
 
@@ -59,35 +78,6 @@ module.exports = (grunt) => {
 				},
 			},
 
-			zsh: {
-				path_zshrc: '<%= config.dotfiles.path_zsh %>/.zshrc',
-				path_zshrc_system: userhome('.zshrc'),
-				path_extras: '<%= config.dotfiles.path_zsh %>/.extras',
-				path_extras_system: '<%= config.custom_folder.path_custom %>/.extras',
-				path_aliases: '<%= config.dotfiles.path_zsh %>/.aliases',
-				path_aliases_system: '<%= config.custom_folder.path_custom %>/.aliases',
-				path_functions: '<%= config.dotfiles.path_zsh %>/.functions',
-				path_functions_system: '<%= config.custom_folder.path_custom %>/.functions',
-			},
-
-			custom_folder: {
-				path_custom: userhome('.custom'),
-				path_themes: '<%= config.custom_folder.path_custom %>/themes',
-				path_plugins: '<%= config.custom_folder.path_custom %>/plugins',
-
-				themes: {
-					dracula: {
-						path_system: '<%= config.custom_folder.path_themes %>/dracula.zsh-theme',
-					},
-				},
-
-				plugins: {
-					zsh_syntax_highlighting: {
-						path_system: '<%= config.custom_folder.path_plugins %>/zsh-syntax-highlighting',
-					},
-				},
-			},
-
 			themes: {
 				path_system: userhome('.themes'),
 
@@ -104,6 +94,26 @@ module.exports = (grunt) => {
 					path_system: '<%= config.plugins.path_system %>/zsh-syntax-highlighting',
 					path_repository: 'https://github.com/zsh-users/zsh-syntax-highlighting.git',
 				},
+			},
+
+			zsh: {
+				path_zshrc: '<%= config.dotfiles.path_zsh %>/.zshrc',
+				path_zshrc_system: userhome('.zshrc'),
+				path_extras: '<%= config.dotfiles.path_zsh %>/.extras',
+				path_extras_system: '<%= config.custom_folder.path_custom %>/.extras',
+				path_aliases: '<%= config.dotfiles.path_zsh %>/.aliases',
+				path_aliases_system: '<%= config.custom_folder.path_custom %>/.aliases',
+				path_functions: '<%= config.dotfiles.path_zsh %>/.functions',
+				path_functions_system: '<%= config.custom_folder.path_custom %>/.functions',
+			},
+
+			vim: {
+				path: '<%= config.dotfiles.path_vim %>',
+				path_system: userhome('.vim'),
+				path_vimrc: '<%= config.vim.path %>/.vimrc',
+				path_vimrc_system: userhome('.vimrc'),
+				path_vim_theme: '<%= config.themes.dracula.path_system %>/vim/colors/dracula.vim',
+				path_vim_theme_system: '<%= config.vim.path_system %>/colors/dracula.vim',
 			},
 
 			z: {
@@ -464,6 +474,16 @@ module.exports = (grunt) => {
 			key_maps: {
 				src: '<%= config.subl.key_maps.path %>',
 				dest: '<%= config.subl.key_maps.path_system %>',
+			},
+
+			vimrc: {
+				src: '<%= config.vim.path_vimrc %>',
+				dest: '<%= config.vim.path_vimrc_system %>',
+			},
+
+			vim_theme: {
+				src: '<%= config.vim.path_vim_theme %>',
+				dest: '<%= config.vim.path_vim_theme_system %>',
 			},
 
 		},
