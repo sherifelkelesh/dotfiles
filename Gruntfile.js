@@ -32,13 +32,12 @@ module.exports = (grunt) => {
 			},
 
 			subl: {
-				path_: '<%= config.dotfiles.path_subl %>',
-				path_system: userhome('.config/sublime-text-3/Packages/User'),
+				path: '<%= config.dotfiles.path_subl %>',
+				path_system: userhome('.config/sublime-text-3/Packages/User/'),
 
 				package_control: {
-					file_name: '/Package Control.sublime-settings',
-					path: '<%= config.subl.path %>' + '<%= config.subl.package_control.file_name %>',
-					path_system: '<%= config.subl.path_system %>' + '<%= config.subl.package_control.file_name %>',
+					path: '<%= config.subl.path %>/Package Control.sublime-settings',
+					path_system: '<%= config.subl.path_system %>/Package Control.sublime-settings',
 				},
 
 				preferences: {
@@ -211,7 +210,7 @@ module.exports = (grunt) => {
 
 			softwares_folders: {
 				command: [
-					'mkdir /home/.softwares',
+					'mkdir /home/iago/.softwares',
 				].join('&&'),
 				options: {
 					stdout: true,
