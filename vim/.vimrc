@@ -1,4 +1,4 @@
-syntax on
+colorscheme dracula
 
 set number
 set linebreak
