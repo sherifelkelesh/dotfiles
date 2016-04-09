@@ -17,7 +17,7 @@
 
 	# Add
 	ad = add
-	aa = add .
+	aa = add --all
 
 	# Branch
 	bd = branch -d
