@@ -21,7 +21,9 @@
 
 	# Branch
 	b  = branch
+	ba = branch -a
 	bd = branch -d
+	bv = branch -v
 
 	# Checkout
 	co  = checkout
@@ -31,14 +33,19 @@
 	# Cherry-pick
 	cp = cherry-pick
 
+	# Clone
+	cl = clone
+
 	# Commit
-	cm  = commit -m
-	cma = commit --amend
-	cam = commit -a -m
+	ci    = commit
+	cm   = commit -m
+	ca   = commit --amend
+	cam  = commit -a -m
 
 	# Config
-	c  = config
-	cg = config --global
+	cg  = config
+	cgg = config --global
+	cgl = config --list
 
 	# Diff
 	df = diff
@@ -50,12 +57,6 @@
 	# Fetch
 	ft = fetch
 
-	# List
-	ba = branch -a
-	bl = branch -v
-	cl = config --list
-	rl = remote -v
-
 	# Logs
 	l  = log --oneline
 	lg = log --oneline --pretty=format:'%h %ad | [%an] %s%d' --graph --date=short
@@ -64,8 +65,9 @@
 	mg = merge
 
 	# Stash
-	sh  = stash
-	sha = stash apply
+	sh = stash
+	sa = stash apply
+	sl = stash list
 
 	# Status
 	st = status
@@ -75,17 +77,19 @@
 	pl = pull
 
 	# Push
-	ps = push
+	ps  = push
 	psu = push -u
 
 	# Remote
 	ra = remote add
 	rs = remote set-url
+	rv = remote -v
 
 	# Reset
-	r   = reset
-	rhh = reset --hard HEAD~1
-	rsh = reset --soft HEAD~1
+	rt  = reset
+	rh  = reset HEAD
+	rh1 = reset --hard HEAD~1
+	rs1 = reset --soft HEAD~1
 
 	# Unstage
 	unstage = reset HEAD
