@@ -109,11 +109,8 @@ module.exports = (grunt) => {
 
 			vim: {
 				path: '<%= config.dotfiles.path_vim %>',
-				path_system: userhome('.vim'),
 				path_vimrc: '<%= config.vim.path %>/.vimrc',
 				path_vimrc_system: userhome('.vimrc'),
-				path_vim_theme: '<%= config.themes.dracula.path_system %>/vim/colors/dracula.vim',
-				path_vim_theme_system: '<%= config.vim.path_system %>/colors/dracula.vim',
 			},
 
 			z: {
@@ -465,11 +462,6 @@ module.exports = (grunt) => {
 			vimrc: {
 				src: '<%= config.vim.path_vimrc %>',
 				dest: '<%= config.vim.path_vimrc_system %>',
-			},
-
-			vim_theme: {
-				src: '<%= config.vim.path_vim_theme %>',
-				dest: '<%= config.vim.path_vim_theme_system %>',
 			},
 
 		},
