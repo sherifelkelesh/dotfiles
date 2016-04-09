@@ -1,5 +1,3 @@
-colorscheme dracula
-
 set number
 set linebreak
 set showbreak=+++
