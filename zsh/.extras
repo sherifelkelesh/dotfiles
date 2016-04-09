@@ -2,6 +2,9 @@
 # Extras Config Variables
 # ---------------------------------------------------------------------
 
+# apt-get
+APTGET="sudo apt-get"
+
 # Directories
 DEV="$HOME/dev"
 REPOS="$DEV/repos"
@@ -11,6 +14,3 @@ DOCUMENTS="$HOME/Documents"
 DOWNLOADS="$HOME/Downloads"
 DROPBOX="$HOME/Dropbox"
 SOFTWARES="$HOME/.softwares"
-
-# apt-get
-APTGET="sudo apt-get"

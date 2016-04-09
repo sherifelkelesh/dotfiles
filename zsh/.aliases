@@ -18,17 +18,19 @@ alias superclean="$APTGET clean && $APTGET autoclean $APTGET autoremove"
 alias dotconfig="$EDITOR $DOTFILES && cd $DOTFILES"
 alias dotfiles="cd $DOTFILES"
 
+# -- Directories ------------------
+alias dev="cd $DEV"
+alias repos="cd $REPOS"
+alias projs="cd $PROJECTS"
+alias docs="cd $DOCUMENTS"
+alias downs="cd $DOWNLOADS"
+alias dropbox="cd $DROPBOX"
+alias softs="cd $SOFTWARES"
+
 # -- ZSH & Oh-My-Zsh --------------
 alias reload='. ~/.zshrc'
 alias zshconfig="$EDITOR $HOME/.zshrc"
 alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
 
 # -- Workflow ---------------------
-alias dev="cd $DEV"
-alias repos="cd $REPOS"
-alias proj="cd $PROJECTS"
-alias docs="cd $DOCUMENTS"
-alias downs="cd $DOWNLOADS"
-alias dropbox="cd $DROPBOX"
-alias softs="cd $SOFTWARES"
 alias work=""
