@@ -13,5 +13,5 @@
 - [x] Git Clone
 - [x] Make
 - [ ] Install
-- [ ] Ubuntu
+- [x] Ubuntu
 - [x] Symlink
