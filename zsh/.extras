@@ -2,10 +2,10 @@
 # Extras Config Variables
 # ---------------------------------------------------------------------
 
-# apt-get
+# -- apt-get ----------------------
 APTGET="sudo apt-get"
 
-# Directories
+# -- Directories ------------------
 DEV="$HOME/dev"
 REPOS="$DEV/repos"
 PROJECTS="$DEV/projects"
@@ -14,3 +14,11 @@ DOCUMENTS="$HOME/Documents"
 DOWNLOADS="$HOME/Downloads"
 DROPBOX="$HOME/Dropbox"
 SOFTWARES="$HOME/.softwares"
+
+# -- Services ---------------------
+SERVICE="sudo service"
+
+# Nginx / PHP / MySQL
+SERVICE_NGINX="$SERVICE nginx"
+SERVICE_PHP="$SERVICE php5-fpm"
+SERVICE_MYSQL="$SERVICE mysql-server"

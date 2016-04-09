@@ -27,10 +27,16 @@ alias downs="cd $DOWNLOADS"
 alias dropbox="cd $DROPBOX"
 alias softs="cd $SOFTWARES"
 
+# -- Server PHP -------------------
+# Nginx / PHP / MySQL
+alias server-start="$SERVICE_NGINX start && $SERVICE_MYSQL start && $SERVICE_PHP start"
+alias server-restart="$SERVICE_NGINX restart && $SERVICE_MYSQL restart && $SERVICE_PHP restart"
+alias server-stop="$SERVICE_NGINX stop && $SERVICE_MYSQL stop && $SERVICE_PHP stop"
+
+# -- Workflow ---------------------
+alias work=""
+
 # -- ZSH & Oh-My-Zsh --------------
 alias reload='. ~/.zshrc'
 alias zshconfig="$EDITOR $HOME/.zshrc"
 alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
-
-# -- Workflow ---------------------
-alias work=""
