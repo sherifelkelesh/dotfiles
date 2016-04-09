@@ -5,6 +5,7 @@
 - [ ] Add programs to Install task
 - [ ] Add startup files to someone task
 - [x] Fix symlink sublime task
+- [ ] Find better name to .extras file
 
 ## Grunt Tasks
 - [x] Clean
