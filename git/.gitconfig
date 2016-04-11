@@ -37,7 +37,7 @@
 	cl = clone
 
 	# Commit
-	ci    = commit
+	c    = commit
 	cm   = commit -m
 	ca   = commit --amend
 	cam  = commit -a -m
@@ -65,7 +65,7 @@
 	mg = merge
 
 	# Stash
-	sh = stash
+	s  = stash
 	sa = stash apply
 	sl = stash list
 
@@ -86,7 +86,7 @@
 	rv = remote -v
 
 	# Reset
-	rt  = reset
+	r   = reset
 	rh  = reset HEAD
 	rh1 = reset --hard HEAD~1
 	rs1 = reset --soft HEAD~1
