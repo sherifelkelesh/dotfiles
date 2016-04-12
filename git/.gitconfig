@@ -62,7 +62,8 @@
 	lg = log --oneline --pretty=format:'%h %ad | [%an] %s%d' --graph --date=short
 
 	# Merge
-	mg = merge
+	mg  = merge
+	mgm = merge master
 
 	# Stash
 	s  = stash
