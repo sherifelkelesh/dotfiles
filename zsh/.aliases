@@ -33,6 +33,9 @@ alias server-start="$SERVICE_NGINX start && $SERVICE_MYSQL start && $SERVICE_PHP
 alias server-restart="$SERVICE_NGINX restart && $SERVICE_MYSQL restart && $SERVICE_PHP restart"
 alias server-stop="$SERVICE_NGINX stop && $SERVICE_MYSQL stop && $SERVICE_PHP stop"
 
+# -- Top --------------------------
+alias top="htop"
+
 # -- Workflow ---------------------
 alias work=""
 
