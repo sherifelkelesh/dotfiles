@@ -36,6 +36,10 @@ alias server-stop="$SERVICE_NGINX stop && $SERVICE_MYSQL stop && $SERVICE_PHP st
 # -- Top --------------------------
 alias top="htop"
 
+# -- Trash ------------------------
+alias tr="trash"
+alias et="empty-trash"
+
 # -- Workflow ---------------------
 alias work=""
 
