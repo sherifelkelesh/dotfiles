@@ -23,6 +23,7 @@
 	b  = branch
 	ba = branch -a
 	bd = branch -d
+	bD = branch -D
 	bl = branch -l
 	bv = branch -v
 
