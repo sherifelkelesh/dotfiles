@@ -8,11 +8,11 @@ EDITOR="subl"
 ZSH_THEME="dracula"
 ZSH_CUSTOM="$HOME/.custom"
 ENABLE_CORRECTION="true"
-COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="false"
 
-plugins=(gitfast git-tools history-substring-search sublime node npm zsh-syntax-highlighting z)
+plugins=(zsh-syntax-highlighting sublime node npm z)
 # Not needed plugins but very useful
-# git git-extras git-prompt
+# git git-extras git-prompt gitfast history-substring-search git-tools
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH_CUSTOM/.extras
