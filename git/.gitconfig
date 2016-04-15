@@ -23,6 +23,7 @@
 	b  = branch
 	ba = branch -a
 	bd = branch -d
+	bl = branch -l
 	bv = branch -v
 
 	# Checkout
