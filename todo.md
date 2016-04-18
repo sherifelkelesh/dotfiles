@@ -5,7 +5,10 @@
 - [ ] Add programs to Install task
 - [ ] Add startup files to someone task
 - [x] Fix symlink sublime task
-- [ ] Find better name to .extras file
+- [x] Find better name to .extras file
+- [ ] Change .extras file to .config
+- [ ] Change setup to shell script
+- [ ] Change zsh plugins to clone in .custom folder
 
 ## Grunt Tasks
 - [x] Clean
