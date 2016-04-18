@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=mutate
+Icon=mutate
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Mutate
+Name=Mutate
+Comment[en_US]=My alfred like launcher
+Comment=My alfred like launcher
