@@ -20,7 +20,7 @@
 	aa = add --all
 
 	# Branch
-	b  = branch
+	br = branch
 	ba = branch -a
 	bd = branch -d
 	bD = branch -D
@@ -39,15 +39,15 @@
 	cl = clone
 
 	# Commit
-	c    = commit
-	cm   = commit -m
-	ca   = commit --amend
-	cam  = commit -a -m
+	ci  = commit
+	cm  = commit -m
+	ca  = commit --amend
+	cam = commit -a -m
 
 	# Config
-	cg  = config
-	cgg = config --global
-	cgl = config --list
+	c  = config
+	cg = config --global
+	cl = config --list
 
 	# Diff
 	df = diff
