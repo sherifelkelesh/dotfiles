@@ -12,7 +12,7 @@ alias clean="$APTGET clean"
 alias autoclean="$APTGET autoclean"
 alias autoremove="$APTGET autoremove"
 alias superup="$APTGET update && $APTGET upgrade -y && $APTGET dist-upgrade -y"
-alias superclean="$APTGET clean && $APTGET autoclean $APTGET autoremove"
+alias superclean="$APTGET clean && $APTGET autoclean && $APTGET autoremove -y"
 
 # -- Dotfiles ---------------------
 alias dotconfig="$EDITOR $DOTFILES && cd $DOTFILES"
