@@ -9,6 +9,7 @@
 - [ ] Change .extras file to .config
 - [ ] Change setup to shell script
 - [ ] Change zsh plugins to clone in .custom folder
+- [ ] Change find function to pass flags
 
 ## Grunt Tasks
 - [x] Clean
