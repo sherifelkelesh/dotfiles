@@ -97,14 +97,16 @@ module.exports = (grunt) => {
 			},
 
 			zsh: {
-				path_zshrc: '<%= config.dotfiles.path_zsh %>/.zshrc',
-				path_zshrc_system: userhome('.zshrc'),
-				path_extras: '<%= config.dotfiles.path_zsh %>/.extras',
-				path_extras_system: '<%= config.custom_folder.path_custom %>/.extras',
 				path_aliases: '<%= config.dotfiles.path_zsh %>/.aliases',
 				path_aliases_system: '<%= config.custom_folder.path_custom %>/.aliases',
+				path_config: '<%= config.dotfiles.path_zsh %>/.config',
+				path_config_system: '<%= config.custom_folder.path_custom %>/.config',
+				path_extras: '<%= config.dotfiles.path_zsh %>/.extras',
+				path_extras_system: '<%= config.custom_folder.path_custom %>/.extras',
 				path_functions: '<%= config.dotfiles.path_zsh %>/.functions',
 				path_functions_system: '<%= config.custom_folder.path_custom %>/.functions',
+				path_zshrc: '<%= config.dotfiles.path_zsh %>/.zshrc',
+				path_zshrc_system: userhome('.zshrc'),
 			},
 
 			vim: {
@@ -132,10 +134,11 @@ module.exports = (grunt) => {
 					'<%= config.git.path_gitignore_global_system %>',
 					'<%= config.subl.path_system %>',
 					'<%= config.vim.path_vimrc_system %>',
-					'<%= config.zsh.path_zshrc_system %>',
-					'<%= config.zsh.path_extras_system %>',
 					'<%= config.zsh.path_aliases_system %>',
+					'<%= config.zsh.path_config_system %>',
+					'<%= config.zsh.path_extras_system %>',
 					'<%= config.zsh.path_functions_system %>',
+					'<%= config.zsh.path_zshrc_system %>',
 				],
 			},
 
@@ -167,9 +170,11 @@ module.exports = (grunt) => {
 							'<%= config.git.path_gitconfig_system %>',
 							'<%= config.git.path_gitignore_global_system %>',
 							'<%= config.vim.path_vimrc_system %>',
-							'<%= config.zsh.path_zshrc_system %>',
 							'<%= config.zsh.path_aliases_system %>',
+							'<%= config.zsh.path_config_system %>',
+							'<%= config.zsh.path_extras_system %>',
 							'<%= config.zsh.path_functions_system %>',
+							'<%= config.zsh.path_zshrc_system %>',
 						],
 						dest: '<%= config.backup.path_system %>',
 						flatten: true,
@@ -399,26 +404,6 @@ module.exports = (grunt) => {
 
 		symlink: {
 
-			extras: {
-				src: '<%= config.zsh.path_extras %>',
-				dest: '<%= config.zsh.path_extras_system %>',
-			},
-
-			aliases: {
-				src: '<%= config.zsh.path_aliases %>',
-				dest: '<%= config.zsh.path_aliases_system %>',
-			},
-
-			functions: {
-				src: '<%= config.zsh.path_functions %>',
-				dest: '<%= config.zsh.path_functions_system %>',
-			},
-
-			zsh: {
-				src: '<%= config.zsh.path_zshrc %>',
-				dest: '<%= config.zsh.path_zshrc_system %>',
-			},
-
 			gitconfig: {
 				src: '<%= config.git.path_gitconfig %>',
 				dest: '<%= config.git.path_gitconfig_system %>',
@@ -429,7 +414,27 @@ module.exports = (grunt) => {
 				dest: '<%= config.git.path_gitignore_global_system %>',
 			},
 
-			dracula: {
+			zsh_aliases: {
+				src: '<%= config.zsh.path_aliases %>',
+				dest: '<%= config.zsh.path_aliases_system %>',
+			},
+
+			zsh_config: {
+				src: '<%= config.zsh.path_config %>',
+				dest: '<%= config.zsh.path_config_system %>',
+			},
+
+			zsh_functions: {
+				src: '<%= config.zsh.path_functions %>',
+				dest: '<%= config.zsh.path_functions_system %>',
+			},
+
+			zshrc: {
+				src: '<%= config.zsh.path_zshrc %>',
+				dest: '<%= config.zsh.path_zshrc_system %>',
+			},
+
+			zsh_dracula: {
 				src: '<%= config.themes.dracula.path_system %>/zsh/dracula.zsh-theme',
 				dest: '<%= config.custom_folder.themes.dracula.path_system %>',
 			},
@@ -439,22 +444,22 @@ module.exports = (grunt) => {
 				dest: '<%= config.custom_folder.plugins.zsh_syntax_highlighting.path_system %>',
 			},
 
-			package_control: {
+			subl_package_control: {
 				src: '<%= config.subl.package_control.path %>',
 				dest: '<%= config.subl.package_control.path_system %>',
 			},
 
-			preferences: {
+			subl_preferences: {
 				src: '<%= config.subl.preferences.path %>',
 				dest: '<%= config.subl.preferences.path_system %>',
 			},
 
-			snippets: {
+			subl_snippets: {
 				src: '<%= config.subl.snippets.path %>',
 				dest: '<%= config.subl.snippets.path_system %>',
 			},
 
-			key_maps: {
+			subl_key_maps: {
 				src: '<%= config.subl.key_maps.path %>',
 				dest: '<%= config.subl.key_maps.path_system %>',
 			},
@@ -497,8 +502,8 @@ module.exports = (grunt) => {
 		'clean:all',
 		'make',
 		'gitclone',
-		'symlink',
 		'install',
+		'symlink',
 		'ubuntu',
 	]);
 
