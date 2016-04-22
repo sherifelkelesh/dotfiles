@@ -14,7 +14,8 @@
 	"highlight_line": false,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"JavaScript"
 	],
 	"indent_guide_options":
 	[
