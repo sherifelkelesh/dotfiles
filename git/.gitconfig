@@ -45,9 +45,9 @@
 	cam = commit -a -m
 
 	# Config
-	c  = config
-	cg = config --global
-	cl = config --list
+	cg  = config
+	cgg = config --global
+	cgl = config --list
 
 	# Diff
 	df = diff
