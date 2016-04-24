@@ -6,10 +6,10 @@
 - [ ] Add startup files to someone task
 - [x] Fix symlink sublime task
 - [x] Find better name to .extras file
-- [ ] Change .extras file to .config
+- [x] Change .extras file to .config
 - [ ] Add .extras file with private configs
 - [ ] Change setup to shell script
-- [ ] Change zsh plugins to clone in .custom folder
+- [x] Change zsh plugins to clone in .custom folder
 - [ ] Change find function to pass flags
 
 ## Grunt Tasks
