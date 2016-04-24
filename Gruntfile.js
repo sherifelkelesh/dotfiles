@@ -83,8 +83,10 @@ module.exports = (grunt) => {
 			},
 
 			ubuntu: {
-				path_autostart: '<%= config.dotfiles.path_ubuntu %>/autostart',
-				path_autostart_system: userhome('.config/autostart'),
+				autostart: {
+					path: '<%= config.dotfiles.path_ubuntu %>/autostart',
+					path_system: userhome('.config/autostart'),
+				},
 			},
 
 			vim: {
@@ -122,7 +124,7 @@ module.exports = (grunt) => {
 					'<%= config.git.path_gitconfig_system %>',
 					'<%= config.git.path_gitignore_global_system %>',
 					'<%= config.subl.path_system %>',
-					'<%= config.ubuntu.path_autostart_system %>',
+					'<%= config.ubuntu.autostart.path_system %>',
 					'<%= config.vim.path_vimrc_system %>',
 					'<%= config.zsh.path_aliases_system %>',
 					'<%= config.zsh.path_config_system %>',
@@ -183,12 +185,12 @@ module.exports = (grunt) => {
 						src: ['**'],
 						dest: '<%= config.backup.path_system %>/subl/snippets',
 					},
-					// {
-					// 	expand: true,
-					// 	cwd: '<%= config.ubuntu.path_autostart_system %>/',
-					// 	src: ['**'],
-					// 	dest: '<%= config.backup.path_system %>/ubuntu/autostart',
-					// },
+					{
+						expand: true,
+						cwd: '<%= config.ubuntu.autostart.path_system %>/',
+						src: ['**'],
+						dest: '<%= config.backup.path_system %>/ubuntu/autostart',
+					},
 				],
 			},
 
