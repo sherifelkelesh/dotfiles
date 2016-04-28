@@ -9,9 +9,9 @@ ZSH_THEME="dracula"
 ZSH_CUSTOM="$HOME/.custom"
 ENABLE_CORRECTION="true"
 
-plugins=(zsh-syntax-highlighting z git-extras gitfast git-prompt git-tools sublime node npm)
+plugins=(zsh-syntax-highlighting z gitfast git-extras git-tools sublime node npm)
 # Not needed plugins but very useful
-# git
+# git git-prompt
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH_CUSTOM/.config
