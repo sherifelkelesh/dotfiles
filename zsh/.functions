@@ -5,12 +5,12 @@
 # -- Shell Commands ---------------
 # Find files or directories by grep
 function find() {
-	ll | grep "$@";
+	ll | grep "$@"
 }
 
 # Create a new directory and enter it
 function mkd() {
-	mkdir -p "$@" && cd "$_";
+	mkdir -p "$@" && cd "$@"
 }
 
 # -- Sublime ----------------------
@@ -18,8 +18,18 @@ function mkd() {
 # opens the given location
 function s() {
 	if [ $# -eq 0 ]; then
-		subl .;
+		subl .
 	else
-		subl "$@";
-	fi;
+		subl "$@"
+	fi
+}
+
+# `o` with no arguments opens current directory, otherwise opens the given
+# location
+function o() {
+	if [ $# -eq 0 ]; then
+		nautilus .
+	else
+		nautilus "$@"
+	fi
 }

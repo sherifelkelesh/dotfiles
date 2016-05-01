@@ -3,47 +3,54 @@
 # ---------------------------------------------------------------------
 
 # -- APT-GET ----------------------
-alias update="$APTGET update"
-alias upgrade="$APTGET upgrade"
-alias dist-upgrade="$APTGET dist-upgrade"
-alias install="$APTGET install"
-alias remove="$APTGET remove"
-alias clean="$APTGET clean"
-alias autoclean="$APTGET autoclean"
-alias autoremove="$APTGET autoremove"
-alias superup="$APTGET update && $APTGET upgrade -y && $APTGET dist-upgrade -y"
-alias superclean="$APTGET clean && $APTGET autoclean && $APTGET autoremove -y"
+alias autoclean='$APTGET autoclean'
+alias autoremove='$APTGET autoremove'
+alias clean='$APTGET clean'
+alias dist-upgrade='$APTGET dist-upgrade'
+alias install='$APTGET install'
+alias remove='$APTGET remove'
+alias update='$APTGET update'
+alias upgrade='$APTGET upgrade'
+
+alias superup='$APTGET update && $APTGET upgrade -y && $APTGET dist-upgrade -y'
+alias superclean='$APTGET clean && $APTGET autoclean && $APTGET autoremove -y'
 
 # -- Dotfiles ---------------------
-alias dotconfig="$EDITOR $DOTFILES && cd $DOTFILES"
-alias dotfiles="cd $DOTFILES"
+alias dotconfig='$EDITOR $DOTFILES && cd $DOTFILES'
+alias dotfiles='cd $DOTFILES'
 
 # -- Directories ------------------
-alias dev="cd $DEV"
-alias repos="cd $REPOS"
-alias projs="cd $PROJECTS"
-alias docs="cd $DOCUMENTS"
-alias downs="cd $DOWNLOADS"
-alias dropbox="cd $DROPBOX"
-alias softs="cd $SOFTWARES"
+alias dev='cd $DEV'
+alias repos='cd $REPOS'
+alias projs='cd $PROJECTS'
+alias docs='cd $DOCUMENTS'
+alias downs='cd $DOWNLOADS'
+alias dropbox='cd $DROPBOX'
+alias softs='cd $SOFTWARES'
+
+# -- NPM --------------------------
+alias nom='rm -rf node_modules && npm cache clear && npm i'
 
 # -- Server PHP -------------------
 # Nginx / PHP / MySQL
-alias server-start="$SERVICE_NGINX start && $SERVICE_MYSQL start && $SERVICE_PHP start"
-alias server-restart="$SERVICE_NGINX restart && $SERVICE_MYSQL restart && $SERVICE_PHP restart"
-alias server-stop="$SERVICE_NGINX stop && $SERVICE_MYSQL stop && $SERVICE_PHP stop"
+alias server-start='$SERVICE_NGINX start && $SERVICE_MYSQL start && $SERVICE_PHP start'
+alias server-restart='$SERVICE_NGINX restart && $SERVICE_MYSQL restart && $SERVICE_PHP restart'
+alias server-stop='$SERVICE_NGINX stop && $SERVICE_MYSQL stop && $SERVICE_PHP stop'
+
+# --  Stopwatch -------------------
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # -- Top --------------------------
-alias top="htop"
+alias top='htop'
 
 # -- Trash ------------------------
-alias tr="trash"
-alias et="empty-trash"
+alias t='trash'
+alias e='empty-trash'
 
 # -- Workflow ---------------------
-alias work=""
+alias work=''
 
 # -- ZSH & Oh-My-Zsh --------------
 alias reload='. ~/.zshrc'
-alias zshconfig="$EDITOR $HOME/.zshrc"
-alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
+alias zshconfig='$EDITOR $HOME/.zshrc'
+alias ohmyzsh='$EDITOR $HOME/.oh-my-zsh'
