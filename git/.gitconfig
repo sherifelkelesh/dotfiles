@@ -83,6 +83,8 @@
 	ps  = push
 	psu = push -u
 
+	undopush = push -f origin HEAD^:master
+
 	# Remote
 	ra = remote add
 	rs = remote set-url
