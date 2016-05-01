@@ -11,6 +11,8 @@
 - [ ] Change setup to shell script
 - [x] Change zsh plugins to clone in .custom folder
 - [ ] Change find function to pass flags
+- [ ] Organize aliases
+- [ ] Do an Undos aliases section in .gitconfig
 
 ## Grunt Tasks
 - [x] Clean
