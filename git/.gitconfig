@@ -83,8 +83,6 @@
 	ps  = push
 	psu = push -u
 
-	undopush = push -f origin HEAD^:master
-
 	# Remote
 	ra = remote add
 	rs = remote set-url
@@ -95,6 +93,9 @@
 	rh  = reset HEAD
 	rh1 = reset --hard HEAD~1
 	rs1 = reset --soft HEAD~1
+
+	# Undo
+	undopush = push -f origin HEAD^:master
 
 	# Unstage
 	unstage = reset HEAD
