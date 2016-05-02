@@ -10,6 +10,7 @@
 <string>.gitattributes</string>
 <string>.gitconfig</string>
 <string>.gitignore</string>
+<string>.gitignore_global</string>
 <string>.inputrc</string>
 <string>.osx</string>
 <string>.zshrc</string>
