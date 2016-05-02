@@ -30,9 +30,8 @@ alias dotsconfig="cd $DOTFILES && $EDITOR ."
 # -- General Shortcuts ------------
 alias c="cat"
 alias i="install"
-alias s="subl"
+alias n="nautilus"
 alias t="top"
-alias v="vim"
 
 # -- NPM --------------------------
 alias npm-clean="rm -rf node_modules && npm cache clear"
@@ -59,5 +58,5 @@ alias work=""
 
 # -- ZSH & Oh-My-Zsh --------------
 alias reload=". ~/.zshrc"
-alias zshconfig="$EDITOR $HOME/.zshrc"
+alias zsh="$EDITOR $HOME/.zshrc"
 alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
