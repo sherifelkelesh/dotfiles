@@ -16,29 +16,42 @@ alias superclean="clean && autoclean && autoremove"
 
 # -- Directories ------------------
 alias dev="cd $DEV"
-alias docs="cd $DOCUMENTS"
-alias downs="cd $DOWNLOADS"
+alias documents="cd $DOCUMENTS"
+alias downloads="cd $DOWNLOADS"
 alias dropbox="cd $DROPBOX"
-alias projs="cd $PROJECTS"
+alias projects="cd $PROJECTS"
 alias repos="cd $REPOS"
-alias softs="cd $SOFTWARES"
+alias softwares="cd $SOFTWARES"
+
+# -- Directories Shortcuts --------
+alias d="dev"
+alias dc="documents"
+alias dw="downloads"
+alias db="dropbox"
+alias pr="projects"
+alias rp="repos"
+alias sw="softwares"
 
 # -- Dotfiles ---------------------
 alias dots="cd $DOTFILES"
 alias dotsconfig="cd $DOTFILES && $EDITOR ."
+alias dotsup="dots && git pull && reload"
 
 # -- General Shortcuts ------------
 alias c="cat"
 alias i="install"
 alias n="nautilus"
+alias r="reload"
 alias t="top"
+alias u="superup"
 
 # -- NPM --------------------------
-alias npm-clean="rm -rf node_modules && npm cache clear"
-alias npm-clean-i="npm-clean && npm i"
+alias npm-clean="rm -rf node_modules"
+alias npm-clean-install="npm-clean && npm i"
+alias npmc="npm-clean"
+alias npmci="npm-clean-install"
 
 # -- Server PHP -------------------
-# Nginx / PHP / MySQL
 alias server-start="$SERVICE_NGINX start && $SERVICE_MYSQL start && $SERVICE_PHP start"
 alias server-restart="$SERVICE_NGINX restart && $SERVICE_MYSQL restart && $SERVICE_PHP restart"
 alias server-stop="$SERVICE_NGINX stop && $SERVICE_MYSQL stop && $SERVICE_PHP stop"
