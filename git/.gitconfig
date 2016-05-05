@@ -6,10 +6,16 @@
 	name   = Iago Dahlem Lorensini
 	email  = iagodahlemlorensini@gmail.com
 	editor = subl
+	
+[github]
+  	user = iagodahlem
 
 [core]
     editor 		 = vim
     excludesfile = ~/.gitignore_global
+    
+[commit]
+	template = ~/.gitmessage
 
 [alias]
 	# Git

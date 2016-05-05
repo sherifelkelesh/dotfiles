@@ -10,7 +10,7 @@ function f() {
 }
 
 # Create a new directory and enter it
-function md() {
+function mkd() {
 	mkdir -p "$@" && cd "$@"
 }
 
@@ -69,4 +69,26 @@ function v() {
 # Run our new web 2.0 todo list application and raise millions of VC dollars.
 function todo() {
 	touch $DESKTOP/"$*"
+}
+
+# -- Git Stuff --------------------
+
+# From: https://github.com/chrishunt/dot-files
+
+function delete_local_merged_branches() {
+  git branch --merged master | grep -v master | xargs git branch -d
+}
+
+function delete_remote_merged_branches() {
+  git fetch origin
+  git remote prune origin
+
+  for BRANCH in `git branch -r --merged origin/master |\
+                 egrep "^\s*origin/"                  |\
+                 grep -v master                       |\
+                 grep rafaelrinaldi                   |\
+                 cut -d/ -f2-`
+  do
+    git push origin :$BRANCH
+  done
 }

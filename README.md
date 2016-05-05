@@ -1,24 +1,11 @@
-# Dotfiles
-This is all my config, dotfiles and softwares that I use, powered by GruntJS. Based on [Eduardo Lundgren Dotfiles](#), and so much more repos that I inspired by.
+# Dotfiles [WIP]
+This is all my config, dotfiles, softwares and all crap that I use. Use by your own risk.
 
 ## Requirements
 TODO: Describe the requirements
 
-## Usage
+## Installation
 TODO: Describe the installation process
 
-## What's included
-
-All softwares, extensions etc that's included.
-
-### Files
-* gitconfig
-* gitignore
-* zshrc
-* aliases
-
-### Softwares
-TODO: Software list
-
 ## License
-[MIT License](http://iagodahlem.mit-license.org/) © Iago Dahlem
+[MIT License ©](http://iagodahlem.mit-license.org/) [Iago Dahlem](http://iagodahlem.com)
