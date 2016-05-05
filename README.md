@@ -1,4 +1,4 @@
-# Dotfiles
+# Dotfiles [WIP]
 This is all my config, dotfiles, softwares and all crap that I use. Use by your own risk.
 
 ## Requirements
