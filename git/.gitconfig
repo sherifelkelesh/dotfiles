@@ -6,14 +6,14 @@
 	name   = Iago Dahlem Lorensini
 	email  = iagodahlemlorensini@gmail.com
 	editor = subl
-	
+
 [github]
-  	user = iagodahlem
+	user = iagodahlem
 
 [core]
-    editor 		 = vim
-    excludesfile = ~/.gitignore_global
-    
+	editor 		 = vim
+	excludesfile = ~/.gitignore_global
+
 [commit]
 	template = ~/.gitmessage
 
@@ -86,8 +86,9 @@
 	pl = pull
 
 	# Push
-	ps  = push
-	psu = push -u
+	ps   = push
+	psu  = push -u
+	psuo = push -u origin
 
 	# Remote
 	ra = remote add
@@ -101,6 +102,7 @@
 	rs1 = reset --soft HEAD~1
 
 	# Undo
+	undo     = rs1
 	undopush = push -f origin HEAD^:master
 
 	# Unstage
@@ -109,24 +111,24 @@
 
 [color]
 	branch = auto
-  	diff   = auto
-  	status = auto
-  	ui     = auto
+	diff   = auto
+	status = auto
+	ui     = auto
 
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old  = red bold
-    new  = green bold
+	frag = magenta bold
+	meta = yellow bold
+	new  = green bold
+	old  = red bold
 
 [color "status"]
-    added     = cyan bold
-    branch    = cyan bold
-    changed   = magenta bold
-    deleted   = red bold
-    untracked = yellow bold
+	added     = cyan bold
+	branch    = cyan bold
+	changed   = magenta bold
+	deleted   = red bold
+	untracked = yellow bold
 
 [push]
-    # 'git push' will push the current branch to its tracking branch
-    # the usual default is to push all branches
-    default = simple
+	# 'git push' will push the current branch to its tracking branch
+	# the usual default is to push all branches
+	default = simple
