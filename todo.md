@@ -1,7 +1,6 @@
 # TODO List
 
 - [ ] Configure git-prompt with Dracula ZSH Theme
-- [ ] Write tests
 - [ ] Add programs to Install task
 - [ ] Add startup files to someone task
 - [x] Fix symlink sublime task
@@ -13,12 +12,3 @@
 - [ ] Change find function to pass flags
 - [ ] Organize aliases
 - [ ] Do an Undos aliases section in .gitconfig
-
-## Grunt Tasks
-- [x] Clean
-- [x] Copy
-- [x] Git Clone
-- [x] Make
-- [ ] Install
-- [x] Ubuntu
-- [x] Symlink
