@@ -4,3 +4,7 @@ source ./scripts/ubuntu.sh
 source ./scripts/backup.sh
 source ./scripts/clean.sh
 source ./scripts/symlinks.sh
+
+source ~/.zshrc
+
+cd ~/

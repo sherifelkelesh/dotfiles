@@ -6,8 +6,8 @@
 
 # Update
 sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get dist-upgrade
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
 
 # ZSH
 sudo apt-get install zsh -y
@@ -20,8 +20,8 @@ sudo apt-get install vim -y
 sudo apt-get install python-software-properties -y
 sudo apt-get install chromium-browser -y
 sudo apt-get install vlc -y
-sudo apt-get install build-essential
-sudo apt-get install htop
+sudo apt-get install build-essential -y
+sudo apt-get install htop -y
 
 # NVM
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
@@ -39,13 +39,13 @@ npm i -g jshint
 npm i -g csscomb
 
 # Java
-sudo add-apt-repository ppa:webupd8team/java
+sudo add-apt-repository ppa:webupd8team/java -y
 sudo apt-get install oracle-java8-installer -y
 sudo apt-get install oracle-java8-set-default -y
 
 # Tlp
-sudo apt-get remove laptop-mode-tools
-sudo add-apt-repository ppa:linrunner/tlp
+sudo apt-get remove laptop-mode-tools -y
+sudo add-apt-repository ppa:linrunner/tlp -y
 sudo apt-get update
 sudo apt-get install tlp tlp-rdw -y
 sudo tlp start
@@ -73,3 +73,5 @@ sudo pip install wakatime -y
 
 cd ~/.custom/plugins && git clone https://github.com/wbinglee/zsh-wakatime.git
 cd ~/.custom/plugins && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+cd ~/

@@ -5,10 +5,10 @@
 # --------------------------------------------------------------------
 
 # ZSH
+ln -s ~/.dotfiles/zsh/.zshrc ~/
 ln -s ~/.dotfiles/zsh/.aliases ~/.custom/
 ln -s ~/.dotfiles/zsh/.config ~/.custom/
 ln -s ~/.dotfiles/zsh/.functions ~/.custom/
-ln -s ~/.dotfiles/zsh/.zshrc ~/.custom/
 ln -s ~/.dotfiles/themes/dracula.zsh-theme ~/.custom/themes/
 
 # Git
