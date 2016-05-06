@@ -16,6 +16,7 @@ alias superclean="clean && autoclean && autoremove"
 
 # -- Directories ------------------
 alias dev="cd $DEV"
+alias desktop="cd $DESKTOP"
 alias documents="cd $DOCUMENTS"
 alias downloads="cd $DOWNLOADS"
 alias dropbox="cd $DROPBOX"
@@ -37,6 +38,7 @@ alias sw="softwares"
 alias dots="cd $DOTFILES"
 alias dotsconfig="cd $DOTFILES && $EDITOR ."
 alias dotsup="dots && git pull && reload"
+alias dotsbackup="source ~/.dotfiles/scripts/backup.sh"
 
 # -- General Shortcuts ------------
 alias c="cat"
