@@ -3,6 +3,6 @@
 // ${1:sub-section name}
 // ----------------------------------
 ]]></content>
-	<tabTrigger>js-subsec-cm</tabTrigger>
+	<tabTrigger>jssubseccm</tabTrigger>
 	<scope>source.js</scope>
 </snippet>

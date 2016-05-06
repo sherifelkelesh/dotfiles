@@ -4,6 +4,6 @@
 // ${1:section name}
 // --------------------------------------------------------------------
 ]]></content>
-	<tabTrigger>sass-sec-cm</tabTrigger>
+	<tabTrigger>sassseccm</tabTrigger>
 	<scope>source.scss, source.sass</scope>
 </snippet>

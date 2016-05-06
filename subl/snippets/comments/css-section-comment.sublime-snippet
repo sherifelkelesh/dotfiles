@@ -4,6 +4,6 @@
  * ${1:section name}
  * -------------------------------------------------------------------- */
 ]]></content>
-	<tabTrigger>css-sec-cm</tabTrigger>
+	<tabTrigger>cssseccm</tabTrigger>
 	<scope>source.css</scope>
 </snippet>

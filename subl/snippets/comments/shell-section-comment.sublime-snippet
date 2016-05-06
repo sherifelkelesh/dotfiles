@@ -4,6 +4,6 @@
 # ${1:section name}
 # --------------------------------------------------------------------
 ]]></content>
-	<tabTrigger>sh-sec-cm</tabTrigger>
+	<tabTrigger>shseccm</tabTrigger>
 	<scope>source.shell, source.sh, source.zsh</scope>
 </snippet>

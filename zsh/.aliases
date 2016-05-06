@@ -25,8 +25,9 @@ alias softwares="cd $SOFTWARES"
 
 # -- Directories Shortcuts --------
 alias d="dev"
+alias dt="desktop"
 alias dc="documents"
-alias dw="downloads"
+alias dl="downloads"
 alias db="dropbox"
 alias pr="projects"
 alias rp="repos"

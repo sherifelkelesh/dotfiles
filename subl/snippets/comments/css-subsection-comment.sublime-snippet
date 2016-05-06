@@ -3,6 +3,6 @@
 /* ${1:sub-section name}
  * ---------------------------------- */
 ]]></content>
-	<tabTrigger>css-subsec-cm</tabTrigger>
+	<tabTrigger>csssubseccm</tabTrigger>
 	<scope>source.css</scope>
 </snippet>

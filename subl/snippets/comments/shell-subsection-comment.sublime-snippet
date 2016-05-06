@@ -3,6 +3,6 @@
 # ${1:subsection name}
 # ----------------------------------
 ]]></content>
-	<tabTrigger>sh-sub-cm</tabTrigger>
+	<tabTrigger>shsubcm</tabTrigger>
 	<scope>source.shell, source.sh, source.zsh</scope>
 </snippet>
