@@ -60,7 +60,7 @@
 
 	# Discard
 	discard = checkout --
-	dc      = checkout --
+	dc      = discard
 
 	# Fetch
 	ft = fetch
@@ -107,7 +107,7 @@
 
 	# Unstage
 	unstage = reset HEAD
-	ut      = reset HEAD
+	ut      = unstage
 
 [color]
 	branch = auto
