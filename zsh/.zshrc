@@ -9,9 +9,9 @@ ZSH_THEME="dracula"
 ZSH_CUSTOM="$HOME/.custom"
 ENABLE_CORRECTION="true"
 
-plugins=(zsh-syntax-highlighting z gitfast git-extras git-tools sublime node npm zsh-wakatime)
+plugins=(zsh-syntax-highlighting z gitfast git-extras git-tools node npm zsh-wakatime)
 # Not needed plugins but very useful
-# git git-prompt
+# git git-prompt sublime
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH_CUSTOM/.config
