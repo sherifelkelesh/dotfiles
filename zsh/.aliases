@@ -6,6 +6,7 @@
 alias autoclean="$APTGET autoclean"
 alias autoremove="$APTGET autoremove -y"
 alias clean="$APTGET clean"
+alias check="$APTGET check"
 alias dist-upgrade="$APTGET dist-upgrade -y"
 alias install="$APTGET install -y"
 alias remove="$APTGET remove -y"
