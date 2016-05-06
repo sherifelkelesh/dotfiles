@@ -2,6 +2,6 @@
 	<content><![CDATA[
 // -- ${1:section name} --------------------------------------------------------------------
 ]]></content>
-	<tabTrigger>js-l-cm</tabTrigger>
+	<tabTrigger>jslcm</tabTrigger>
 	<scope>source.js</scope>
 </snippet>

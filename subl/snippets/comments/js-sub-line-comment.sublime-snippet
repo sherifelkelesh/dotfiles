@@ -2,6 +2,6 @@
 	<content><![CDATA[
 // -- ${1:section name} ---------------
 ]]></content>
-	<tabTrigger>js-sub-l-cm</tabTrigger>
+	<tabTrigger>jssublcm</tabTrigger>
 	<scope>source.js</scope>
 </snippet>
