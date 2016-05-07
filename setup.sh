@@ -1,3 +1,5 @@
+mv ~/dotfiles ~/.dotfiles
+
 source ./scripts/makes.sh
 source ./scripts/installs.sh
 source ./scripts/ubuntu.sh
