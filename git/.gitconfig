@@ -56,27 +56,27 @@
 	cgl = config --list
 
 	# Diff
-	df = diff
+	d = diff
 
 	# Discard
 	discard = checkout --
-	dc      = discard
+	dc      = checkout --
 
 	# Fetch
-	ft = fetch
+	f = fetch
 
 	# Logs
 	l  = log --oneline
 	lg = log --oneline --pretty=format:'%h %ad | [%an] %s%d' --graph --date=short
 
 	# Merge
-	mg  = merge
-	mgm = merge master
+	m  = merge
+	mm = merge master
 
 	# Stash
-	sh = stash
-	sa = stash apply
-	sl = stash list
+	sh  = stash
+	sha = stash apply
+	shl = stash list
 
 	# Status
 	st = status
@@ -102,7 +102,7 @@
 	rs1 = reset --soft HEAD~1
 
 	# Undo
-	undo     = rs1
+	undo     = reset --soft HEAD~1
 	undopush = push -f origin HEAD^:master
 
 	# Unstage
