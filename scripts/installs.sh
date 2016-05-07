@@ -84,8 +84,8 @@ sudo apt-get install spotify-client -y
 sudo apt-get install python-pip python-dev -y
 
 # Terminal plugins
-sudo pip install psutil thefuck -y
-sudo pip install wakatime -y
+sudo pip install psutil thefuck
+sudo pip install wakatime
 
 cd ~/.custom/plugins && git clone https://github.com/wbinglee/zsh-wakatime.git && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git && cd ~/
 
