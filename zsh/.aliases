@@ -37,12 +37,13 @@ alias sw="softwares"
 
 # -- Dotfiles ---------------------
 alias dots="cd $DOTFILES"
-alias dotsconfig="cd $DOTFILES && $EDITOR ."
+alias dotsconf="cd $DOTFILES && $EDITOR ."
 alias dotsup="dots && git pull && reload"
 alias dotsbackup="source ~/.dotfiles/scripts/backup.sh"
 
 # -- General Shortcuts ------------
 alias c="cat"
+alias h="history"
 alias i="install"
 alias n="nautilus"
 alias r="reload"

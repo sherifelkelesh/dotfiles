@@ -57,14 +57,14 @@
 	cgl = config --list
 
 	# Diff
-	df = diff
+	d = diff
 
 	# Discard
 	dc      = checkout --
 	discard = checkout --
 
 	# Fetch
-	ft = fetch
+	f = fetch
 
 	# Lists
 	branchs = branch -l
@@ -77,8 +77,8 @@
 	lg = log --oneline --pretty=format:'%h %ad | [%an] %s%d' --graph --date=short
 
 	# Merge
-	mg  = merge
-	mgm = merge master
+	m  = merge
+	mm = merge master
 
 	# Stash
 	sth  = stash
