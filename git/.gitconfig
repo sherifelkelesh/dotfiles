@@ -24,6 +24,7 @@
 	# Add
 	ad = add
 	aa = add --all
+	aA = add -A
 
 	# Branch
 	br = branch
@@ -59,11 +60,17 @@
 	df = diff
 
 	# Discard
+	dc      = checkout --
 	discard = checkout --
-	dc      = discard
 
 	# Fetch
 	ft = fetch
+
+	# Lists
+	branchs = branch -l
+	configs = config --list
+	remotes = remote -v
+	tags    = tag -l
 
 	# Logs
 	l  = log --oneline
@@ -74,9 +81,10 @@
 	mgm = merge master
 
 	# Stash
-	sh = stash
-	sa = stash apply
-	sl = stash list
+	sth  = stash
+	stha = stash apply
+	sthl = stash list
+	sths = stash show
 
 	# Status
 	st = status
@@ -91,9 +99,9 @@
 	psuo = push -u origin
 
 	# Remote
-	ra = remote add
-	rs = remote set-url
-	rv = remote -v
+	rmta = remote add
+	rmts = remote set-url
+	rmtv = remote -v
 
 	# Reset
 	r   = reset
@@ -102,12 +110,12 @@
 	rs1 = reset --soft HEAD~1
 
 	# Undo
-	undo     = rs1
+	undo     = reset --soft HEAD~1
 	undopush = push -f origin HEAD^:master
 
 	# Unstage
+	ut      = reset HEAD
 	unstage = reset HEAD
-	ut      = unstage
 
 [color]
 	branch = auto
