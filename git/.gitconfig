@@ -57,7 +57,7 @@
 	cgl = config --list
 
 	# Diff
-	d = diff
+	df = diff
 
 	# Discard
 	dc      = checkout --
