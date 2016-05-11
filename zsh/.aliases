@@ -12,8 +12,8 @@ alias install="$APTGET install -y"
 alias remove="$APTGET remove -y"
 alias update="$APTGET update"
 alias upgrade="$APTGET upgrade -y"
-alias superup="update && upgrade && dist-upgrade"
-alias superclean="clean && autoclean && autoremove"
+alias up="update && upgrade && dist-upgrade"
+alias cleanup="clean && autoclean && autoremove"
 
 # -- Directories ------------------
 alias dev="cd $DEV"
