@@ -47,7 +47,6 @@ alias dotsbackup="source ~/.dotfiles/scripts/backup.sh"
 alias c="cat"
 alias h="history"
 alias i="install"
-alias n="nautilus"
 alias r="reload"
 alias t="top"
 
