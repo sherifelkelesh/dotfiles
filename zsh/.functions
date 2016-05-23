@@ -19,7 +19,7 @@ function mkd() {
 # Nautilus
 # `o` with no arguments opens current directory, otherwise opens the given
 # location
-function o() {
+function n() {
 	if [ $# -eq 0 ]; then
 		nautilus .
 	else
