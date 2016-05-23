@@ -25,6 +25,8 @@ alias projects="cd $PROJECTS"
 alias repos="cd $REPOS"
 alias softwares="cd $SOFTWARES"
 
+alias dlist="dirs -v | head -10"
+
 # -- Directories Shortcuts --------
 alias d="dev"
 alias dt="desktop"
@@ -38,7 +40,7 @@ alias sw="softwares"
 # -- Dotfiles ---------------------
 alias dots="cd $DOTFILES"
 alias dotsconf="cd $DOTFILES && $EDITOR ."
-alias dotsup="dots && git pull && reload"
+alias dotsup="source ~/.dotfiles/scripts/upgrade.sh"
 alias dotsbackup="source ~/.dotfiles/scripts/backup.sh"
 
 # -- General Shortcuts ------------
@@ -48,7 +50,6 @@ alias i="install"
 alias n="nautilus"
 alias r="reload"
 alias t="top"
-alias u="superup"
 
 # -- NPM --------------------------
 alias npm-clean="rm -rf node_modules"
@@ -68,8 +69,8 @@ alias timer="echo 'Timer started. Stop with Ctrl-D.' && date && time cat && date
 alias top="htop"
 
 # -- Trash ------------------------
-alias t="trash"
-alias e="empty-trash"
+alias tr="trash"
+alias et="empty-trash"
 
 # -- Workflow ---------------------
 alias work=""
