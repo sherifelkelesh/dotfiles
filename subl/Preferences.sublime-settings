@@ -43,7 +43,9 @@
 		".svn",
 		".git",
 		".hg",
-		"CVS"
+		"CVS",
+		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/lib",
+		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/node_modules",
 	],
 	"file_exclude_patterns":
 	[
@@ -66,17 +68,14 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"*.sublime-workspace",
-		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/npm-debug.log"
+		"*.sublime-workspace"
 	],
 	"folder_exclude_patterns":
 	[
 		".svn",
 		".git",
 		".hg",
-		"CVS",
-		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/lib",
-		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/node_modules"
+		"CVS"
 	],
 	"font_options":
 	[
