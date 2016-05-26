@@ -45,7 +45,7 @@
 		".hg",
 		"CVS",
 		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/lib",
-		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/node_modules",
+		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/node_modules"
 	],
 	"file_exclude_patterns":
 	[
@@ -75,7 +75,9 @@
 		".svn",
 		".git",
 		".hg",
-		"CVS"
+		"CVS",
+		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/lib",
+		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/node_modules"
 	],
 	"font_options":
 	[

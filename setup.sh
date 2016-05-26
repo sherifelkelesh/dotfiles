@@ -1,12 +1,14 @@
-mv ~/dotfiles ~/.dotfiles
-
-source ./scripts/makes.sh
-source ./scripts/installs.sh
-source ./scripts/ubuntu.sh
-source ./scripts/backup.sh
-source ./scripts/clean.sh
-source ./scripts/symlinks.sh
-
-source ~/.zshrc
+#!/usr/bin/ bash
 
 cd ~/
+
+mv ~/dotfiles ~/.dotfiles
+
+source ./.dotfiles/scripts/makes.sh
+source ./.dotfiles/scripts/installs.sh
+source ./.dotfiles/scripts/ubuntu.sh
+source ./.dotfiles/scripts/backup.sh
+source ./.dotfiles/scripts/clean.sh
+source ./.dotfiles/scripts/symlinks.sh
+
+source ./.zshrc
