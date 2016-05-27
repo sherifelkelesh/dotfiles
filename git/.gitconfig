@@ -84,6 +84,7 @@
 	sth  = stash
 	stha = stash apply
 	sthl = stash list
+	sthp = stash pop
 	sths = stash show
 
 	# Status
