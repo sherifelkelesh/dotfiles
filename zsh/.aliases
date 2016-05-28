@@ -40,8 +40,9 @@ alias sw="softwares"
 # -- Dotfiles ---------------------
 alias dots="cd $DOTFILES"
 alias dotsconf="cd $DOTFILES && $EDITOR ."
-alias dotsup="source ~/.dotfiles/scripts/upgrade.sh"
-alias dotsbackup="source ~/.dotfiles/scripts/backup.sh"
+alias dotsup="source ~/.dotfiles/bin/upgrade.sh"
+alias dotsbackup="source ~/.dotfiles/bin/backup.sh"
+alias dotscolors="source ~/.dotfiles/bin/colors.sh"
 
 # -- General Shortcuts ------------
 alias c="cat"
