@@ -1,5 +1,10 @@
 #!/usr/bin/ bash
 
+#
+# Mutate Installation
+# --------------------------------------------------------------------
+
+# Dependencies
 sudo apt-get install build-essential qt5-qmake qt5-default libgtk2.0-dev libqt5x11extras5-dev libboost-regex-dev -y
 
 # Mutate

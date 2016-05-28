@@ -4,11 +4,11 @@ cd ~/
 
 mv ~/dotfiles ~/.dotfiles
 
-source ./.dotfiles/scripts/makes.sh
-source ./.dotfiles/scripts/installs.sh
-source ./.dotfiles/scripts/ubuntu.sh
-source ./.dotfiles/scripts/backup.sh
-source ./.dotfiles/scripts/clean.sh
-source ./.dotfiles/scripts/symlinks.sh
+source ./.dotfiles/bin/makes.sh
+source ./.dotfiles/bin/installs.sh
+source ./.dotfiles/bin/ubuntu.sh
+source ./.dotfiles/bin/backup.sh
+source ./.dotfiles/bin/clean.sh
+source ./.dotfiles/bin/symlinks.sh
 
 source ./.zshrc
