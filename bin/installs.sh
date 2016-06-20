@@ -53,7 +53,7 @@ pip install --upgrade pip
 
 
 # Terminal plugins
-pip install psutil thefuck
-pip install wakatime
+sudo pip install psutil thefuck
+sudo pip install wakatime
 
 cd ~/.custom/plugins && git clone https://github.com/wbinglee/zsh-wakatime.git && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git && cd ~/
