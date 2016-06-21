@@ -10,11 +10,11 @@ sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
 
 # Softwares
-sudo apt-get install vim -y
+sudo apt-get install build-essential -y
 sudo apt-get install python-software-properties -y
 sudo apt-get install chromium-browser -y
+sudo apt-get install vim -y
 sudo apt-get install vlc -y
-sudo apt-get install build-essential -y
 sudo apt-get install htop -y
 sudo apt-get install curl -y
 sudo apt-get install unity-tweak-tool -y

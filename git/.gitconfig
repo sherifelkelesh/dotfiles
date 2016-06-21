@@ -88,8 +88,8 @@
 	sths = stash show
 
 	# Status
-	st = status
 	ss = status -s
+	st = status
 
 	# Pull
 	pl = pull
@@ -110,7 +110,7 @@
 	rh1 = reset --hard HEAD~1
 	rs1 = reset --soft HEAD~1
 
-	# Undo
+	# Undos
 	undo     = reset --soft HEAD~1
 	undopush = push -f origin HEAD^:master
 
