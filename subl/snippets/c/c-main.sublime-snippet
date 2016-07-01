@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+#include <stdio.h>
+#include "curses.c"
+
+void main() {
+
+	${1:code}
+
+	getche();
+}
+
+]]></content>
+	<tabTrigger>c-main</tabTrigger>
+	<scope>source.c, source.cpp</scope>
+</snippet>
