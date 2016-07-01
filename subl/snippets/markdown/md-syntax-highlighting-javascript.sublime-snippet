@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-```javascript
-${1:code}
-```
-]]></content>
-	<tabTrigger>md-sh-js</tabTrigger>
-</snippet>
