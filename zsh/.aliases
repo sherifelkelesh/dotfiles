@@ -51,6 +51,9 @@ alias i="install"
 alias r="reload"
 alias t="top"
 
+# -- Hosts ------------------------
+alias hosts="sudo subl /etc/hosts"
+
 # -- NPM --------------------------
 alias npm-clean="rm -rf node_modules"
 alias npm-clean-install="npm-clean && npm i"
