@@ -2,19 +2,19 @@
 	<content><![CDATA[
 # ${1:Project Name}
 
-TODO: Write a project description
+> TODO: Write a project description
 
 ## Requirements
 
-TODO: Describe the requirements
+> TODO: Describe the requirements
 
 ## Install
 
-TODO: Describe the installation process
+> TODO: Describe the installation process
 
 ## Usage
 
-TODO: Write usage instructions
+> TODO: Write usage instructions
 
 ## Contributing
 
@@ -28,6 +28,6 @@ TODO: Write usage instructions
 
 [MIT License](http://iagodahlem.mit-license.org/) © Iago Dahlem
 ]]></content>
-	<tabTrigger>readme</tabTrigger>
+	<tabTrigger>md-readme</tabTrigger>
 	<scope>source.md, text.html.markdown, text.html.markdown.multimarkdown</scope>
 </snippet>
