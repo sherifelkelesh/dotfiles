@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[
+	<content><![CDATA[
 # EditorConfig helps developers define and maintain consistent
 # coding styles between different editors and IDEs
 # http://editorconfig.org
@@ -24,5 +24,5 @@ indent_size = 4
 indent_size = 2
 
 ]]></content>
-    <tabTrigger>my-editorconfig</tabTrigger>
+	<tabTrigger>editorconfig-complete</tabTrigger>
 </snippet>
