@@ -10,11 +10,9 @@ ZSH_CUSTOM="$HOME/.custom"
 ENABLE_CORRECTION="true"
 
 plugins=(zsh-syntax-highlighting z gitfast git-extras git-tools node npm zsh-wakatime)
-# Not needed plugins but very useful
-# git git-prompt sublime
 
 source $ZSH/oh-my-zsh.sh
-source $ZSH_CUSTOM/.config
+source $ZSH_CUSTOM/.exports
 source $ZSH_CUSTOM/.aliases
 source $ZSH_CUSTOM/.functions
 

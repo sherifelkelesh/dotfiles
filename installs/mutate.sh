@@ -25,3 +25,5 @@ chmod -R a+w ~/.config/Mutate
 sed -i "s|{home}|$HOME|g" ~/.config/Mutate/config.ini
 
 cd ~
+
+cd ~/.custom/plugins && git clone https://github.com/wbinglee/zsh-wakatime.git

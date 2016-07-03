@@ -6,12 +6,13 @@
 
 # ZSH
 ln -s ~/.dotfiles/zsh/.zshrc ~/
+ln -s ~/.dotfiles/zsh/.exports ~/.custom/
 ln -s ~/.dotfiles/zsh/.aliases ~/.custom/
-ln -s ~/.dotfiles/zsh/.config ~/.custom/
 ln -s ~/.dotfiles/zsh/.functions ~/.custom/
-ln -s ~/.dotfiles/themes/dracula.zsh-theme ~/.custom/themes/
+cd ~/.custom && wget https://raw.githubusercontent.com/dracula/zsh/master/dracula.zsh-theme
+cd ~/
 
-# # Git
+# Git
 ln -s ~/.dotfiles/git/.gitconfig ~/
 ln -s ~/.dotfiles/git/.gitignore_global ~/
 ln -s ~/.dotfiles/git/.gitmessage ~/
@@ -27,8 +28,8 @@ ln -s ~/.dotfiles/subl/Package\ Control.sublime-settings ~/.config/sublime-text-
 ln -s ~/.dotfiles/subl/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/
 ln -s ~/.dotfiles/subl/SublimeLinter.sublime-settings ~/.config/sublime-text-3/Packages/User/
 
-# # Vim
+# Vim
 ln -s ~/.dotfiles/vim/.vimrc ~/
 
-# # Ubuntu
+# Ubuntu
 ln -s ~/.dotfiles/ubuntu/autostart ~/.config/

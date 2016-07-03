@@ -91,6 +91,9 @@
 	ss = status -s
 	st = status
 
+	# Sync
+	sync = pull && push
+
 	# Pull
 	pl = pull
 

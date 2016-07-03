@@ -17,6 +17,8 @@ npm i -g trash-cli
 npm i -g empty-trash-cli
 npm i -g yo
 npm i -g jshint
+npm i -g eslint
 npm i -g csscomb
 npm i -g babel
+npm i -g browserify
 npm i -g bower

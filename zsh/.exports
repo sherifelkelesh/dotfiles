@@ -1,0 +1,28 @@
+#
+# Config
+# ---------------------------------------------------------------------
+
+# -- APT-GET ----------------------
+readonly APTGET="sudo apt-get"
+
+# -- Directories ------------------
+readonly BACKUP="$HOME/.backup"
+readonly DOTFILES="$HOME/.dotfiles"
+
+readonly DEV="$HOME/dev"
+readonly PROJECTS="$DEV/projects"
+readonly REPOS="$DEV/repos"
+
+readonly DESKTOP="$HOME/Desktop"
+readonly DOCUMENTS="$HOME/Documents"
+readonly DOWNLOADS="$HOME/Downloads"
+readonly DROPBOX="$HOME/Dropbox"
+readonly SOFTWARES="$HOME/.softwares"
+
+# -- Services ---------------------
+readonly SERVICE="sudo service"
+
+# Nginx / PHP / MySQL
+readonly SERVICE_NGINX="$SERVICE nginx"
+readonly SERVICE_PHP="$SERVICE php5-fpm"
+readonly SERVICE_MYSQL="$SERVICE mysql-server"
