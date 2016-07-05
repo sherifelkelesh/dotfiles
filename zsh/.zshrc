@@ -2,7 +2,7 @@
 # ZSH Config
 # ---------------------------------------------------------------------
 
-export ZSH=/home/iago/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 EDITOR="subl"
 ZSH_THEME="dracula"
