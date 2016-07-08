@@ -41,6 +41,7 @@
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-contrib-stylelint",
 		"SwapStrings",
 		"Terminal",
 		"TrailingSpaces",
