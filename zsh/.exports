@@ -3,26 +3,26 @@
 # ---------------------------------------------------------------------
 
 # -- APT-GET ----------------------
-readonly APTGET="sudo apt-get"
+APTGET="sudo apt-get"
 
 # -- Directories ------------------
-readonly BACKUP="$HOME/.backup"
-readonly DOTFILES="$HOME/.dotfiles"
+BACKUP="$HOME/.backup"
+DOTFILES="$HOME/.dotfiles"
 
-readonly DEV="$HOME/dev"
-readonly PROJECTS="$DEV/projects"
-readonly REPOS="$DEV/repos"
+DEV="$HOME/dev"
+PROJECTS="$DEV/projects"
+REPOS="$DEV/repos"
 
-readonly DESKTOP="$HOME/Desktop"
-readonly DOCUMENTS="$HOME/Documents"
-readonly DOWNLOADS="$HOME/Downloads"
-readonly DROPBOX="$HOME/Dropbox"
-readonly SOFTWARES="$HOME/.softwares"
+DESKTOP="$HOME/Desktop"
+DOCUMENTS="$HOME/Documents"
+DOWNLOADS="$HOME/Downloads"
+DROPBOX="$HOME/Dropbox"
+SOFTWARES="$HOME/.softwares"
 
 # -- Services ---------------------
-readonly SERVICE="sudo service"
+SERVICE="sudo service"
 
 # Nginx / PHP / MySQL
-readonly SERVICE_NGINX="$SERVICE nginx"
-readonly SERVICE_PHP="$SERVICE php5-fpm"
-readonly SERVICE_MYSQL="$SERVICE mysql-server"
+SERVICE_NGINX="$SERVICE nginx"
+SERVICE_PHP="$SERVICE php5-fpm"
+SERVICE_MYSQL="$SERVICE mysql-server"
