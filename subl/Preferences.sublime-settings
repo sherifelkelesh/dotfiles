@@ -4,7 +4,7 @@
 	"caret_extra_bottom": 3,
 	"caret_extra_top": 3,
 	"caret_extra_width": 2,
-	"caret_style": "solid",
+	"caret_style": "smooth",
 	"color_scheme": "Packages/User/SublimeLinter/Dracula (SL).tmTheme",
 	"detect_indentation": true,
 	"draw_indent_guides": true,
