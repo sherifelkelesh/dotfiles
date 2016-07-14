@@ -1,14 +1,8 @@
-#!/usr/bin/ bash
+#!/bin/sh
 
-cd ~/
+source ~/.dotfiles/lib/makes.sh
+source ~/.dotfiles/lib/backup.sh
+source ~/.dotfiles/lib/clean.sh
+source ~/.dotfiles/lib/symlinks.sh
 
-mv ~/dotfiles ~/.dotfiles
-
-source ./.dotfiles/bin/makes.sh
-source ./.dotfiles/bin/installs.sh
-source ./.dotfiles/bin/ubuntu.sh
-source ./.dotfiles/bin/backup.sh
-source ./.dotfiles/bin/clean.sh
-source ./.dotfiles/bin/symlinks.sh
-
-source ./.zshrc
+source ~/.zshrc

@@ -1,16 +1,14 @@
-#!/usr/bin/ bash
+#!/bin/sh
 
 #
 # Makes
 # --------------------------------------------------------------------
 
-mkdir -p ~/dev
 mkdir -p ~/dev/repos
 mkdir -p ~/dev/projects
 
-mkdir -p ~/.custom
 mkdir -p ~/.custom/themes
-mkdir -p ~/.custom/plugins
+wget https://raw.githubusercontent.com/dracula/zsh/master/dracula.zsh-theme -O ~/.custom/themes/dracula.zsh-theme
 
 mkdir -p ~/.softwares
 

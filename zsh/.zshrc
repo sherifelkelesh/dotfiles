@@ -12,9 +12,10 @@ ENABLE_CORRECTION="true"
 plugins=(zsh-syntax-highlighting z gitfast git-extras git-tools node npm zsh-wakatime)
 
 source $ZSH/oh-my-zsh.sh
-source $ZSH_CUSTOM/.exports
-source $ZSH_CUSTOM/.aliases
-source $ZSH_CUSTOM/.functions
+
+source $HOME/.dotfiles/zsh/.exports
+source $HOME/.dotfiles/zsh/.aliases
+source $HOME/.dotfiles/zsh/.functions
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 export SSH_KEY_PATH="~/.ssh/dsa_id"

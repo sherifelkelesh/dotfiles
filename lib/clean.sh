@@ -1,4 +1,4 @@
-#!/usr/bin/ bash
+#!/bin/sh
 
 #
 # Clean
@@ -6,13 +6,15 @@
 
 # ZSH
 rm -rf ~/.zshrc
+rm -rf ~/.custom
 
 # Git
 rm -rf ~/.gitconfig
+rm -rf ~/.gitignore_global
+rm -rf ~/.gitmessage
 
 # Subl
 rm -rf ~/.config/sublime-text-3/Packages/User
-mkdir -p ~/.config/sublime-text-3/Packages/User
 
 # Vim
 rm -rf ~/.vimrc
