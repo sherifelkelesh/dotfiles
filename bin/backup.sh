@@ -6,7 +6,6 @@
 
 rm -rf ~/.backup
 
-mkdir -p ~/.backup
 mkdir -p ~/.backup/zsh
 mkdir -p ~/.backup/git
 mkdir -p ~/.backup/vim
