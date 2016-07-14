@@ -18,4 +18,4 @@ $ source ./setup.sh
 
 ## License
 
-[MIT License ©](http://iagodahlem.mit-license.org/) Iago Dahlem
+[MIT License](http://iagodahlem.mit-license.org/) © Iago Dahlem
