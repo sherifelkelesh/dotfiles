@@ -38,8 +38,6 @@
 		".git",
 		".hg",
 		".svn",
-		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/lib",
-		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/node_modules",
 		"CVS"
 	],
 	"fade_fold_buttons": true,
@@ -71,8 +69,6 @@
 		".git",
 		".hg",
 		".svn",
-		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/lib",
-		"/home/iago/dev/projects/cwi/unimed/unimedvtrp-common-front/node_modules",
 		"CVS"
 	],
 	"font_options":
