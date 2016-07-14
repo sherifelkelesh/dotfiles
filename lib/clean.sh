@@ -6,7 +6,6 @@
 
 # ZSH
 rm -rf ~/.zshrc
-rm -rf ~/.custom
 
 # Git
 rm -rf ~/.gitconfig
