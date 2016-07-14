@@ -12,6 +12,7 @@
 
 # IntelliJ IDEA
 .idea
+*.iml
 
 # Logs and databases
 *.log
