@@ -25,7 +25,6 @@
 		"Emmet Style Reflector",
 		"Git",
 		"GitGutter",
-		"Gitignored File Excluder",
 		"HTML Nest Comments",
 		"Inc-Dec-Value",
 		"JavaScript & NodeJS Snippets",
@@ -45,6 +44,7 @@
 		"SublimeLinter-contrib-stylelint",
 		"SwapStrings",
 		"Terminal",
+		"ToggleExclude",
 		"TrailingSpaces",
 		"WakaTime"
 	]
