@@ -98,5 +98,5 @@
 	"translate_spaces_to_tabs": true,
 	"trim_trailing_white_space_on_save": true,
 	"wide_caret": false,
-	"word_wrap": true
+	"word_wrap": false
 }
