@@ -64,7 +64,8 @@
 	discard = checkout --
 
 	# Fetch
-	ft = fetch
+	ft  = fetch
+	ftp = fetch -p
 
 	# Lists
 	branchs = branch -l
