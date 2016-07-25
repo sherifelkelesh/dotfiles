@@ -47,9 +47,9 @@
 
 	# Commit
 	ci  = commit
-	cm  = commit -m
-	ca  = commit --amend
-	cam = commit -a -m
+	cim  = commit -m
+	cia  = commit --amend
+	ciam = commit -a -m
 
 	# Config
 	cg  = config
