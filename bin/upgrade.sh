@@ -4,13 +4,13 @@
 # Upgrade
 # --------------------------------------------------------------------
 
-printf "Updating Dotfiles...\n"
+echo "Updating Dotfiles..."
 cd "$DOTFILES"
 if git pull
 then
-	printf "Dotfiles has been updated.\n"
+	echo "Dotfiles has been updated."
 	source ~/.zshrc
 else
-	printf "There was an error updating.\n"
+	echo "There was an error updating."
 fi
-cd -
+cd - &> /dev/null
