@@ -65,6 +65,7 @@
 	"font_size": 10,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
+	"hot_exit": false,
 	"ignored_packages":
 	[
 		"JavaScript",
@@ -92,6 +93,7 @@
 	"material_theme_tabs_separator": true,
 	"mouse_wheel_tabswitch": true,
 	"overlay_scroll_bars": "enabled",
+	"remember_open_files": false,
 	"show_minimap": false,
 	"tab_size": 2,
 	"theme": "Material-Theme-Darker.sublime-theme",
