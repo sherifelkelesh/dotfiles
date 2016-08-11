@@ -14,7 +14,6 @@ ln -s ~/.dotfiles/git/.gitmessage ~/.gitmessage
 
 # Sublime
 ln -s ~/.dotfiles/subl/User ~/.config/sublime-text-3/Packages/User
-ln -s ~/.dotfiles/subl/ShellScript ~/.config/sublime-text-3/Packages/ShellScript
 
 # Vim
 ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
