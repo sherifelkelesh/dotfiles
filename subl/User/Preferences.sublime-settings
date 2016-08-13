@@ -93,7 +93,7 @@
 	"material_theme_tabs_separator": true,
 	"mouse_wheel_tabswitch": true,
 	"overlay_scroll_bars": "enabled",
-	"remember_open_files": false,
+	"remember_open_files": true,
 	"show_minimap": false,
 	"tab_size": 2,
 	"theme": "Material-Theme-Darker.sublime-theme",
