@@ -1,11 +1,8 @@
 #
-# Config
+# Exports
 # ---------------------------------------------------------------------
 
-# -- APT-GET ----------------------
-APTGET="sudo apt-get"
-
-# -- Directories ------------------
+# Directories path variables
 BACKUP="$HOME/.backup"
 DOTFILES="$HOME/.dotfiles"
 
@@ -19,10 +16,34 @@ DOWNLOADS="$HOME/Downloads"
 DROPBOX="$HOME/Dropbox"
 SOFTWARES="$HOME/.softwares"
 
-# -- Services ---------------------
-SERVICE="sudo service"
+# Make some commands not show up in history
+export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
-# Nginx / PHP / MySQL
-SERVICE_NGINX="$SERVICE nginx"
-SERVICE_PHP="$SERVICE php5-fpm"
-SERVICE_MYSQL="$SERVICE mysql-server"
+# Prefer US English and use UTF-8
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US"
+
+# Editor
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='subl'
+fi
+
+# NVM
+export NVM_DIR="/home/iago/.nvm"
+
+# SSH
+export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# PATH
+PATH=/usr/local/bin
+PATH=$PATH:/usr/local/sbin
+PATH=$PATH:/usr/sbin
+PATH=$PATH:/usr/bin
+PATH=$PATH:/sbin
+PATH=$PATH:/bin
+PATH=$PATH:/usr/games
+PATH=$PATH:/usr/local/games
+PATH=$PATH:$HOME/.rbenv/bin
+export PATH

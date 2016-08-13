@@ -3,15 +3,17 @@
 # ---------------------------------------------------------------------
 
 # -- APT-GET ----------------------
-alias autoclean="$APTGET autoclean"
-alias autoremove="$APTGET autoremove -y"
-alias clean="$APTGET clean"
-alias check="$APTGET check"
-alias dist-upgrade="$APTGET dist-upgrade -y"
-alias install="$APTGET install -y"
-alias remove="$APTGET remove -y"
-alias update="$APTGET update"
-alias upgrade="$APTGET upgrade -y"
+alias autoclean="sudo apt-get autoclean"
+alias autoremove="sudo apt-get autoremove -y"
+alias check="sudo apt-get check"
+alias clean="sudo apt-get clean"
+alias dist-upgrade="sudo apt-get dist-upgrade -y"
+alias install="sudo apt-get install -y"
+alias purge="sudo apt-get purge -y"
+alias remove="sudo apt-get remove -y"
+alias update="sudo apt-get update"
+alias upgrade="sudo apt-get upgrade -y"
+
 alias up="update && upgrade && dist-upgrade"
 alias cleanup="clean && autoclean && autoremove"
 
@@ -40,9 +42,9 @@ alias sw="softwares"
 # -- Dotfiles ---------------------
 alias dots="cd $DOTFILES"
 alias dotsconf="cd $DOTFILES && $EDITOR ."
-alias dotsup="source ~/.dotfiles/bin/upgrade.sh"
-alias dotsbackup="source ~/.dotfiles/bin/backup.sh"
-alias dotscolors="source ~/.dotfiles/bin/colors.sh"
+alias dotsup="source $DOTFILES_BIN/upgrade.sh"
+alias dotsbackup="source $DOTFILES_BIN/backup.sh"
+alias dotscolors="source $DOTFILES_BIN/colors.sh"
 
 # -- General Shortcuts ------------
 alias c="cat"
@@ -52,7 +54,7 @@ alias r="reload"
 alias t="top"
 
 # -- Hosts ------------------------
-alias hosts="sudo subl /etc/hosts"
+alias hosts='sudo $EDITOR /etc/hosts'
 
 # -- NPM --------------------------
 alias npm-clean="rm -rf node_modules"
@@ -60,20 +62,14 @@ alias npm-clean-install="npm-clean && npm i"
 alias npmc="npm-clean"
 alias npmci="npm-clean-install"
 
-# -- Server PHP -------------------
-alias server-start="$SERVICE_NGINX start && $SERVICE_MYSQL start && $SERVICE_PHP start"
-alias server-restart="$SERVICE_NGINX restart && $SERVICE_MYSQL restart && $SERVICE_PHP restart"
-alias server-stop="$SERVICE_NGINX stop && $SERVICE_MYSQL stop && $SERVICE_PHP stop"
+# -- Service ---------------------
+alias service="sudo service"
 
 # -- Stopwatch --------------------
 alias timer="echo 'Timer started. Stop with Ctrl-D.' && date && time cat && date"
 
 # -- Top --------------------------
 alias top="htop"
-
-# -- Trash ------------------------
-alias tr="trash"
-alias et="empty-trash"
 
 # -- Workflow ---------------------
 alias work=""

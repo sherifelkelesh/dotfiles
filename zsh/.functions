@@ -4,14 +4,9 @@
 
 # -- Shell Commands ---------------
 
-# Find files or directories by grep
-function f() {
-	la | grep "$@"
-}
-
 # Create a new directory and enter it
 function mkd() {
-	mkdir -p "$@" && cd "$@"
+  mkdir -p "$@" && cd "$@"
 }
 
 # -- Applications -----------------
@@ -20,33 +15,33 @@ function mkd() {
 # `o` with no arguments opens current directory, otherwise opens the given
 # location
 function n() {
-	if [ $# -eq 0 ]; then
-		nautilus .
-	else
-		nautilus "$@"
-	fi
+  if [ $# -eq 0 ]; then
+    nautilus .
+  else
+    nautilus "$@"
+  fi
 }
 
 # Sublime Text
 # `s` with no arguments opens the current directory in Sublime Text, otherwise
 # opens the given location
 function s() {
-	if [ $# -eq 0 ]; then
-		subl .
-	else
-		subl "$@"
-	fi
+  if [ $# -eq 0 ]; then
+    subl .
+  else
+    subl "$@"
+  fi
 }
 
 # Vim
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
 function v() {
-	if [ $# -eq 0 ]; then
-		vim .
-	else
-		vim "$@"
-	fi
+  if [ $# -eq 0 ]; then
+    vim .
+  else
+    vim "$@"
+  fi
 }
 
 # -- Extras -----------------------
@@ -68,7 +63,7 @@ function v() {
 
 # Run our new web 2.0 todo list application and raise millions of VC dollars.
 function todo() {
-	touch $DESKTOP/"$*"
+  touch $DESKTOP/"$*"
 }
 
 # -- Git Stuff --------------------
@@ -76,19 +71,19 @@ function todo() {
 # From: https://github.com/chrishunt/dot-files
 
 function delete_local_merged_branches() {
-	git branch --merged master | grep -v master | xargs git branch -d
+  git branch --merged master | grep -v master | xargs git branch -d
 }
 
 function delete_remote_merged_branches() {
-	git fetch origin
-	git remote prune origin
+  git fetch origin
+  git remote prune origin
 
-	for BRANCH in `git branch -r --merged origin/master |\
-				   egrep "^\s*origin/"                  |\
-				   grep -v master                       |\
-				   grep iagodahlem                      |\
-				   cut -d/ -f2-`
-	do
-		git push origin :$BRANCH
-	done
+  for BRANCH in `git branch -r --merged origin/master |\
+           egrep "^\s*origin/"                  |\
+           grep -v master                       |\
+           grep iagodahlem                      |\
+           cut -d/ -f2-`
+  do
+    git push origin :$BRANCH
+  done
 }
