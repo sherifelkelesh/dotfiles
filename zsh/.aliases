@@ -46,6 +46,11 @@ alias dotsup="source $DOTFILES_BIN/upgrade.sh"
 alias dotsbackup="source $DOTFILES_BIN/backup.sh"
 alias dotscolors="source $DOTFILES_BIN/colors.sh"
 
+# -- General commands -------------
+alias cat="pygmentize -O style=monokai -f console256 -g"
+alias service="sudo service"
+alias top="htop"
+
 # -- General Shortcuts ------------
 alias c="cat"
 alias h="history"
@@ -62,14 +67,8 @@ alias npm-clean-install="npm-clean && npm i"
 alias npmc="npm-clean"
 alias npmci="npm-clean-install"
 
-# -- Service ---------------------
-alias service="sudo service"
-
 # -- Stopwatch --------------------
 alias timer="echo 'Timer started. Stop with Ctrl-D.' && date && time cat && date"
-
-# -- Top --------------------------
-alias top="htop"
 
 # -- Workflow ---------------------
 alias work=""
