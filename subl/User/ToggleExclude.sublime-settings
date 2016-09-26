@@ -1,25 +1,22 @@
 {
-	"conditional_file_exclude_patterns":
-	[
-		"*.min.css",
-		"*.min.js",
-		"npm-debug.log"
-	],
-	"conditional_folder_exclude_patterns":
-	[
-		"bower_components",
-		"build",
-		"dist",
-		"node_modules",
-		"/home/iago/.dotfiles/subl/User/Color Highlighter/",
-		"/home/iago/.dotfiles/subl/User/gitignorer.sublime-settings",
-		"/home/iago/.dotfiles/subl/User/Package Control.cache/",
-		"/home/iago/.dotfiles/subl/User/Package Control.last-run",
-		"/home/iago/.dotfiles/subl/User/Package Control.merged-ca-bundle",
-		"/home/iago/.dotfiles/subl/User/Package Control.user-ca-bundle",
-		"/home/iago/.dotfiles/subl/User/Side Bar Folders.sublime-settings",
-		"/home/iago/.dotfiles/subl/User/Side Bar Folders/",
-		"/home/iago/.dotfiles/subl/User/SublimeLinter/"
-	],
-	"enabled": true
+  "conditional_file_exclude_patterns":
+  [
+    "*.min.css",
+    "*.min.js",
+    "/home/iago/.dotfiles/subl/User/Package Control.cache",
+    "/home/iago/.dotfiles/subl/User/Package Control.last-run",
+    "/home/iago/.dotfiles/subl/User/Package Control.merged-ca-bundle",
+    "/home/iago/.dotfiles/subl/User/Package Control.user-ca-bundle",
+    "/home/iago/.dotfiles/subl/User/Side Bar Folders.sublime-settings",
+    "npm-debug.log"
+  ],
+  "conditional_folder_exclude_patterns":
+  [
+    "/home/iago/.dotfiles/subl/User/Color Highlighter",
+    "/home/iago/.dotfiles/subl/User/Side Bar Folders",
+    "/home/iago/.dotfiles/subl/User/SublimeLinter",
+    "bower_components",
+    "node_modules"
+  ],
+  "enabled": true
 }
