@@ -4,6 +4,6 @@ Type=Application
 Exec=rescuetime
 Hidden=false
 NoDisplay=false
-X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-enabled=false
 Name=RescueTime
 Comment=Keep your time rescue
