@@ -47,12 +47,11 @@ alias dotsbackup="source $DOTFILES_BIN/backup.sh"
 alias dotscolors="source $DOTFILES_BIN/colors.sh"
 
 # -- General commands -------------
-alias cat="pygmentize -O style=monokai -f console256 -g"
 alias service="sudo service"
 alias top="htop"
 
 # -- General Shortcuts ------------
-alias c="cat"
+alias c="pygmentize -O style=monokai -f console256 -g"
 alias h="history"
 alias i="install"
 alias r="reload"
