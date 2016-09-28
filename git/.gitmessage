@@ -14,17 +14,3 @@
 # chore       Changes to the build process or auxiliary tools/libraries
 #
 # ---------------------------------------------------------------------
-#
-# Revert
-#
-# Should begin with `revert: ` followed by the header of the reverted commit.
-# In the body it should say: `This reverts commit <hash>.`
-#
-# ---------------------------------------------------------------------
-#
-# Footer
-#
-# Breaking changes: should start with `BREAKING CHANGE: `
-# Referencing issues: Closes #123, #245, #992
-#
-# ---------------------------------------------------------------------
