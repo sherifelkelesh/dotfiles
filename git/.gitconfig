@@ -3,146 +3,146 @@
 # ===========================================
 
 [user]
-	name   = Iago Dahlem Lorensini
-	email  = iagodahlemlorensini@gmail.com
-	editor = subl
+  name   = Iago Dahlem Lorensini
+  email  = iagodahlemlorensini@gmail.com
+  editor = subl
 
 [github]
-	user = iagodahlem
+  user = iagodahlem
 
 [core]
-	editor       = vim
-	excludesfile = ~/.gitignore_global
+  editor       = vim
+  excludesfile = ~/.gitignore_global
 
 [commit]
-	template = ~/.gitmessage
+  template = ~/.gitmessage
 
 [alias]
-	# Git
-	g = git
+  # Git
+  g = git
 
-	# Add
-	ad = add
-	aa = add --all
-	aA = add -A
+  # Add
+  ad = add
+  aa = add --all
+  aA = add -A
 
-	# Branch
-	br  = branch
-	bra = branch -a
-	brd = branch -d
-	brD = branch -D
-	brl = branch -l
-	brv = branch -v
+  # Branch
+  br  = branch
+  bra = branch -a
+  brd = branch -d
+  brD = branch -D
+  brl = branch -l
+  brv = branch -v
 
-	# Checkout
-	co  = checkout
-	cob = checkout -b
-	com = checkout master
+  # Checkout
+  co  = checkout
+  cob = checkout -b
+  com = checkout master
 
-	# Cherry-pick
-	cp = cherry-pick
+  # Cherry-pick
+  cp = cherry-pick
 
-	# Clone
-	cl = clone
+  # Clone
+  cl = clone
 
-	# Commit
-	ci  = commit
-	cim  = commit -m
-	cia  = commit --amend
-	ciam = commit -a -m
+  # Commit
+  ci  = commit
+  cim  = commit -m
+  cia  = commit --amend
+  ciam = commit -a -m
 
-	# Config
-	cg  = config
-	cgg = config --global
-	cgl = config --list
+  # Config
+  cg  = config
+  cgg = config --global
+  cgl = config --list
 
-	# Diff
-	df  = diff
-	dfs = diff --staged
+  # Diff
+  df  = diff
+  dfs = diff --staged
 
-	# Discard
-	dc      = checkout --
-	discard = checkout --
+  # Discard
+  dc      = checkout --
+  discard = checkout --
 
-	# Fetch
-	ft  = fetch
-	ftp = fetch -p
+  # Fetch
+  ft  = fetch
+  ftp = fetch -p
 
-	# Lists
-	branchs = branch -l
-	configs = config --list
-	remotes = remote -v
-	tags    = tag -l
+  # Lists
+  branchs = branch -l
+  configs = config --list
+  remotes = remote -v
+  tags    = tag -l
 
-	# Logs
-	l  = log --oneline
-	lg = log --oneline --pretty=format:'%h %ad | [%an] %s%d' --graph --date=short
+  # Logs
+  l  = log --oneline
+  lg = log --oneline --pretty=format:'%h %ad | [%an] %s%d' --graph --date=short
 
-	# Merge
-	mg  = merge
-	mgm = merge master
+  # Merge
+  mg  = merge
+  mgm = merge master
 
-	# Stash
-	sth  = stash
-	stha = stash apply
-	sthl = stash list
-	sthp = stash pop
-	sths = stash show
+  # Stash
+  sth  = stash
+  stha = stash apply
+  sthl = stash list
+  sthp = stash pop
+  sths = stash show
 
-	# Status
-	ss = status -s
-	st = status
+  # Status
+  ss = status -s
+  st = status
 
-	# Sync
-	sync = pull && push
+  # Sync
+  sync = pull && push
 
-	# Pull
-	pl = pull
+  # Pull
+  pl = pull
 
-	# Push
-	ps   = push
-	psu  = push -u
-	psuo = push -u origin
+  # Push
+  ps   = push
+  psu  = push -u
+  psuo = push -u origin
 
-	# Remote
-	rmta = remote add
-	rmts = remote set-url
-	rmtv = remote -v
+  # Remote
+  rmta = remote add
+  rmts = remote set-url
+  rmtv = remote -v
 
-	# Reset
-	r   = reset
-	rh  = reset HEAD
-	rh1 = reset --hard HEAD~1
-	rs1 = reset --soft HEAD~1
+  # Reset
+  r   = reset
+  rh  = reset HEAD
+  rh1 = reset --hard HEAD~1
+  rs1 = reset --soft HEAD~1
 
-	# Undos
-	undo     = reset --soft HEAD~1
-	undopush = push -f origin HEAD^:master
+  # Undos
+  undo     = reset --soft HEAD~1
+  undopush = push -f origin HEAD^:master
 
-	# Unstage
-	ut      = reset HEAD
-	unstage = reset HEAD
+  # Unstage
+  ut      = reset HEAD
+  unstage = reset HEAD
 
 [color]
-	branch = auto
-	diff   = auto
-	status = auto
-	ui     = auto
+  branch = auto
+  diff   = auto
+  status = auto
+  ui     = auto
 
 [color "diff"]
-	frag = magenta bold
-	meta = yellow bold
-	new  = green bold
-	old  = red bold
+  frag = magenta bold
+  meta = yellow bold
+  new  = green bold
+  old  = red bold
 
 [color "status"]
-	added     = cyan bold
-	branch    = cyan bold
-	changed   = magenta bold
-	deleted   = red bold
-	untracked = yellow bold
+  added     = cyan bold
+  branch    = cyan bold
+  changed   = magenta bold
+  deleted   = red bold
+  untracked = yellow bold
 
 [push]
-	# 'git push' will push the current branch to its tracking branch
-	# the usual default is to push all branches
-	default = simple
+  # 'git push' will push the current branch to its tracking branch
+  # the usual default is to push all branches
+  default = simple
