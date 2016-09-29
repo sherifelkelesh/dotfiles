@@ -2,6 +2,17 @@
 # Exports
 # ---------------------------------------------------------------------
 
+# Paths
+export DESKTOP="$HOME/Desktop"
+export DOCUMENTS="$HOME/Documents"
+export DOWNLOADS="$HOME/Downloads"
+export DROPBOX="$HOME/Dropbox"
+export SOFTWARES="$HOME/.softwares"
+export DEV="$HOME/dev"
+export PROJECTS="$DEV/projects"
+export REPOS="$DEV/repos"
+export BACKUP="$HOME/.backup"
+
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 

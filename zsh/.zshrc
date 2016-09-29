@@ -13,10 +13,10 @@ ENABLE_CORRECTION="true"
 plugins=(zsh-syntax-highlighting z gitfast git-extras git-tools node npm zsh-wakatime)
 
 # Dotfiles configuration
-DOTFILES="$HOME/.dotfiles"
-DOTFILES_BIN="$DOTFILES/bin"
-DOTFILES_ZSH="$DOTFILES/zsh"
-DOTFILES_GIT="$DOTFILES/git"
+export DOTFILES="$HOME/.dotfiles"
+export DOTFILES_BIN="$DOTFILES/bin"
+export DOTFILES_ZSH="$DOTFILES/zsh"
+export DOTFILES_GIT="$DOTFILES/git"
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
