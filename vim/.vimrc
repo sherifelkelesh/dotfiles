@@ -19,3 +19,7 @@ set ruler
 
 set undolevels=1000
 set backspace=indent,eol,start
+
+map gg ^rx: <Esc>:r! date +" [\%H:\%M]"<ENTER>kJA<Esc>$
+
+map gt o  _
