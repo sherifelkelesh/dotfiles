@@ -123,6 +123,9 @@
   ut      = reset HEAD
   unstage = reset HEAD
 
+  # Up
+  up = "!git pull && git push"
+
 [color]
   branch = auto
   diff   = auto
