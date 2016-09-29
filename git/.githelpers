@@ -21,7 +21,7 @@ function delete_remote_merged_branches() {
   done
 }
 
-function pull() {
+function pull_all_repos_in_folder() {
   for d in */ ; do
     cd "$d" && git pull > /dev/null && cd ..
   done
