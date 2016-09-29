@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=mutate
-Icon=mutate
-Hidden=false
-NoDisplay=false
-X-GNOME-Autostart-enabled=false
-Name=Mutate
-Comment=My alfred like launcher
