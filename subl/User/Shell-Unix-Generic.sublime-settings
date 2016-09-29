@@ -15,6 +15,7 @@
     ".git",
     ".gitattributes",
     ".gitconfig",
+    ".githelpers",
     ".gitignore",
     ".gitignore_global",
     ".gitmessage",

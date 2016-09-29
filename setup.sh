@@ -1,7 +1,9 @@
 #!/bin/sh
 
-source ~/.dotfiles/lib/makes.sh
-source ~/.dotfiles/lib/clean.sh
-source ~/.dotfiles/lib/symlinks.sh
+source ~/.dotfiles/utils/logger.sh
+
+source ~/.dotfiles/scripts/makes.sh
+source ~/.dotfiles/scripts/clean.sh
+source ~/.dotfiles/scripts/symlinks.sh
 
 source ~/.zshrc

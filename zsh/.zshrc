@@ -16,6 +16,7 @@ plugins=(zsh-syntax-highlighting z gitfast git-extras git-tools node npm zsh-wak
 DOTFILES="$HOME/.dotfiles"
 DOTFILES_BIN="$DOTFILES/bin"
 DOTFILES_ZSH="$DOTFILES/zsh"
+DOTFILES_GIT="$DOTFILES/git"
 
 # User configuration
 source $ZSH/oh-my-zsh.sh

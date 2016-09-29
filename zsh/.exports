@@ -2,19 +2,6 @@
 # Exports
 # ---------------------------------------------------------------------
 
-# Directories path variables
-BACKUP="$HOME/.backup"
-
-DEV="$HOME/dev"
-PROJECTS="$DEV/projects"
-REPOS="$DEV/repos"
-
-DESKTOP="$HOME/Desktop"
-DOCUMENTS="$HOME/Documents"
-DOWNLOADS="$HOME/Downloads"
-DROPBOX="$HOME/Dropbox"
-SOFTWARES="$HOME/.softwares"
-
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 

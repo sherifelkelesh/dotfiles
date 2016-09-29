@@ -1,6 +1,6 @@
 #
 # Git Config
-# ===========================================
+# --------------------------------------------------------------------
 
 [user]
   name   = Iago Dahlem Lorensini
@@ -22,17 +22,17 @@
   g = git
 
   # Add
-  ad = add
+  a  = add
   aa = add --all
   aA = add -A
 
   # Branch
-  br  = branch
-  bra = branch -a
-  brd = branch -d
-  brD = branch -D
-  brl = branch -l
-  brv = branch -v
+  b  = branch
+  ba = branch -a
+  bd = branch -d
+  bD = branch -D
+  bl = branch -l
+  bv = branch -v
 
   # Checkout
   co  = checkout
@@ -57,8 +57,8 @@
   cgl = config --list
 
   # Diff
-  df  = diff
-  dfs = diff --staged
+  d  = diff
+  ds = diff --staged
 
   # Discard
   dc      = checkout --
@@ -67,6 +67,10 @@
   # Fetch
   ft  = fetch
   ftp = fetch -p
+
+  # Helpers
+  bam  = "!source $DOTFILES_GIT/.githelpers && delete_local_merged_branches"
+  bamr = "!source $DOTFILES_GIT/.githelpers && delete_remote_merged_branches"
 
   # Lists
   branchs = branch -l
@@ -90,11 +94,11 @@
   sths = stash show
 
   # Status
+  s = status
   ss = status -s
-  st = status
 
   # Sync
-  sync = pull && push
+  sync = "!git pull && git push"
 
   # Pull
   pl = pull
@@ -122,9 +126,6 @@
   # Unstage
   ut      = reset HEAD
   unstage = reset HEAD
-
-  # Up
-  up = "!git pull && git push"
 
 [color]
   branch = auto
