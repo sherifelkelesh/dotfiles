@@ -22,7 +22,7 @@
   g = git
 
   # Add
-  a  = add
+  ad  = add
   aa = add --all
   aA = add -A
 
@@ -69,7 +69,7 @@
   ftp = fetch -p
 
   # Helpers
-  bam     = "!source $DOTFILES_GIT/.githelpers && delete_local_merged_branches"
+  bam     = "!source ~/.dotfiles/git/.githelpers"
   bamr    = "!source $DOTFILES_GIT/.githelpers && delete_remote_merged_branches"
   summary = "!source $DOTFILES_GIT/.githelpers && weekly_summary"
   pullall = "!source $DOTFILES_GIT/.githelpers && pull_all_repos_in_folder"
