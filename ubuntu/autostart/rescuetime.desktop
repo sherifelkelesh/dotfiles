@@ -1,0 +1,9 @@
+[Desktop Entry]
+Icon=rescuetime
+Type=Application
+Exec=rescuetime
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=false
+Name=RescueTime
+Comment=Keep your time rescue
