@@ -65,9 +65,9 @@
   ftp = fetch -p
 
   # Helpers
-  bamr    = "!source $DOTFILES_GIT/.githelpers && delete_remote_merged_branches"
-  summary = "!source $DOTFILES_GIT/.githelpers && weekly_summary"
-  pullall = "!source $DOTFILES_GIT/.githelpers && pull_all_repos_in_folder"
+  bam     = "!git branch --merged master | grep -v master | xargs git branch -d"
+  la      = "!git config -l | grep alias | cut -c 7-"
+  pullall = "!for d in */ ; do cd "$d" && git pull > /dev/null && cd .. done"
 
   # Lists
   branchs = branch -l
