@@ -3,31 +3,27 @@
 # --------------------------------------------------------------------
 
 [user]
-  name   = Iago Dahlem Lorensini
-  email  = iagodahlemlorensini@gmail.com
+  name = Iago Dahlem Lorensini
+  email = iagodahlemlorensini@gmail.com
   editor = subl
-
 [github]
   user = iagodahlem
-
 [core]
-  editor       = vim
+  editor = vim
   excludesfile = ~/.gitignore_global
-
 [commit]
   template = ~/.gitmessage
-
 [alias]
   # Git
   g = git
 
   # Add
-  ad  = add
+  ad = add
   aa = add --all
   aA = add -A
 
   # Branch
-  b  = branch
+  br = branch
   ba = branch -a
   bd = branch -d
   bD = branch -D
@@ -35,7 +31,7 @@
   bv = branch -v
 
   # Checkout
-  co  = checkout
+  co = checkout
   cob = checkout -b
   com = checkout master
 
@@ -46,7 +42,7 @@
   cl = clone
 
   # Commit
-  ci  = commit
+  ci   = commit
   cim  = commit -m
   cia  = commit --amend
   ciam = commit -a -m
@@ -57,7 +53,7 @@
   cgl = config --list
 
   # Diff
-  d  = diff
+  df = diff
   ds = diff --staged
 
   # Discard
@@ -69,7 +65,6 @@
   ftp = fetch -p
 
   # Helpers
-  bam     = "!source ~/.dotfiles/git/.githelpers"
   bamr    = "!source $DOTFILES_GIT/.githelpers && delete_remote_merged_branches"
   summary = "!source $DOTFILES_GIT/.githelpers && weekly_summary"
   pullall = "!source $DOTFILES_GIT/.githelpers && pull_all_repos_in_folder"
@@ -96,7 +91,7 @@
   sths = stash show
 
   # Status
-  s = status
+  st = status
   ss = status -s
 
   # Sync
@@ -106,14 +101,15 @@
   pl = pull
 
   # Push
-  ps   = push
-  psu  = push -u
-  psuo = push -u origin
+  ps    = push
+  psu   = push -u
+  psuo  = push -u origin
+  psuom = push -u origin master
 
   # Remote
-  rmta = remote add
-  rmts = remote set-url
-  rmtv = remote -v
+  rma = remote add
+  rms = remote set-url
+  rmv = remote -v
 
   # Reset
   r   = reset
@@ -128,26 +124,22 @@
   # Unstage
   ut      = reset HEAD
   unstage = reset HEAD
-
 [color]
   branch = auto
   diff   = auto
   status = auto
   ui     = auto
-
 [color "diff"]
   frag = magenta bold
   meta = yellow bold
-  new  = green bold
-  old  = red bold
-
+  new = green bold
+  old = red bold
 [color "status"]
   added     = cyan bold
   branch    = cyan bold
   changed   = magenta bold
   deleted   = red bold
   untracked = yellow bold
-
 [push]
   # 'git push' will push the current branch to its tracking branch
   # the usual default is to push all branches
