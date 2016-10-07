@@ -1,13 +1,10 @@
 <snippet>
 	<content><![CDATA[
 #include <stdio.h>
-#include "curses.c"
+#include "conio.c"
 
 void main() {
 
-	${1:code}
-
-	getche();
 }
 
 ]]></content>
