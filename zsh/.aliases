@@ -4,7 +4,7 @@
 
 # -- APT-GET ----------------------
 alias autoclean="sudo apt-get autoclean"
-alias autoremove="sudo apt-get autoremove -y"
+alias autoremove="sudo apt-get autoremove -y --purge"
 alias check="sudo apt-get check"
 alias clean="sudo apt-get clean"
 alias dist-upgrade="sudo apt-get dist-upgrade -y"
