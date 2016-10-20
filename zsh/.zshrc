@@ -8,6 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 # ZSH Configuration
 ZSH_THEME="dracula"
 ZSH_CUSTOM="$HOME/.custom"
+unsetopt correct_all
 
 plugins=(zsh-syntax-highlighting z gitfast git-extras git-tools node npm zsh-wakatime)
 
