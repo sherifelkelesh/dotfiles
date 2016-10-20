@@ -23,7 +23,7 @@
   aA = add -A
 
   # Branch
-  br = branch
+  b  = branch
   ba = branch -a
   bd = branch -d
   bD = branch -D
