@@ -1,7 +1,3 @@
-#
-# Git Config
-# --------------------------------------------------------------------
-
 [user]
   name = Iago Dahlem Lorensini
   email = iagodahlemlorensini@gmail.com
@@ -14,131 +10,113 @@
 [commit]
   template = ~/.gitmessage
 [alias]
-  # Git
+  # git
   g = git
 
-  # Add
+  # add
   ad = add
   aa = add --all
-  aA = add -A
+  ap = add -p
 
-  # Branch
-  b  = branch
+  # branch
   ba = branch -a
   bd = branch -d
   bD = branch -D
   bl = branch -l
   bv = branch -v
 
-  # Checkout
+  # checkout
   co = checkout
   cob = checkout -b
   com = checkout master
-
-  # Cherry-pick
-  cp = cherry-pick
-
-  # Clone
-  cl = clone
-
-  # Commit
-  ci   = commit
-  cim  = commit -m
-  cia  = commit --amend
-  ciam = commit -a -m
-
-  # Config
-  cg  = config
-  cgg = config --global
-  cgl = config --list
-
-  # Diff
-  df = diff
-  ds = diff --staged
-
-  # Discard
-  dc      = checkout --
   discard = checkout --
 
-  # Fetch
-  ft  = fetch
+  # cherry-pick
+  cp = cherry-pick -x
+
+  # clone
+  cl = clone
+
+  # commit
+  ci = commit
+  cim = commit -m
+  cia = commit --amend
+  ciam = commit -am
+
+  # diff
+  df = diff
+  dfs = diff --staged
+  dfc = diff --cached
+  last = diff HEAD^ # diff last commited change
+
+  # fetch
+  ft = fetch
   ftp = fetch -p
 
-  # Helpers
-  bam     = "!git branch --merged master | grep -v master | xargs git branch -d"
-  la      = "!git config -l | grep alias | cut -c 7-"
-  pullall = "!for d in */ ; do cd "$d" && git pull > /dev/null && cd .. done"
+  # helpers
+  bam = !git branch --merged master | grep -v master | xargs git branch -d
+  sync = !git pull && git push
 
-  # Lists
-  branchs = branch -l
+  # lists
+  aliases = !git config -l | grep alias | cut -c 7-
+  branchs = branch -v
   configs = config --list
   remotes = remote -v
-  tags    = tag -l
+  tags = tag -l
 
-  # Logs
-  l  = log --oneline
+  # logs
+  l = log --oneline --date=short
   lg = log --oneline --pretty=format:'%h %ad | [%an] %s%d' --graph --date=short
+  changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
+  short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
+  simple = log --pretty=format:\" * %s\"
+  shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
 
-  # Merge
-  mg  = merge
+  # merge
+  mg = merge
   mgm = merge master
 
-  # Stash
-  sth  = stash
-  stha = stash apply
-  sthl = stash list
-  sthp = stash pop
-  sths = stash show
-
-  # Status
-  st = status
-  ss = status -s
-
-  # Sync
-  sync = "!git pull && git push"
-
-  # Pull
+  # pull
   pl = pull
 
-  # Push
-  ps    = push
-  psu   = push -u
-  psuo  = push -u origin
+  # push
+  ps = push
+  psu = push -u
+  psuo = push -u origin
   psuom = push -u origin master
-
-  # Remote
-  rma = remote add
-  rms = remote set-url
-  rmv = remote -v
-
-  # Reset
-  r   = reset
-  rh  = reset HEAD
-  rh1 = reset --hard HEAD~1
-  rs1 = reset --soft HEAD~1
-
-  # Undos
-  undo     = reset --soft HEAD~1
   undopush = push -f origin HEAD^:master
 
-  # Unstage
-  ut      = reset HEAD
+  # reset
   unstage = reset HEAD
+  uncommit = reset --soft HEAD^
+  undocommit = reset --hard HEAD^
+
+  # stash
+  sh = stash
+  sha = stash apply
+  shd = stash drop
+  shl = stash list
+  shp = stash pop
+  shs = stash show
+
+  # status
+  st = status
+  ss = status -s
 [color]
+  ui = auto
   branch = auto
-  diff   = auto
+  diff = auto
   status = auto
-  ui     = auto
 [color "diff"]
   frag = magenta bold
   meta = yellow bold
-  new = green bold
-  old = red bold
+  new = green
+  old = red
 [color "status"]
-  added     = cyan bold
-  branch    = cyan bold
-  changed   = magenta bold
-  deleted   = red bold
+  added = cyan bold
+  branch = cyan bold
+  changed = magenta bold
+  deleted = red bold
   untracked = yellow bold
 [push]
   # 'git push' will push the current branch to its tracking branch
