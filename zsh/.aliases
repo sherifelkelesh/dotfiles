@@ -1,8 +1,11 @@
-#
-# Aliases
-# ---------------------------------------------------------------------
+# dotfiles support
+alias dots="cd $DOTFILES"
+alias dotsconf="cd $DOTFILES && $EDITOR ."
+alias dotsup="source $DOTFILES_BIN/upgrade.sh"
+alias dotsbackup="source $DOTFILES_BIN/backup.sh"
+alias dotscolors="source $DOTFILES_BIN/colors.sh"
 
-# -- APT-GET ----------------------
+# apt-get
 alias autoclean="sudo apt-get autoclean"
 alias autoremove="sudo apt-get autoremove -y --purge"
 alias check="sudo apt-get check"
@@ -17,62 +20,48 @@ alias upgrade="sudo apt-get upgrade -y"
 alias up="update && upgrade && dist-upgrade"
 alias cleanup="clean && autoclean && autoremove"
 
-# -- Directories ------------------
+# directories
 alias dev="cd $DEV"
 alias desktop="cd $DESKTOP"
 alias documents="cd $DOCUMENTS"
 alias downloads="cd $DOWNLOADS"
 alias dropbox="cd $DROPBOX"
 alias projects="cd $PROJECTS"
-alias repos="cd $REPOS"
-alias softwares="cd $SOFTWARES"
 
 alias dlist="dirs -v | head -10"
 
-# -- Directories Shortcuts --------
+# directories shortcuts
 alias d="dev"
 alias dt="desktop"
 alias dc="documents"
 alias dl="downloads"
 alias db="dropbox"
 alias pr="projects"
-alias rp="repos"
-alias sw="softwares"
 
-# -- Dotfiles ---------------------
-alias dots="cd $DOTFILES"
-alias dotsconf="cd $DOTFILES && $EDITOR ."
-alias dotsup="source $DOTFILES_BIN/upgrade.sh"
-alias dotsbackup="source $DOTFILES_BIN/backup.sh"
-alias dotscolors="source $DOTFILES_BIN/colors.sh"
+# show human friendly numbers and colors
+alias df='df -h'
+alias du='du -h -d 2'
 
-# -- General commands -------------
-alias service="sudo service"
+# show me files matching "ls grep"
+alias lsg='ll | grep'
+
+# override rm -i alias which makes rm prompt for every action
+alias rm='nocorrect rm'
+
+# general commands
+alias cat="pygmentize -O style=monokai -f console256 -g"
 alias top="htop"
 
-# -- General Shortcuts ------------
-alias c="pygmentize -O style=monokai -f console256 -g"
-alias h="history"
+# general shortcuts
+alias c="cat"
 alias i="install"
 alias r="reload"
 alias t="top"
 
-# -- Hosts ------------------------
+# hosts
 alias hosts='sudo $EDITOR /etc/hosts'
 
-# -- NPM --------------------------
-alias npm-clean="rm -rf node_modules"
-alias npm-clean-install="npm-clean && npm i"
-alias npmc="npm-clean"
-alias npmci="npm-clean-install"
-
-# -- Stopwatch --------------------
-alias timer="echo 'Timer started. Stop with Ctrl-D.' && date && time cat && date"
-
-# -- Workflow ---------------------
-alias work=""
-
-# -- ZSH & Oh-My-Zsh --------------
+# zsh & oh-my-zsh
 alias reload=". ~/.zshrc"
 alias zsh="$EDITOR $HOME/.zshrc"
 alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
