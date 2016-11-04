@@ -99,6 +99,11 @@
   shp = stash pop
   shs = stash show
 
+  # via http://blog.apiaxle.com/post/handy-git-tips-to-stop-you-getting-fired/
+  snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+  snapshotm = "!f() { git stash save \"snapshot: $@\" && git stash apply \"stash@{0}\"; }; f"
+  snapshots = !git stash list --grep snapshot
+
   # status
   st = status
   ss = status -s
