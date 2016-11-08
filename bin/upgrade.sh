@@ -1,16 +1,16 @@
 #!/bin/sh
 
-#
-# Upgrade
-# --------------------------------------------------------------------
+source ./utils/index.sh
 
-echo "Updating Dotfiles..."
+msg_banner
+
+msg "Updating Dotfiles..."
 cd "$DOTFILES"
 if git pull
 then
-  echo "Dotfiles has been updated."
+  msg "Dotfiles has been updated."
   source ~/.zshrc
 else
-  echo "There was an error updating."
+  msg "There was an error updating."
 fi
 cd - &> /dev/null

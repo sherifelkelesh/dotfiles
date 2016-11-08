@@ -2,7 +2,6 @@
 alias dots="cd $DOTFILES"
 alias dotsconf="cd $DOTFILES && $EDITOR ."
 alias dotsup="source $DOTFILES_BIN/upgrade.sh"
-alias dotsbackup="source $DOTFILES_BIN/backup.sh"
 alias dotscolors="source $DOTFILES_BIN/colors.sh"
 
 # apt-get

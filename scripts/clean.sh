@@ -1,9 +1,5 @@
 #!/bin/sh
 
-#
-# Clean
-# --------------------------------------------------------------------
-
 # ZSH
 rm -rf ~/.zshrc
 
@@ -14,7 +10,6 @@ rm -rf ~/.gitmessage
 
 # Subl
 rm -rf ~/.config/sublime-text-3/Packages/User
-rm -rf ~/.config/sublime-text-3/Packages/ShellScript
 
 # Vim
 rm -rf ~/.vimrc

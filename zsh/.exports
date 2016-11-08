@@ -5,7 +5,6 @@ export DOWNLOADS="$HOME/Downloads"
 export DROPBOX="$HOME/Dropbox"
 export DEV="$HOME/dev"
 export PROJECTS="$DEV/projects"
-export BACKUP="$HOME/.backup"
 
 # make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
