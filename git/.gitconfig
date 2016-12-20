@@ -56,10 +56,6 @@
   ft = fetch
   ftp = fetch -p
 
-  # helpers
-  bam = !git branch --merged master | grep -v master | xargs git branch -d # remove local merged branchs
-  sync = !git pull && git push
-
   # lists
   aliases = !git config -l | grep alias | cut -c 7-
   branchs = branch -v
@@ -109,13 +105,18 @@
   ss = status -s
 
   # undos
-  uncommit = reset --soft HEAD^
-  undocommit = reset --hard HEAD^
+  uncommit = reset --soft HEAD~1
+  undocommit = reset --hard HEAD~1
   undopush = push -f origin HEAD^:master
 
   # unstage
   us = reset HEAD
   unstage = reset HEAD
+
+  # helpers
+  bam = !git branch --merged master | grep -v master | xargs git branch -d # remove local merged branchs
+  cleanup = !git pull && git fetch -p && git bam
+  sync = !git pull && git push
 [color]
   ui = auto
   branch = auto
