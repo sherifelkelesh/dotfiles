@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 BEGIN
    FOR cur_rec IN (SELECT object_name, object_type
                      FROM user_objects
@@ -43,5 +43,5 @@ BEGIN
 END;
 /
 ]]></content>
-	<tabTrigger>sql-oracle-drop-everything</tabTrigger>
+  <tabTrigger>sql-oracle-drop-everything</tabTrigger>
 </snippet>

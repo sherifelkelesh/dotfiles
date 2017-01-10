@@ -1,9 +1,9 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 ```javascript
 ${1:code}
 ```
 ]]></content>
-	<tabTrigger>md-code-js</tabTrigger>
-	<scope>source.md, text.html.markdown, text.html.markdown.multimarkdown</scope>
+  <tabTrigger>md-code-js</tabTrigger>
+  <scope>source.md, text.html.markdown, text.html.markdown.multimarkdown</scope>
 </snippet>

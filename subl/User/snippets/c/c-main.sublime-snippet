@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 #include <stdio.h>
 #include "conio.c"
 
@@ -8,6 +8,6 @@ void main() {
 }
 
 ]]></content>
-	<tabTrigger>c-main</tabTrigger>
-	<scope>source.c, source.cpp</scope>
+  <tabTrigger>c-main</tabTrigger>
+  <scope>source.c, source.cpp</scope>
 </snippet>

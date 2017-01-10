@@ -1,9 +1,9 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 ```${1:format}
 ${2:code}
 ```
 ]]></content>
-	<tabTrigger>md-code</tabTrigger>
-	<scope>source.md, text.html.markdown, text.html.markdown.multimarkdown</scope>
+  <tabTrigger>md-code</tabTrigger>
+  <scope>source.md, text.html.markdown, text.html.markdown.multimarkdown</scope>
 </snippet>

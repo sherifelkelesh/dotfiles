@@ -1,9 +1,9 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 #
 # ${1:section name}
 # --------------------------------------------------------------------
 ]]></content>
-	<tabTrigger>shseccm</tabTrigger>
-	<scope>source.shell, source.sh, source.zsh</scope>
+  <tabTrigger>shseccm</tabTrigger>
+  <scope>source.shell, source.sh, source.zsh</scope>
 </snippet>

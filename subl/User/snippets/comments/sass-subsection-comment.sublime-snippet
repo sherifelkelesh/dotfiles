@@ -1,8 +1,8 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 // ${1:sub-section name}
 // ----------------------------------
 ]]></content>
-	<tabTrigger>sasssubseccm</tabTrigger>
-	<scope>source.scss, source.sass</scope>
+  <tabTrigger>sasssubseccm</tabTrigger>
+  <scope>source.scss, source.sass</scope>
 </snippet>

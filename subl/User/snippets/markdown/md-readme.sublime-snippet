@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[
+  <content><![CDATA[
 # ${1:Project Name}
 
 > TODO: Write a project description
@@ -28,6 +28,6 @@
 
 [MIT License](http://iagodahlem.mit-license.org/) © Iago Dahlem
 ]]></content>
-	<tabTrigger>md-readme</tabTrigger>
-	<scope>source.md, text.html.markdown, text.html.markdown.multimarkdown</scope>
+  <tabTrigger>md-readme</tabTrigger>
+  <scope>source.md, text.html.markdown, text.html.markdown.multimarkdown</scope>
 </snippet>
