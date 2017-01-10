@@ -1,4 +1,4 @@
-var palette = {
+const palette = {
   background: { hex: '#282a36', rgb: '40 42 54', hsl: '231° 15% 18%' },
   currentLine: { hex: '#44475a', rgb: '68 71 90', hsl: '232° 14% 31%' },
   selection: { hex: '#44475a', rgb: '68 71 90', hsl: '232° 14% 31%' },
@@ -10,18 +10,18 @@ var palette = {
   pink: { hex: '#ff79c6', rgb: '255 121 198', hsl: '326° 100% 74%' },
   purple: { hex: '#bd93f9', rgb: '189 147 249', hsl: '265° 89% 78%' },
   red: { hex: '#ff5555', rgb: '255 85 85', hsl: '0° 100% 67%' },
-  yellow: { hex: '#f1fa8c', rgb: '241 250 140', hsl: '65° 92% 76%' }
-};
+  yellow: { hex: '#f1fa8c', rgb: '241 250 140', hsl: '65° 92% 76%' },
+}
 
 module.exports = {
   config: {
     fontSize: 13,
     windowSize: [680, 450],
     fontFamily: 'Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
-    cursorColor: palette.foreground.hex,
+    cursorColor: `rgba(${palette.foreground.hex}, 0.8)`,
     cursorShape: 'UNDERLINE',
     foregroundColor: palette.foreground.hex,
-    backgroundColor: palette.background.hex,
+    backgroundColor: `rgba(${palette.background.hex}, 0.8)`,
     borderColor: '',
     css: ``,
     termCSS: `
@@ -46,16 +46,16 @@ module.exports = {
       lightBlue: palette.purple.hex,
       lightMagenta: palette.pink.hex,
       lightCyan: palette.cyan.hex,
-      lightWhite: palette.foreground.hex
+      lightWhite: palette.foreground.hex,
     },
     shell: '',
     shellArgs: ['--login'],
     env: {},
     bell: 'SOUND',
-    copyOnSelect: false
+    copyOnSelect: false,
   },
   plugins: [
     'hyperlinks',
   ],
-  localPlugins: []
-};
+  localPlugins: [],
+}
