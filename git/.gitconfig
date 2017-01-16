@@ -19,16 +19,18 @@
   ap = add -p
 
   # branch
-  ba = branch -a
-  bd = branch -d
-  bD = branch -D
-  bl = branch -l
-  bv = branch -v
+  br = branch
+  bra = branch -a
+  brd = branch -d
+  brD = branch -D
+  brl = branch -l
+  brv = branch -v
 
   # checkout
   co = checkout
   cob = checkout -b
   com = checkout master
+  cod = checkout develop
 
   # cherry-pick
   cp = cherry-pick -x
@@ -54,7 +56,11 @@
 
   # fetch
   ft = fetch
-  ftp = fetch -p
+  ftp = fetch --prune
+
+  # helpers
+  bam = !git branch --merged master | grep -v master | xargs git branch -d
+  bad = !git branch --merged develop | grep -v develop | xargs git branch -d
 
   # lists
   aliases = !git config -l | grep alias | cut -c 7-
@@ -66,17 +72,15 @@
   # logs
   l = log --oneline --date=short
   lg = log --oneline --pretty=format:'%h %ad | [%an] %s%d' --graph --date=short
-  changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
-  short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
-  simple = log --pretty=format:\" * %s\"
-  shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
 
   # merge
   mg = merge
   mgm = merge master
+  mgd = merge develop
 
   # pull
   pl = pull
+  plp = pull --prune
 
   # push
   ps = push
@@ -95,11 +99,6 @@
   shp = stash pop
   shs = stash show
 
-  # via http://blog.apiaxle.com/post/handy-git-tips-to-stop-you-getting-fired/
-  snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
-  snapshotm = "!f() { git stash save \"snapshot: $@\" && git stash apply \"stash@{0}\"; }; f"
-  snapshots = !git stash list --grep snapshot
-
   # status
   st = status
   ss = status -s
@@ -112,11 +111,6 @@
   # unstage
   us = reset HEAD
   unstage = reset HEAD
-
-  # helpers
-  bam = !git branch --merged master | grep -v master | xargs git branch -d # remove local merged branchs
-  cleanup = !git pull && git fetch -p && git bam
-  sync = !git pull && git push
 [color]
   ui = auto
   branch = auto
