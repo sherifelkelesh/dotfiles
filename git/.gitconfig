@@ -60,7 +60,7 @@
 
   # helpers
   bam = !git branch --merged master | grep -v master | xargs git branch -d
-  bad = !git branch --merged develop | grep -v develop | xargs git branch -d
+  bad = !git branch --merged develop | grep -v master | grep -v develop | xargs git branch -d
 
   # lists
   aliases = !git config -l | grep alias | cut -c 7-
