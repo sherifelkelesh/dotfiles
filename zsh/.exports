@@ -21,7 +21,7 @@ else
 fi
 
 # NVM
-export NVM_DIR="/home/iago/.nvm"
+export NVM_DIR="$HOME/.nvm"
 
 # SSH
 export SSH_KEY_PATH="~/.ssh/dsa_id"
