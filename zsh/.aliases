@@ -41,9 +41,6 @@ alias pr="projects"
 alias df='df -h'
 alias du='du -h -d 2'
 
-# show me files matching "ls grep"
-alias lsg='ll | grep'
-
 # override rm -i alias which makes rm prompt for every action
 alias rm='nocorrect rm'
 

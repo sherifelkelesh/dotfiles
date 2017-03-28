@@ -3,36 +3,14 @@ function mkd() {
   mkdir -p "$@" && cd "$@"
 }
 
-# nautilus
-# `n` with no arguments opens current directory, otherwise opens the given
-# location
-function n() {
-  if [ $# -eq 0 ]; then
-    nautilus .
-  else
-    nautilus "$@"
-  fi
-}
-
-# sublime text
-# `s` with no arguments opens the current directory in Sublime Text, otherwise
+# editor
+# `e` with no arguments opens the current directory in current Editor, otherwise
 # opens the given location
-function s() {
+function e() {
   if [ $# -eq 0 ]; then
-    subl .
+    $EDITOR .
   else
-    subl "$@"
-  fi
-}
-
-# vim
-# `v` with no arguments opens the current directory in Vim, otherwise opens the
-# given location
-function v() {
-  if [ $# -eq 0 ]; then
-    vim .
-  else
-    vim "$@"
+    $EDITOR "$@"
   fi
 }
 
