@@ -24,7 +24,7 @@ fi
 export NVM_DIR="$HOME/.nvm"
 
 # SSH
-export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH="$HOME/.ssh/dsa_id"
 
 # PATH
 PATH=/usr/local/bin
