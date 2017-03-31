@@ -1,4 +1,4 @@
 #!/bin/bash
 
-source ./utils/consts.sh
-source ./utils/logger.sh
+source ${BASH_SOURCE%/*}/consts.sh
+source ${BASH_SOURCE%/*}/logger.sh

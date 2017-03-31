@@ -1,16 +1,16 @@
 #!/bin/bash
 
-source ./utils/index.sh
+source ${BASH_SOURCE%/*}/index.sh
 
-msg_banner
+logBanner
 
-msg "Updating Dotfiles..."
+log "Updating Dotfiles..."
 cd "$DOTFILES"
 if git pull
 then
-  msg "Dotfiles has been updated."
+  log "Dotfiles has been updated."
   source ~/.zshrc
 else
-  msg "There was an error updating."
+  log "There was an error updating."
 fi
 cd - &> /dev/null

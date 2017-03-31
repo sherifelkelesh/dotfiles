@@ -1,21 +1,23 @@
 #!/bin/bash
 
-source ~/.dotfiles/utils/index.sh
+set -e
 
-msg_banner
+source ${BASH_SOURCE%/*}/utils/index.sh
 
-msg "creating default directories"
-source ~/.dotfiles/scripts/makes.sh
-msg_ok "makes"
+logBanner
 
-msg "cleaning existing files"
-source ~/.dotfiles/scripts/clean.sh
-msg_ok "cleans"
+log "creating default directories"
+source ${BASH_SOURCE%/*}/scripts/makes.sh
+log "makes"
 
-msg "creating symlinks"
-source ~/.dotfiles/scripts/symlinks.sh
-msg_ok "synlinks"
+log "cleaning existing files"
+source ${BASH_SOURCE%/*}/scripts/clean.sh
+log "cleans"
 
-msg "reloading zsh"
-source ~/.zshrc
-msg_ok "zsh"
+log "creating symlinks"
+source ${BASH_SOURCE%/*}/scripts/symlinks.sh
+log "synlinks"
+
+log "reloading zsh"
+source "$HOME/.zshrc"
+log "zsh"
