@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #Background
 for clbg in {40..47} {100..107} 49 ; do

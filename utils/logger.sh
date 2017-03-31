@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 function msg() {
   echo "\033[0;37m$1\033[0m";
