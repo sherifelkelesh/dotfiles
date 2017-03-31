@@ -51,10 +51,6 @@
   dfc = diff --cached
   last = diff HEAD^ # diff last commited change
 
-  # discard
-  dc = checkout --
-  discard = checkout --
-
   # fetch
   ft = fetch
   ftp = fetch --prune
@@ -88,9 +84,12 @@
   psu = push -u
   psuo = push -u origin
   psuom = push -u origin master
+  undopush = push -f origin HEAD^:master
 
   # reset
   rt = reset
+  rts = reset --soft HEAD~1
+  rth = reset --hard HEAD~1
 
   # stash
   sh = stash
@@ -103,15 +102,6 @@
   # status
   st = status
   ss = status -s
-
-  # undos
-  uncommit = reset --soft HEAD~1
-  undocommit = reset --hard HEAD~1
-  undopush = push -f origin HEAD^:master
-
-  # unstage
-  us = reset HEAD
-  unstage = reset HEAD
 [color]
   ui = auto
   branch = auto
@@ -129,6 +119,4 @@
   deleted = red bold
   untracked = yellow bold
 [push]
-  # 'git push' will push the current branch to its tracking branch
-  # the usual default is to push all branches
   default = simple
