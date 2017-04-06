@@ -17,6 +17,3 @@ export DOTFILES_GIT="$DOTFILES/git"
 # user configuration
 source $ZSH/oh-my-zsh.sh
 source $DOTFILES_ZSH/.bootstrap
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
