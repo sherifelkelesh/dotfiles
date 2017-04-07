@@ -14,6 +14,22 @@ function e() {
   fi
 }
 
+function s() {
+  if [ $# -eq 0 ]; then
+    subl .
+  else
+    subl "$@"
+  fi
+}
+
+function v() {
+  if [ $# -eq 0 ]; then
+    vim .
+  else
+    vim "$@"
+  fi
+}
+
 # homestead alias for php/laravel development
 function homestead() {
   (cd ~/Homestead && vagrant $*)
