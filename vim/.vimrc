@@ -1,25 +1,92 @@
+"###############################################################################
+"# Bootstrap
+"###############################################################################
+
+" be iMproved, required
+set nocompatible
+
+" Remove automatic plugin identation (required by Vundle)
+filetype off
+
+"###############################################################################
+"# Vundle
+"###############################################################################
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+
+"###############################################################################
+"# Plugins
+"###############################################################################
+
+" Startup Vundle
+call vundle#begin()
+
+" Let Vundle manage Vundle
+Plugin 'VundleVim/Vundle.vim'
+
+" Close Vundle
+call vundle#end()
+
+"###############################################################################
+"# General settings
+"###############################################################################
+
+" UTF-8 all the things
+set encoding=utf-8
+
+" Automatic plugin indent
+filetype plugin indent on
+
+" Show line numbers
 set number
-set linebreak
-set showbreak=+++
-set textwidth=100
-set showmatch
 
+" Enable tree folding
+set foldenable
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+
+" Set the title at top of tab to be the filename
+set title
+
+" Automatic syntax
+syntax enable
+
+" Tab
+set softtabstop=2 shiftwidth=2 noexpandtab
+
+" Backspace
+set backspace=2
+
+" Display hidden whitespace
+set listchars=tab:▸\ ,eol:¬,trail:·,nbsp:·
+
+" Display hidden characters by default
+set list
+
+" Set highlight for search
 set hlsearch
-set smartcase
+
+" Case-insensitive searching
 set ignorecase
-set incsearch
 
-set autoindent
-set shiftwidth=4
-set smartindent
-set smarttab
-set softtabstop=4
+" But case-sensitive if expression contains a capital letter
+set smartcase
 
-set ruler
+" Remove automatic text wrapping
+set nowrap
 
-set undolevels=1000
-set backspace=indent,eol,start
+" Display status bar
+set laststatus=2
 
-map gg ^rx: <Esc>:r! date +" [\%H:\%M]"<ENTER>kJA<Esc>$
+" Backups are annoying, let file versioning handles this
+set nobackup
+set nowritebackup
 
-map gt o  _
+" Stop being bothered by Vim swap files
+set noswapfile
+
+" Enable mouse in all modes because why not
+set mouse=a
