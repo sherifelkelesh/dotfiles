@@ -1,5 +1,5 @@
 {
-  "ha_style": "underlined_solid",
-  "icons": false,
-  "style": "filled"
+	"ha_style": "filled",
+	"icons": false,
+	"style": "filled"
 }
