@@ -64,7 +64,6 @@
 	"ignored_packages":
 	[
 		"JavaScript",
-		"SublimeLinter",
 		"Vintage"
 	],
 	"indent_guide_options":
