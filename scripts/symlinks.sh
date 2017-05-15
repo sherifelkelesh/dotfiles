@@ -1,18 +1,21 @@
 #!/bin/bash
 
 # ZSH
-ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+ln -s "$DOTFILES_PATH/zsh/.zshrc" "$HOME/.zshrc"
 
 # Git
-ln -s ~/.dotfiles/git/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/git/.gitignore_global ~/.gitignore_global
-ln -s ~/.dotfiles/git/.gitmessage ~/.gitmessage
+ln -s "$DOTFILES_PATH/git/.gitconfig" "$HOME/.gitconfig"
+ln -s "$DOTFILES_PATH/git/.gitignore_global" "$HOME/.gitignore_global"
+ln -s "$DOTFILES_PATH/git/.gitmessage" "$HOME/.gitmessage"
 
 # Sublime
-ln -s ~/.dotfiles/subl/User ~/.config/sublime-text-3/Packages/User
+ln -s "$DOTFILES_PATH/subl/User" "$HOME/.config/sublime-text-3/Packages/User"
+
+# tmux
+ln -s "$DOTFILES_PATH/tmux/.tmux.conf" "$HOME/.tmux.conf"
 
 # Vim
-ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
+ln -s "$DOTFILES_PATH/vim/.vimrc" "$HOME/.vimrc"
 
-# Ubuntu
-ln -s ~/.dotfiles/ubuntu/autostart ~/.config/autostart
+#Ubuntu
+ln -s "$DOTFILES_PATH/ubuntu/autostart" "$HOME/.config/autostart"

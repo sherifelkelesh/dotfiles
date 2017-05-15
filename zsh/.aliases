@@ -1,8 +1,6 @@
 # dotfiles support
 alias dots="cd $DOTFILES"
 alias dotsconf="cd $DOTFILES && $EDITOR ."
-alias dotsup="source $DOTFILES_BIN/upgrade.sh"
-alias dotscolors="source $DOTFILES_BIN/colors.sh"
 
 # apt
 alias autoclean="sudo apt autoclean"

@@ -2,9 +2,9 @@
 
 set -e
 
-RESET="\e[0m"
-BOLD="\e[1;34m"
-RED="\e[0;31m"
+readonly RESET="\e[0m"
+readonly BOLD="\e[1;34m"
+readonly RED="\e[0;31m"
 
 function log() {
   printf "$1\n"

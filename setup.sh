@@ -16,7 +16,7 @@ log "cleans"
 
 log "creating symlinks"
 source ${BASH_SOURCE%/*}/scripts/symlinks.sh
-log "synlinks"
+log "symlinks"
 
 log "reloading zsh"
 source "$HOME/.zshrc"
