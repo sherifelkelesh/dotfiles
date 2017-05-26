@@ -1,15 +1,14 @@
 {
-  "conditional_file_exclude_patterns":
-  [
-    "*.min.css",
-    "*.min.js",
-    "npm-debug.log"
-  ],
-  "conditional_folder_exclude_patterns":
-  [
-    "bower_components",
-    "lib",
-    "node_modules"
-  ],
-  "enabled": true
+	"conditional_file_exclude_patterns":
+	[
+		"*.min.css",
+		"*.min.js",
+		"npm-debug.log"
+	],
+	"conditional_folder_exclude_patterns":
+	[
+		"bower_components",
+		"node_modules"
+	],
+	"enabled": true
 }
