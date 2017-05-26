@@ -6,7 +6,6 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
-		"Alignment",
 		"AlignTab",
 		"All Autocomplete",
 		"Auto Semi-Colon",
@@ -14,7 +13,6 @@
 		"Babel",
 		"BracketHighlighter",
 		"Color Highlighter",
-		"ColorPicker",
 		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
 		"Dracula Color Scheme",
