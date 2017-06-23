@@ -20,20 +20,26 @@ else
   export EDITOR='subl'
 fi
 
-# NVM
+# nvm
 export NVM_DIR="$HOME/.nvm"
 
-# SSH
+# ssh
 export SSH_KEY_PATH="$HOME/.ssh/dsa_id"
 
-# PATH
-PATH=/usr/local/bin
-PATH=$PATH:/usr/local/sbin
-PATH=$PATH:/usr/sbin
-PATH=$PATH:/usr/bin
-PATH=$PATH:/sbin
-PATH=$PATH:/bin
-PATH=$PATH:/usr/games
-PATH=$PATH:/usr/local/games
-PATH=$PATH:$HOME/.rbenv/bin
-export PATH
+# android
+export ANDROID_HOME="$HOME/Android/Sdk"
+
+# path
+export PATH=/usr/local/bin
+export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/usr/sbin
+export PATH=$PATH:/usr/bin
+export PATH=$PATH:/sbin
+export PATH=$PATH:/bin
+export PATH=$PATH:/usr/games
+export PATH=$PATH:/usr/local/games
+
+export PATH=$PATH:$HOME/.rbenv/bin
+
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
