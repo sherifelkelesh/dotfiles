@@ -5,5 +5,5 @@
 // ===========================================
 ]]></content>
   <tabTrigger>sasssubseccm</tabTrigger>
-  <scope>source.scss, source.sass</scope>
+  <scope>source.scss, source.sass, source.styl</scope>
 </snippet>
