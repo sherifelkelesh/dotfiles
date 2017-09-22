@@ -53,7 +53,7 @@
   ftp = fetch --prune
 
   # helpers
-  bam = !git branch --merged origin/master | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
+  bam = !git branch --merged | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
 
   # lists
   aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /' | sort
@@ -78,6 +78,7 @@
   # push
   ps = push
   psu = push -u
+  psf = push -f
   psuo = push -u origin
   psuom = push -u origin master
   undopush = push -f origin HEAD^:master
