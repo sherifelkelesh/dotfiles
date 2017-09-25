@@ -34,6 +34,9 @@ Plugin 'editorconfig/editorconfig-vim'
 " Emmet
 Plugin 'mattn/emmet-vim'
 
+" Wakatime
+Plugin 'wakatime/vim-wakatime'
+
 " Close Vundle
 call vundle#end()
 
