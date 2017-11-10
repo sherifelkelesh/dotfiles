@@ -20,11 +20,13 @@
   "draw_white_space": "all",
   "highlight_modified_tabs": true,
   "indent_guide_options": ["draw_active", "draw_normal"],
+  "overlay_scroll_bars": "enabled",
   "rulers": [80],
   "theme": "Material-Theme-Darker.sublime-theme",
   "word_wrap": false,
 
   // behavior
+  "remember_opened_files": false,
   "hot_exit": true,
 
   // theme
