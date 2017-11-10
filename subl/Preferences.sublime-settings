@@ -1,0 +1,85 @@
+{
+  // code
+  "tab_size": 2,
+  "ensure_newline_at_eof_on_save": true,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+
+  // type
+  "font_options": ["gray_antialias", "subpixel_antialias"],
+  "font_size": 10,
+  "line_padding_bottom": 2,
+  "line_padding_top": 2,
+
+  // appearence
+  "caret_extra_bottom": 3,
+  "caret_extra_top": 3,
+  "caret_extra_width": 2,
+  "color_scheme": "Packages/User/Dracula (SL).tmTheme",
+  "draw_indent_guides": true,
+  "draw_white_space": "all",
+  "highlight_modified_tabs": true,
+  "indent_guide_options": ["draw_active", "draw_normal"],
+  "rulers": [80],
+  "theme": "Material-Theme-Darker.sublime-theme",
+  "word_wrap": false,
+
+  // behavior
+  "hot_exit": true,
+
+  // theme
+  "material_theme_accent_blue": true,
+  "material_theme_bold_tab": false,
+  "material_theme_compact_panel": true,
+  "material_theme_compact_sidebar": true,
+  "material_theme_contrast_mode": false,
+  "material_theme_disable_fileicons": false,
+  "material_theme_disable_folder_animation": false,
+  "material_theme_disable_tree_indicator": false,
+  "material_theme_panel_separator": true,
+  "material_theme_small_statusbar": true,
+  "material_theme_small_tab": true,
+  "material_theme_tabs_autowidth": true,
+  "material_theme_tabs_separator": true,
+
+  // exclude
+  "ignored_packages": [
+    "JavaScript",
+    "Vintage"
+  ],
+  "file_exclude_patterns": [
+    "*.a",
+    "*.class",
+    "*.db",
+    "*.dll",
+    "*.dylib",
+    "*.exe",
+    "*.idb",
+    "*.lib",
+    "*.min.css",
+    "*.min.js",
+    "*.ncb",
+    "*.o",
+    "*.obj",
+    "*.pdb",
+    "*.psd",
+    "*.pyc",
+    "*.pyo",
+    "*.sdf",
+    "*.so",
+    "*.sublime-workspace",
+    "*.suo",
+    ".DS_Store",
+    "npm-debug.log"
+  ],
+  "folder_exclude_patterns": [
+    ".git",
+    ".hg",
+    ".svn",
+    "bower_components",
+    "build",
+    "CVS",
+    "dist",
+    "node_modules"
+  ]
+}
