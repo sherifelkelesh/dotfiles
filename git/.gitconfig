@@ -41,6 +41,7 @@
   cim = commit -m
   cia = commit --amend
   ciam = commit -am
+  amend = commit --amend --no-edit
 
   # diff
   df = diff
