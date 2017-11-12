@@ -46,7 +46,6 @@
 
   // exclude
   "ignored_packages": [
-    "JavaScript",
     "Vintage"
   ],
   "file_exclude_patterns": [
