@@ -26,7 +26,7 @@
   "word_wrap": false,
 
   // behavior
-  "remember_opened_files": false,
+  "remember_open_files": true,
   "hot_exit": true,
 
   // theme
@@ -46,6 +46,7 @@
 
   // exclude
   "ignored_packages": [
+    "JavaScript",
     "Vintage"
   ],
   "file_exclude_patterns": [
