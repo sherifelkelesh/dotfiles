@@ -26,8 +26,8 @@
   "word_wrap": false,
 
   // behavior
-  "remember_open_files": true,
-  "hot_exit": true,
+  "hot_exit": false,
+  "remember_open_files": false,
 
   // theme
   "material_theme_accent_blue": true,
