@@ -5,4 +5,3 @@ unset file
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-if which fuck > /dev/null; then eval $(thefuck --alias); fi
