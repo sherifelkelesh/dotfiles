@@ -29,8 +29,3 @@ function v() {
     vim "$@"
   fi
 }
-
-# homestead alias for php/laravel development
-function homestead() {
-  (cd ~/Homestead && vagrant $*)
-}

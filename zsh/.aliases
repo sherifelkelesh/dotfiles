@@ -40,16 +40,18 @@ alias du='du -h -d 2'
 alias rm='nocorrect rm'
 
 # general commands
-alias cat="pygmentize -O style=monokai -f console256 -g"
-alias c="cat"
+alias c="pygmentize -O style=monokai -f console256 -g"
 alias top="htop"
 alias t="top"
 
 # hosts
-alias hosts='sudo $EDITOR /etc/hosts'
+alias hosts="sudo $EDITOR /etc/hosts"
 
 # zsh & oh-my-zsh
 alias reload=". ~/.zshrc"
 alias r="reload"
 alias zsh="$EDITOR $HOME/.zshrc"
 alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
+
+# node / npm
+alias install-global-packages="npm install -g $(cat $DOTFILES/npm/globals)"
