@@ -1,39 +1,15 @@
 #!/bin/bash
 
-# icons
-readonly ARROW="→"
-readonly CHECK="✔"
-readonly CLOSE="✗"
-readonly HEART="♥"
+DIR=$(dirname $0)
 
-# colors
-readonly RESET="\e[0m"
-readonly RED="\e[0;31m"
-readonly GREEN_BOLD="\e[1;32m"
-readonly YELLOW_BOLD="\e[1;33m"
-readonly BLUE_BOLD="\e[1;34m"
+git clone git@github.com:iagodahlem/scripts.git &> /dev/null
+source $DIR/scripts/index.sh
 
 # paths
 readonly DOTFILES_PATH="$HOME/.dotfiles"
 readonly SUBLIME_PATH="$HOME/.config/sublime-text-3/Packages/User"
 
-function log() {
-  printf "$1\n"
-}
-
-function bold() {
-  printf "${BLUE_BOLD}$1${RESET}\n"
-}
-
-function arrow() {
-  printf "${YELLOW_BOLD}${ARROW}${RESET} $1\n"
-}
-
-function check() {
-  printf "${GREEN_BOLD}${CHECK}${RESET} $1\n"
-}
-
-function banner() {
+banner() {
   log  ""
   bold "       _       _    __ _ _             "
   bold "      | |     | |  / _(_) |            "
@@ -48,11 +24,11 @@ function banner() {
   log  ""
 }
 
-function makes() {
+makes() {
   mkdir -p ~/dev/projects
 }
 
-function clean() {
+clean() {
   # zsh
   rm -rf "$HOME/.zshrc"
 
@@ -83,7 +59,7 @@ function clean() {
   rm -rf "$HOME/.config/autostart"
 }
 
-function symlinks() {
+symlinks() {
   # zsh
   ln -s "$DOTFILES_PATH/zsh/.zshrc" "$HOME/.zshrc"
 
@@ -127,3 +103,6 @@ check "existing files cleaned"
 arrow "creating symlinks"
 symlinks
 check "symlinks created"
+
+# clean up script
+rm -rf scripts
