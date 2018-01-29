@@ -6,3 +6,4 @@ Comment=cerebrostartup script
 Exec=/tmp/.mount_Hc3Wu1/usr/bin/cerebro
 StartupNotify=false
 Terminal=false
+X-GNOME-Autostart-enabled=true
