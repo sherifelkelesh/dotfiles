@@ -1,12 +1,12 @@
 # create a new directory and enter it
-function mkd() {
+function mkd {
   mkdir -p "$@" && cd "$@"
 }
 
 # editor
 # `e` with no arguments opens the current directory in current Editor, otherwise
 # opens the given location
-function e() {
+function e {
   if [ $# -eq 0 ]; then
     $EDITOR .
   else
@@ -14,7 +14,7 @@ function e() {
   fi
 }
 
-function s() {
+function s {
   if [ $# -eq 0 ]; then
     subl .
   else
@@ -22,7 +22,7 @@ function s() {
   fi
 }
 
-function v() {
+function v {
   if [ $# -eq 0 ]; then
     vim .
   else

@@ -3,5 +3,12 @@ for file in $DOTFILES_ZSH/.{exports,aliases,functions}; do
 done
 unset file
 
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# asdf
+source "$ASDF_DIR/asdf.sh"
+source "$ASDF_DIR/completions/asdf.bash"

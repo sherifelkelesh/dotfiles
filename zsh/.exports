@@ -17,17 +17,17 @@ export LANG="en_US"
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='subl'
+  export EDITOR='code'
 fi
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
 
+# asdf
+export ASDF_DIR="$HOME/.asdf"
+
 # ssh
 export SSH_KEY_PATH="$HOME/.ssh/dsa_id"
-
-# android
-export ANDROID_HOME="$HOME/Android/Sdk"
 
 # path
 export PATH=/usr/local/bin
@@ -40,6 +40,3 @@ export PATH=$PATH:/usr/games
 export PATH=$PATH:/usr/local/games
 
 export PATH=$PATH:$HOME/.rbenv/bin
-
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
