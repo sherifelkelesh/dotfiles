@@ -8,6 +8,7 @@ source $DIR/scripts/index.sh
 # paths
 readonly DOTFILES_PATH="$HOME/.dotfiles"
 readonly SUBLIME_PATH="$HOME/.config/sublime-text-3/Packages/User"
+readonly VSCODE_PATH="$HOME/.config/Code/User"
 
 banner() {
   log  ""
@@ -60,6 +61,11 @@ clean() {
 
   # asdf
   rm -rf "$HOME/.tool-versions"
+
+  # vscode
+  rm -rf "$VSCODE_PATH/snippets"
+  rm -rf "$VSCODE_PATH/keybindings.json"
+  rm -rf "$VSCODE_PATH/settings.json"
 }
 
 symlinks() {
@@ -94,6 +100,11 @@ symlinks() {
 
   # asdf
   ln -s "$DOTFILES_PATH/asdf/.tool-versions" "$HOME/.tool-versions"
+
+  # vscode
+  ln -s "$DOTFILES_PATH/vscode/snippets" "$VSCODE_PATH/snippets"
+  ln -s "$DOTFILES_PATH/vscode/keybindings.json" "$VSCODE_PATH/keybindings.json"
+  ln -s "$DOTFILES_PATH/vscode/settings.json" "$VSCODE_PATH/settings.json"
 }
 
 banner
