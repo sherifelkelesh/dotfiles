@@ -57,6 +57,9 @@ clean() {
 
   # ubuntu
   rm -rf "$HOME/.config/autostart"
+
+  # asdf
+  rm -rf "$HOME/.tool-versions"
 }
 
 symlinks() {
@@ -88,6 +91,9 @@ symlinks() {
 
   # ubuntu
   ln -s "$DOTFILES_PATH/ubuntu/autostart" "$HOME/.config/autostart"
+
+  # asdf
+  ln -s "$DOTFILES_PATH/asdf/.tool-versions" "$HOME/.tool-versions"
 }
 
 banner

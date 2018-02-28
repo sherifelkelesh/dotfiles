@@ -29,6 +29,9 @@ export ASDF_DIR="$HOME/.asdf"
 # ssh
 export SSH_KEY_PATH="$HOME/.ssh/dsa_id"
 
+# golang
+export GOPATH="$HOME/go"
+
 # path
 export PATH=/usr/local/bin
 export PATH=$PATH:/usr/local/sbin
@@ -38,5 +41,4 @@ export PATH=$PATH:/sbin
 export PATH=$PATH:/bin
 export PATH=$PATH:/usr/games
 export PATH=$PATH:/usr/local/games
-
 export PATH=$PATH:$HOME/.rbenv/bin
