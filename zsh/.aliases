@@ -40,7 +40,7 @@ alias du='du -h -d 2'
 alias rm='nocorrect rm'
 
 # general commands
-alias c="pygmentize -O style=monokai -f console256 -g"
+alias cat="pygmentize -O style=monokai -f console256 -g"
 alias top="htop"
 alias t="top"
 
@@ -57,8 +57,9 @@ alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
 alias install-global-packages="npm install -g $(cat $DOTFILES/npm/globals)"
 
 # docker
-alias d="docker"
-alias dc="docker-compose"
+alias dc="docker"
+alias dcc="docker-compose"
 
 # ruby, rails, bundle
-alias bx="bundle exec"
+alias ra="rails"
+alias be="bundle exec"
