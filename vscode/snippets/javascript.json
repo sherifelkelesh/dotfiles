@@ -1,0 +1,17 @@
+{
+  "print to console": {
+    "prefix": "log",
+    "description": "log output to console",
+    "body": [
+      "console.log($1)"
+    ]
+  },
+
+  "print to console with a namespace" : {
+    "prefix": "logn",
+    "description": "log output to console with a namespace",
+    "body": [
+      "console.log('$1', $1)"
+    ]
+  }
+}

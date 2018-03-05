@@ -1,1 +1,119 @@
-/home/iagodahlem/.config/Code/User/settings.json
+{
+  "editor.cursorBlinking": "smooth",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.formatOnPaste": false,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.quickSuggestionsDelay": 5,
+  "editor.renderIndentGuides": true,
+  "editor.renderLineHighlight": "none",
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+
+  "explorer.openEditors.visible": 0,
+
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    ".vscode": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/.vscode": true,
+    "**/bower_components": true,
+    "**/build": true,
+    "**/CVS": true,
+    "**/dist": true,
+    "**/node_modules": true
+  },
+  "files.associations": {
+    ".ackrc": "shellscript",
+    ".aliases": "shellscript",
+    ".bash_profile": "shellscript",
+    ".bash_prompt": "shellscript",
+    ".bashrc": "shellscript",
+    ".bootstrap": "shellscript",
+    ".brew": "shellscript",
+    ".config": "shellscript",
+    ".curlrc": "shellscript",
+    ".exports": "shellscript",
+    ".extra": "shellscript",
+    ".functions": "shellscript",
+    ".git": "shellscript",
+    ".gitattributes": "shellscript",
+    ".gitconfig": "shellscript",
+    ".githelpers": "shellscript",
+    ".gitignore": "shellscript",
+    ".gitignore_global": "shellscript",
+    ".gitmessage": "shellscript",
+    ".hushlogin": "shellscript",
+    ".inputrc": "shellscript",
+    ".npmrc": "shellscript",
+    ".osx": "shellscript",
+    ".packages": "shellscript",
+    ".pkginit": "shellscript",
+    ".screenrc": "shellscript",
+    ".symlink": "shellscript",
+    ".vim": "shellscript",
+    ".vimrc": "shellscript",
+    ".wgetrc": "shellscript",
+    ".xsessionrc": "shellscript",
+    ".zlogin": "shellscript",
+    ".zlogout": "shellscript",
+    ".zpreztorc": "shellscript",
+    ".zprofile": "shellscript",
+    ".zshenv": "shellscript",
+    ".zshrc": "shellscript",
+    "bash": "shellscript",
+    "Berkfile": "shellscript",
+    "Cheffile": "shellscript",
+    "Gemfile": "shellscript",
+    "Rakefile": "shellscript",
+    "sh": "shellscript",
+    "symlink": "shellscript",
+    "Vagrantfile": "shellscript",
+    "zlogin": "shellscript",
+    "zlogout": "shellscript",
+    "zpreztorc": "shellscript",
+    "zprofile": "shellscript",
+    "zsh": "shellscript",
+    "zshenv": "shellscript",
+    "zshrc": "shellscript"
+  },
+
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.fontLigatures": true,
+  "terminal.integrated.fontSize": 13,
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/build": true,
+    "**/dist": true
+  },
+
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Dracula",
+  "workbench.startupEditor": "none",
+
+  "zenMode.fullScreen": false,
+
+  // plugins
+
+  "disableLigatures.mode": "Cursor",
+
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "plaintext": "jade"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+
+  "sublimeTextKeymap.promptV3Features": true,
+  "window.zoomLevel": 0
+}

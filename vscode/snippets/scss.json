@@ -1,0 +1,21 @@
+{
+  "Section comment": {
+    "prefix": "sassseccm",
+    "description": "sass section comment",
+    "body": [
+      "// ====================================================================",
+      "// ${1:section name}",
+      "// ===================================================================="
+    ]
+  },
+
+  "subsection comment": {
+    "prefix": "sasssubseccm",
+    "description": "sass subsection comment",
+    "body": [
+      "//",
+      "// ${1:subsection name}",
+      "// ==================================================================== */"
+    ]
+  }
+}
