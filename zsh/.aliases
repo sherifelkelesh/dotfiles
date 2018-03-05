@@ -27,7 +27,7 @@ alias projects="cd $PROJECTS"
 alias dlist="dirs -v | head -10"
 
 # directories shortcuts
-alias d="dev"
+alias dv="dev"
 alias dt="desktop"
 alias dl="downloads"
 alias pr="projects"
@@ -55,3 +55,10 @@ alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
 
 # node / npm
 alias install-global-packages="npm install -g $(cat $DOTFILES/npm/globals)"
+
+# docker
+alias d="docker"
+alias dc="docker-compose"
+
+# ruby, rails, bundle
+alias bx="bundle exec"
