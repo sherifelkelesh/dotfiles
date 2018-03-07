@@ -4,8 +4,20 @@ export ZSH=$HOME/.oh-my-zsh
 # ZSH configuration
 ZSH_THEME="dracula"
 ZSH_CUSTOM="$HOME/.custom"
+ZSH_TMUX_AUTOSTART=true
 
-plugins=(zsh-syntax-highlighting z gitfast git-extras git-tools node npm)
+plugins=(
+  bundle                    # aliases `be` `bi` `bu`
+  docker                    # docker autocompletion
+  gem                       # gem autocompletion
+  git-tools
+  gitfast                   # git faster autocompletion
+  npm                       # npm autocompletion
+  tmux                      # tmux behavior and aliases
+  yarn                      # yarn autocompletion
+  z                         # `z` navigator
+  zsh-syntax-highlighting   # syntax highlighting for zsh
+)
 
 # dotfiles configuration
 export DOTFILES="$HOME/.dotfiles"
