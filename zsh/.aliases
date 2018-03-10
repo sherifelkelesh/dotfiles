@@ -59,3 +59,7 @@ alias install-global-packages="npm install -g $(cat $DOTFILES/npm/globals)"
 # docker
 alias dc="docker"
 alias dcc="docker-compose"
+
+# bundle
+alias be="bundle exec"
+alias bi="bundle install"

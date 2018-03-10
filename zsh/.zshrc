@@ -6,7 +6,6 @@ ZSH_THEME="dracula"
 ZSH_CUSTOM="$HOME/.custom"
 
 plugins=(
-  bundle                    # aliases `be` `bi` `bu`
   docker                    # docker autocompletion
   gem                       # gem autocompletion
   git-tools
