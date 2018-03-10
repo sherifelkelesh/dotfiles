@@ -10,6 +10,7 @@
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "all",
+  "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
 
   "explorer.openEditors.visible": 0,
@@ -85,7 +86,6 @@
   },
 
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.fontLigatures": true,
   "terminal.integrated.fontSize": 13,
 
   "search.exclude": {
