@@ -30,3 +30,7 @@ source $DOTFILES_ZSH/.bootstrap
 # keybindings
 setxkbmap -option 'caps:ctrl_modifier'
 xcape -e 'Caps_Lock=Escape'
+
+# touchpad things
+xinput --set-prop 14 328 0 40
+xinput --set-prop 14 326 0
