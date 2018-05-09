@@ -1,20 +1,20 @@
 {
-  "Section comment": {
-    "prefix": "cssseccm",
-    "description": "css section comment",
+  "section": {
+    "prefix": "section",
+    "description": "CSS section comment.",
     "body": [
       "/* ====================================================================",
-      " * ${1:section name}",
+      " * $1",
       " * ==================================================================== */"
     ]
   },
 
-  "subsection comment": {
-    "prefix": "csssubseccm",
-    "description": "css subsection comment",
+  "subsection": {
+    "prefix": "subsection",
+    "description": "CSS subsection comment.",
     "body": [
       "/*",
-      " * ${1:subsection name}",
+      " * $1",
       " * ==================================================================== */"
     ]
   }

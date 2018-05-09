@@ -1,15 +1,15 @@
 {
-  "print to console": {
+  "console.log": {
     "prefix": "log",
-    "description": "log output to console",
+    "description": "Basic console.log.",
     "body": [
       "console.log($1)"
     ]
   },
 
-  "print to console with a namespace" : {
+  "console.log-namespace" : {
     "prefix": "logn",
-    "description": "log output to console with a namespace",
+    "description": "Basic console.log with a namespace.",
     "body": [
       "console.log('$1', $1)"
     ]
