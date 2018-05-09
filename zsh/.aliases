@@ -40,9 +40,8 @@ alias du='du -h -d 2'
 alias rm='nocorrect rm'
 
 # general commands
-alias cat="pygmentize -O style=monokai -f console256 -g"
+alias cot="pygmentize -O style=monokai -f console256 -g"
 alias top="htop"
-alias t="top"
 
 # hosts
 alias hosts="sudo $EDITOR /etc/hosts"
@@ -54,7 +53,7 @@ alias zsh="$EDITOR $HOME/.zshrc"
 alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
 
 # node / npm
-alias install-global-packages="npm install -g $(cat $DOTFILES/npm/globals)"
+alias install-global-packages="npm install -g $(cat $DOTFILES/npm/globals | grep -v '#')"
 
 # docker
 alias dc="docker"
