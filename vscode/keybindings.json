@@ -27,5 +27,9 @@
   {
     "key": "ctrl+e ctrl+e",
     "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "workbench.files.action.showActiveFileInExplorer"
   }
 ]
