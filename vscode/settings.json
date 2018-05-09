@@ -12,18 +12,23 @@
   "editor.renderWhitespace": "all",
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
+  "editor.wordWrap": "off",
 
+  "explorer.autoReveal": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   "explorer.openEditors.visible": 0,
 
+  "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "files.hotExit": "off",
   "files.exclude": {
-    ".vscode": true,
     "**/.DS_Store": true,
     "**/.git": true,
     "**/.hg": true,
+    "**/.next": true,
     "**/.svn": true,
-    "**/.vscode": true,
     "**/bower_components": true,
     "**/build": true,
     "**/CVS": true,
@@ -95,6 +100,8 @@
     "**/dist": true
   },
 
+  "window.zoomLevel": 0,
+
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Dracula",
   "workbench.startupEditor": "none",
@@ -102,9 +109,6 @@
   "zenMode.fullScreen": false,
 
   // plugins
-
-  "disableLigatures.mode": "Cursor",
-
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "vue-html": "html",
@@ -114,6 +118,29 @@
     "javascript": "jsx"
   },
 
-  "sublimeTextKeymap.promptV3Features": true,
-  "window.zoomLevel": 0
+  "extension-manager.extensions": [
+    "AndrewRazumovsky.vscode-styled-jsx-languageserver",
+    "CoenraadS.disableligatures",
+    "DavidAnson.vscode-markdownlint",
+    "EditorConfig.EditorConfig",
+    "PeterJausovec.vscode-docker",
+    "WakaTime.vscode-wakatime",
+    "WallabyJs.quokka-vscode",
+    "blanu.vscode-styled-jsx",
+    "bungcip.better-toml",
+    "dbaeumer.vscode-eslint",
+    "dracula-theme.theme-dracula",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "lukehoban.Go",
+    "mikestead.dotenv",
+    "ms-vscode.sublime-keybindings",
+    "octref.vetur",
+    "patbenatar.advanced-new-file",
+    "pnp.polacode",
+    "rebornix.Ruby",
+    "techer.open-in-browser",
+    "waderyan.gitblame",
+    "webstp.extension-manager"
+  ]
 }
