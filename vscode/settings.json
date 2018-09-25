@@ -106,41 +106,16 @@
   "workbench.colorTheme": "Dracula",
   "workbench.startupEditor": "none",
 
-  "zenMode.fullScreen": false,
-
   // plugins
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "vue-html": "html",
-    "plaintext": "jade"
+    "plaintext": "jade",
+    "erb": "html"
   },
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
 
-  "extension-manager.extensions": [
-    "AndrewRazumovsky.vscode-styled-jsx-languageserver",
-    "CoenraadS.disableligatures",
-    "DavidAnson.vscode-markdownlint",
-    "EditorConfig.EditorConfig",
-    "PeterJausovec.vscode-docker",
-    "WakaTime.vscode-wakatime",
-    "WallabyJs.quokka-vscode",
-    "blanu.vscode-styled-jsx",
-    "bungcip.better-toml",
-    "dbaeumer.vscode-eslint",
-    "dracula-theme.theme-dracula",
-    "formulahendry.auto-close-tag",
-    "formulahendry.auto-rename-tag",
-    "lukehoban.Go",
-    "mikestead.dotenv",
-    "ms-vscode.sublime-keybindings",
-    "octref.vetur",
-    "patbenatar.advanced-new-file",
-    "pnp.polacode",
-    "rebornix.Ruby",
-    "techer.open-in-browser",
-    "waderyan.gitblame",
-    "webstp.extension-manager"
-  ]
+  "javascript.updateImportsOnFileMove.enabled": "never"
 }
