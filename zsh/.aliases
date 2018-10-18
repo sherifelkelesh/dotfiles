@@ -44,7 +44,7 @@ alias cot="pygmentize -O style=monokai -f console256 -g"
 alias top="htop"
 
 # hosts
-alias hosts="sudo $EDITOR /etc/hosts"
+alias hosts="sudo $SUBL /etc/hosts"
 
 # zsh & oh-my-zsh
 alias reload=". ~/.zshrc"
