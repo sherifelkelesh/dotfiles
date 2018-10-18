@@ -9,6 +9,7 @@ source $DIR/scripts/index.sh
 readonly DOTFILES_PATH="$HOME/.dotfiles"
 readonly SUBLIME_PATH="$HOME/.config/sublime-text-3/Packages/User"
 readonly VSCODE_PATH="$HOME/.config/Code/User"
+readonly CEREBRO_PATH="$HOME/.config/Cerebro"
 
 banner() {
   log  ""
@@ -66,6 +67,10 @@ clean() {
   rm -rf "$VSCODE_PATH/snippets"
   rm -rf "$VSCODE_PATH/keybindings.json"
   rm -rf "$VSCODE_PATH/settings.json"
+
+  # cerebro
+  rm -rf "$CEREBRO_PATH/config.json"
+  rm -rf "$CEREBRO_PATH/plugins/package.json"
 }
 
 symlinks() {
@@ -105,6 +110,10 @@ symlinks() {
   ln -s "$DOTFILES_PATH/vscode/snippets" "$VSCODE_PATH/snippets"
   ln -s "$DOTFILES_PATH/vscode/keybindings.json" "$VSCODE_PATH/keybindings.json"
   ln -s "$DOTFILES_PATH/vscode/settings.json" "$VSCODE_PATH/settings.json"
+
+  # cerebro
+  ln -s "$DOTFILES_PATH/cerebro/config.json" "$CEREBRO_PATH/config.json"
+  ln -s "$DOTFILES_PATH/cerebro/plugins/package.json" "$CEREBRO_PATH/plugins/package.json"
 }
 
 banner
