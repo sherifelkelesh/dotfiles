@@ -1,0 +1,26 @@
+{
+  "locale": "en-US",
+  "lang": "en",
+  "country": "BR",
+  "theme": "../dist/main/css/themes/dark.css",
+  "hotkey": "Control+Space",
+  "showInTray": true,
+  "firstStart": false,
+  "developerMode": false,
+  "cleanOnHide": true,
+  "skipDonateDialog": true,
+  "lastShownDonateDialog": 1515977440522,
+  "plugins": {},
+  "isMigratedPlugins": true,
+  "openAtLogin": true,
+  "positions": {
+    "3850489720471552": [
+      70,
+      277
+    ],
+    "4693508594246913": [
+      2001,
+      277
+    ]
+  }
+}
