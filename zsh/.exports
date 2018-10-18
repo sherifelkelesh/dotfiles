@@ -13,11 +13,16 @@ export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
-# editor
+# editors
+
+export SUBL='subl'
+export CODE='code'
+export VIM='vim'
+
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR=$VIM
 else
-  export EDITOR='code'
+  export EDITOR=$CODE
 fi
 
 # nvm
@@ -42,3 +47,4 @@ export PATH=$PATH:/bin
 export PATH=$PATH:/usr/games
 export PATH=$PATH:/usr/local/games
 export PATH=$PATH:$HOME/.rbenv/bin
+export PATH=~/bin:$PATH
