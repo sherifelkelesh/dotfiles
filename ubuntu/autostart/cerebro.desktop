@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Version=1.0
-Name=cerebro
-Comment=cerebrostartup script
-Exec=/home/iagodahlem/softwares/cerebro-0.3.1-x86_64.AppImage
-StartupNotify=false
-Terminal=false
-X-GNOME-Autostart-enabled=true
