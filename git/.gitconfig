@@ -1,7 +1,7 @@
 [user]
   name = Iago Dahlem Lorensini
   email = iagodahlemlorensini@gmail.com
-  editor = subl
+  editor = code
 [github]
   user = iagodahlem
 [core]
@@ -28,7 +28,6 @@
   co = checkout
   cob = checkout -b
   com = checkout master
-  cod = checkout develop
 
   # cherry-pick
   cp = cherry-pick -x
