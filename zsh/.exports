@@ -2,7 +2,6 @@
 export DESKTOP="$HOME/Desktop"
 export DOCUMENTS="$HOME/Documents"
 export DOWNLOADS="$HOME/Downloads"
-export DROPBOX="$HOME/Dropbox"
 export DEV="$HOME/dev"
 export PROJECTS="$DEV/projects"
 
@@ -14,7 +13,6 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 # editors
-
 export SUBL='subl'
 export CODE='code'
 export VIM='vim'

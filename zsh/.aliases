@@ -1,22 +1,13 @@
-# dotfiles support
+# dotfiles
 alias dots="cd $DOTFILES"
-alias dotsconf="cd $DOTFILES && $EDITOR ."
 
-# apt
-alias autoclean="sudo apt autoclean"
-alias autoremove="sudo apt autoremove -y --purge"
-alias check="sudo apt check"
-alias clean="sudo apt clean"
-alias dist-upgrade="sudo apt dist-upgrade -y"
-alias install="sudo apt install -y"
-alias i="install"
-alias purge="sudo apt purge -y"
-alias remove="sudo apt remove -y"
-alias update="sudo apt update"
-alias upgrade="sudo apt upgrade -y"
-
-alias up="update && upgrade && dist-upgrade"
-alias cleanup="clean && autoclean && autoremove"
+# brew
+alias install="brew install"
+alias cask="brew cask install"
+alias update="brew update"
+alias upgrade="brew upgrade"
+alias up="update && upgrade"
+alias cleanup="brew cleanup"
 
 # directories
 alias dev="cd $DEV"
@@ -40,14 +31,13 @@ alias du='du -h -d 2'
 alias rm='nocorrect rm'
 
 # general commands
-alias cot="pygmentize -O style=monokai -f console256 -g"
 alias top="htop"
 
 # hosts
 alias hosts="sudo $SUBL /etc/hosts"
 
 # zsh & oh-my-zsh
-alias reload=". ~/.zshrc"
+alias reload=". $HOME/.zshrc"
 alias r="reload"
 alias zsh="$EDITOR $HOME/.zshrc"
 alias ohmyzsh="$EDITOR $HOME/.oh-my-zsh"
@@ -60,5 +50,5 @@ alias dc="docker"
 alias dcc="docker-compose"
 
 # bundle
-alias be="bundle exec"
 alias bi="bundle install"
+alias bx="bundle exec"
