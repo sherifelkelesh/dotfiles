@@ -10,10 +10,9 @@ alias up="update && upgrade"
 alias cleanup="brew cleanup"
 
 # directories
-alias dev="cd $DEV"
+alias dev="cd $CODE"
 alias desktop="cd $DESKTOP"
 alias downloads="cd $DOWNLOADS"
-alias projects="cd $PROJECTS"
 
 alias dlist="dirs -v | head -10"
 
@@ -21,7 +20,6 @@ alias dlist="dirs -v | head -10"
 alias dv="dev"
 alias dt="desktop"
 alias dl="downloads"
-alias pr="projects"
 
 # show human friendly numbers and colors
 alias df='df -h'
