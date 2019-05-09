@@ -1,10 +1,16 @@
 {
-  "editor.cursorBlinking": "smooth",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.detectIndentation": true,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
-  "editor.formatOnPaste": false,
+  "editor.formatOnPaste": true,
+  "editor.insertSpaces": true,
   "editor.minimap.enabled": false,
+  "editor.minimap.maxColumn": 200,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.quickSuggestionsDelay": 5,
   "editor.renderIndentGuides": true,
@@ -13,6 +19,7 @@
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "editor.wordWrap": "off",
+  "editor.smoothScrolling": true,
 
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
@@ -52,8 +59,8 @@
     ".gitattributes": "shellscript",
     ".gitconfig": "shellscript",
     ".githelpers": "shellscript",
-    ".gitignore": "shellscript",
     ".gitignore_global": "shellscript",
+    ".gitignore": "shellscript",
     ".gitmessage": "shellscript",
     ".hushlogin": "shellscript",
     ".inputrc": "shellscript",
@@ -73,6 +80,7 @@
     ".zprofile": "shellscript",
     ".zshenv": "shellscript",
     ".zshrc": "shellscript",
+    "*.js": "javascriptreact",
     "bash": "shellscript",
     "Berkfile": "shellscript",
     "Cheffile": "shellscript",
@@ -87,8 +95,19 @@
     "zprofile": "shellscript",
     "zsh": "shellscript",
     "zshenv": "shellscript",
-    "zshrc": "shellscript"
+    "zshrc": "shellscript",
   },
+
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
 
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 13,
@@ -100,13 +119,18 @@
     "**/dist": true
   },
 
+  "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
   "window.zoomLevel": 0,
 
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Dracula",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.startupEditor": "none",
+  "workbench.statusBar.feedback.visible": false,
 
   // plugins
+
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "vue-html": "html",
@@ -116,6 +140,4 @@
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
-
-  "javascript.updateImportsOnFileMove.enabled": "never"
 }
