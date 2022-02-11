@@ -26,7 +26,3 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
-
-# asdf
-source "$ASDF_DIR/asdf.sh"
-source "$ASDF_DIR/completions/asdf.bash"

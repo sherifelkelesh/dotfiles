@@ -10,7 +10,6 @@ plugins=(
   gem                       # gem autocompletion
   gitfast                   # git faster autocompletion
   npm                       # npm autocompletion
-  tmux                      # tmux behavior and aliases
   yarn                      # yarn autocompletion
   z                         # `z` navigator
   zsh-syntax-highlighting   # syntax highlighting for zsh
