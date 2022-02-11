@@ -5,17 +5,15 @@
     "command": "workbench.action.toggleZenMode"
   },
 
-  // open panels
+  // collapse all folders
   {
-    "key": "ctrl+k ctrl+e",
-    "command": "workbench.view.explorer"
+    "key": "cmd+k cmd+c",
+    "command": "workbench.files.action.collapseExplorerFolders"
   },
+// refactor
   {
-    "key": "ctrl+k ctrl+g",
-    "command": "workbench.view.scm"
-  },
-  {
-    "key": "ctrl+k ctrl+i",
-    "command": "workbench.extensions.action.showInstalledExtensions"
-  },
+    "key": "shift+cmd+r",
+    "command": "editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  }
 ]
