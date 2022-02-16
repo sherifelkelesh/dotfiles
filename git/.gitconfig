@@ -1,9 +1,9 @@
 [user]
-  name = Moises Hilario
+  name = moiseshilario
   email = moiseshilariu@gmail.com
   editor = code
 [github]
-  user = moiseshilariu
+  user = moiseshilario
 [core]
   editor = vim
   excludesfile = ~/.gitignore_global
