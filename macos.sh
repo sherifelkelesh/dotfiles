@@ -68,6 +68,9 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # Disable Chrome's back/forward navigation
 #defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
 
+# Enable keypress repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
 # --------------–-------–--------–--------–-------–--–-----
 # Screen
 # --------------–-------–--------–--------–-------–--–-----
