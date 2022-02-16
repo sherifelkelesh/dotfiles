@@ -6,13 +6,17 @@ ZSH_THEME="dracula"
 ZSH_CUSTOM="$HOME/.custom"
 
 plugins=(
-  docker                    # docker autocompletion
-  gem                       # gem autocompletion
+  #docker                    # docker autocompletion
+  #gem                       # gem autocompletion
   gitfast                   # git faster autocompletion
   npm                       # npm autocompletion
   yarn                      # yarn autocompletion
   z                         # `z` navigator
   zsh-syntax-highlighting   # syntax highlighting for zsh
+  github
+  #colored-man-pages
+  #colorize
+  macos
 )
 
 # config
