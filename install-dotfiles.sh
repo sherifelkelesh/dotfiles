@@ -32,6 +32,9 @@ echo "→ Installing Oh My ZSH and custom plugins..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 mkdir -p ~/.custom/plugins ~/.custom/themes
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.custom/plugins/zsh-syntax-highlighting
+# install spaceship oh-my-zsh theme
+# git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+# ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 echo "→ Configuring VSCode..."
 rm -rf "$VSCODE_CONFIG/{keybindings.json,settings.json}"
