@@ -1,9 +1,6 @@
 bat
 git
-nvm
 yarn
 cocoapods
 watchman
 zsh
-zsh-autosuggestions
-zsh-syntax-highlighting

@@ -23,18 +23,13 @@ else
 fi
 
 # nvm
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
-
-# asdf
-# export ASDF_DIR="$HOME/.asdf"
+export NVM_COMPLETION=true
+export NVM_LAZY_LOAD=true
+export NVM_NO_USE=false
+export NVM_AUTO_USE=true
 
 # ssh
 export SSH_KEY_PATH="$HOME/.ssh/dsa_id"
-
-# golang
-# export GOPATH="$HOME/go"
 
 # path
 export PATH=/usr/local/bin
