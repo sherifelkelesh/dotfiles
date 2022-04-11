@@ -14,18 +14,8 @@ function e {
   fi
 }
 
-function s {
-  if [ $# -eq 0 ]; then
-    subl .
-  else
-    subl "$@"
-  fi
-}
-
-function v {
-  if [ $# -eq 0 ]; then
-    vim .
-  else
-    vim "$@"
-  fi
+# git
+# create and push to origin
+push-tag() {
+  git tag $1 && git push origin $1
 }
