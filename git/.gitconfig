@@ -1,15 +1,11 @@
 [user]
-  name = moiseshilario
+  name = Moises Hilario
   email = moiseshilariu@gmail.com
   editor = code
 [github]
   user = moiseshilario
 [core]
-  editor = vim
   excludesfile = ~/.gitignore_global
-  pager = diff-so-fancy | less --tabs=4
-[commit]
-  template = ~/.gitmessage
 [alias]
   # helpers
   delete-merged = !git branch --merged | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
