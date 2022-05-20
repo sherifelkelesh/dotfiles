@@ -21,6 +21,7 @@ plugins=(
   yarn                      # yarn autocompletion
   z                         # `z` navigator
   zsh-syntax-highlighting   # syntax highlighting for zsh
+  git
   github
   colored-man-pages
   colorize
