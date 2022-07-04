@@ -49,3 +49,5 @@ I can't agree more with [Holman](https://github.com/holman)'s thoughts on dotfil
 ## License
 
 [MIT License](http://iagodahlem.mit-license.org/) © Iago Dahlem
+
+Changes made by Sherif Elkelesh
