@@ -1,5 +1,0 @@
-for file in $DOTFILES_ZSH/.{exports,aliases,functions}; do
-  [ -r "$file" ] && source "$file"
-done
-unset file
-
