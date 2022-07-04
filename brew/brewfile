@@ -1,6 +1,14 @@
 bat
 git
 yarn
-cocoapods
 watchman
 zsh
+fish
+k9s
+kubernetes-cli
+node
+pulumi
+ngrok
+google-cloud-sdk
+docker
+openssl@1.1
