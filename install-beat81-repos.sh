@@ -1,0 +1,4 @@
+for repo in GRITSpot/mobile-app-customer GRITSpot/mobile-app-workout GRITSpot/local-env GRITSpot/qa-end-to-end GRITSpot/wave-user-service GRITSpot/fe-web-admin GRITSpot/wave-event-service GRITSpot/api-specification GRITSpot/wave-media-service GRITSpot/wave-feedback-service GRITSpot/wave-payment-service GRITSpot/wave-api-gateway GRITSpot/data-partners-integrations GRITSpot/wave-mono-service GRITSpot/fe-web GRITSpot/wave-integration-autopilot-service GRITSpot/wave-result-service GRITSpot/wave-lib-health-metrics GRITSpot/wave-lib-tests GRITSpot/wave-datawarehouse-service GRITSpot/data-engineering GRITSpot/wave-lib-pulumi GRITSpot/wave-koa-service-blueprint GRITSpot/fe-workout-overlay GRITSpot/infra-iac GRITSpot/wave-chat-service GRITSpot/wave-mail-service GRITSpot/wave-lib-logger GRITSpot/wave-lib-pubsub GRITSpot/locker-room;
+do
+git clone git@github.com:$repo.git
+done                     
